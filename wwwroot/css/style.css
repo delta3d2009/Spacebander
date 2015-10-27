@@ -1,0 +1,844 @@
+/*****************************************************************Fonts*****************************************************************/
+
+/*@font-face {
+    font-family:'Lato-Regular';
+    src: url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Regular.ttf') format('truetype'),
+        url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato/Lato-Regular.svg#Lato-Regular') format('svg'); 
+}
+
+@font-face {
+    font-family:'Lato-Light';
+    src: url('../fonts/Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Light.ttf') format('truetype'),
+        url('../fonts/Lato/Lato-Light.woff') format('woff'),
+        url('../fonts/Lato/Lato-Light.svg#Lato-Light') format('svg'); 
+}
+
+@font-face {
+    font-family:'Lato-Hairline';
+    src: url('../fonts/Lato/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Hairline.ttf') format('truetype'),
+        url('../fonts/Lato/Lato-Hairline.woff') format('woff'),
+        url('../fonts/Lato/Lato-Hairline.svg#Lato-Hairline') format('svg'); 
+}
+
+@font-face {
+    font-family:'Lato-Bold';
+    src: url('../fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Bold.ttf') format('truetype'),
+        url('../fonts/Lato/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato/Lato-Bold.svg#Lato-Bold') format('svg'); 
+}
+
+@font-face {
+    font-family:'Lato-Black';
+    src: url('../fonts/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Black.ttf') format('truetype'),
+        url('../fonts/Lato/Lato-Black.woff') format('woff'),
+        url('../fonts/Lato/Lato-Black.svg#Lato-Black') format('svg'); 
+}*/
+
+
+
+/*****************************************************************Gobal styles*****************************************************************/
+
+body{
+    min-height:1024px;
+}
+
+
+#wrapper{
+    background: #fff;
+    /*border: 1px solid #d4d4d3;*/
+    margin: 0 auto;
+    /*width: 976px;*/
+    overflow: hidden;
+    min-height:100%;
+}
+
+.container{
+    width:100%;
+    padding-left:0;
+    padding-right:0;
+}
+
+h1, .jumbotron h1{
+    font-size:55px;
+}
+
+h2, .jumbotron h2{
+    font-size:26px;
+}
+
+
+/*****************************************************************Bootstrap Customize elements*****************************************************************/
+
+
+.container .jumbotron{
+    padding:0;
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color:#FFFFFF;
+}
+
+.container-fluid{
+    padding-left:0;
+    padding-right:0;
+    max-width: 1024px;
+}
+
+#navbar{
+    /*font-family:'Lato-Black', Arial, sans-serif;*/
+   font-family: 'Raleway', sans-serif;
+   border-radius:none;
+   font-weight:bold;
+   background-color:#736EED;
+}
+
+.navbar{
+    border-radius:0;
+    margin-bottom:0;
+}
+
+.navbar-default{
+   border:none;   
+   background-color:#736EED;
+}
+
+.navbar-brand{
+    padding: 10px;
+    height: 70px;
+    padding-left:48px;
+    margin-left:0 !important;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.navbar-nav > li{
+    background-color:#6459C4;
+    margin-right:10px;
+}
+
+.navbar-nav > li > a{
+    line-height:40px;
+    font-size: 16px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color:#68DDDD;
+     color:#2c3e50 !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color:#99D9F2;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color:#FFFFFF;
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color:#FFFFFF;
+  background-color:#A6A6FF;
+}
+
+.navbar-right{
+     margin-right: -30px !important;
+}
+
+/*****************************************************************Navigation Menu Sub-Items*****************************************************************/
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+    color:#99D9F2;
+}
+
+.dropdown-menu > li > a{
+     color:#333366;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 0px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  text-align:left;
+  text-shadow:none;
+  left:0;
+  right:0;
+  margin-left:80px;
+  width: 50%;
+  margin-top: 72px;
+  bottom:0;
+  padding:0;
+  top:0;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+  background-color: #777;
+}
+
+.carousel .item .container{
+   
+}
+
+.carousel-inner > .item > img {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+}
+
+.carousel-indicators li{
+    background-color:#A6A6FF;
+    width:16px;
+    height:16px;
+    border:none;
+    margin:0;
+}
+.carousel-indicators .active{
+    background-color:#6459C4;
+    width:16px;
+    height:16px;
+    margin:0;
+}
+
+.carousel-control, .carousel-control:hover, .glyphicon-chevron-left, .glyphicon-chevron-right{
+    color:transparent;
+    text-shadow: none;
+}
+
+.carousel-control{
+    width:35px;
+    height:34px;
+    top:50%;
+}
+.carousel-control.left{
+    background-image:none;
+    background-repeat:no-repeat;
+    margin-left: 24px;
+}
+
+.carousel-control.right{
+    background-image:none;
+     background-repeat:no-repeat;
+    margin-right: 24px;
+    
+}
+
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left{
+    background:url("../img/desktop/arrow-left.png") no-repeat;
+    width:35px;
+    height:34px;
+    margin-left:0;
+    left:0;
+}
+
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right{
+    background:url("../img/desktop/arrow-right.png") no-repeat;
+    width:35px;
+    height:34px;
+    right: 0;
+    margin-left:0;
+}
+
+.carousel-caption{
+    
+}
+
+.carousel .item h1{
+    color:#2c3e50;
+    font-size:36px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-shadow:none;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:14px;
+}
+
+.carousel .item h2{
+    color:#2c3e50;
+    font-size:24px;
+    font-family: 'PT Serif', serif;
+    text-shadow:none;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:24px;
+}
+
+/*****************************************************************Home page callouts*****************************************************************/
+
+.callouts{
+    margin-top:48px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 48px;
+    background-color:#FFFFFF;
+}
+
+.callout{
+    height:130px;
+    text-align: center;
+}
+
+.thumbnail{
+    background-color:#DEE1E3;
+    border-radius: 0;
+    border: 2px solid #2C3E50;
+    padding:0;
+    height:345px;
+    padding-left:40px;
+    padding-right:40px;
+    margin-bottom: 0;
+    margin-right: 12px;
+}
+
+.thumbnail.last{
+    margin-right: 0;
+}
+
+ a.thumbnail:hover,  a.thumbnail:focus{
+    background-color:#DEE1E3;
+    border-radius: 0;
+    border: 2px solid #2C3E50 !important;
+    padding:0;
+    height:345px;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.thumbnail div{
+    float:left;
+}
+
+.callout h3{
+    color:#34495e;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bolder;
+    font-size:21px;
+    text-transform:uppercase;
+    margin-top:46px;
+    margin-bottom:15px;
+}
+
+.callout p{
+    color:#34495e;
+    font-size: 16px;
+    font-weight:normal;
+    font-family: 'Raleway', sans-serif;
+}
+
+.thumbnail .btn-primary{
+    position:absolute;
+    bottom:40px;
+    margin: 0 16%;
+    display:block;
+}
+
+.col-sm-6, .col-md-4{
+    padding-left:0;
+    padding-right:0;
+}
+
+
+.call-to-action{
+    background-color:#736EED;
+    color:#FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size:18px;
+    text-transform:uppercase;
+    padding-bottom: 80px;
+    padding-top: 86px;
+    margin-bottom: 48px;
+}
+
+.cta{
+    margin: 0 auto;
+    max-width: 1024px;
+    text-align: center;
+}
+
+.call-to-action strong{
+    font-weight:bolder;
+}
+
+
+
+
+/*****************************************************************Find Physicians*****************************************************************/
+
+.banner{
+     background:url("../img/desktop/find-physicians-banner.jpg") no-repeat;
+     width:1024px;
+     height:auto;
+     padding-bottom:34.17%;
+     background-size:contain;
+}
+
+.content-banner{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 72px;
+    width: 40%;
+}
+
+.banner h1{
+    color:#2c3e50;
+    font-size:36px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-shadow:none;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:14px;
+}
+
+.banner h2{
+    color:#2c3e50;
+    font-size:24px;
+    font-family: 'PT Serif', serif;
+    text-shadow:none;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:24px;
+}
+
+.find{
+    background:#59BFC1 url("../img/desktop/map-container-bg") no-repeat;
+    float:left;
+}
+
+.find h3{
+    color:#2c3e50;
+    font-size:20px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-shadow:none;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:14px;
+}
+
+.find p{
+    color:#2c3e50;
+    font-family: 'PT Serif', serif;
+    text-shadow:none;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:14px;
+}
+
+.controls{
+    width:282px;
+    float:left;
+    margin-top:88px;
+    margin-left:32px;
+    margin-right:40px;
+}
+
+.controls p{
+    font-size:16px;
+}
+
+.controls form{
+    height:auto;
+    float:left;
+    margin-bottom:24px;
+}
+
+.controls form input[type=text]{
+    width:222px;
+    height:40px;
+    border: 1px solid #EDEDED;
+    background-color:transparent;
+    color:#2c3e50;
+    font-size:20px;
+    font-family: 'PT Serif', serif;
+    float:left;
+}
+
+.search-icon{
+    background:url("../img/desktop/map-search-icon.png") no-repeat;
+    width:33px;
+    height:33px;
+    display:block;
+}
+
+.controls form input[type=text]:focus{
+    border: 1px solid #59BFC1;
+}
+
+label{
+    color:#2c3e50;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+    text-shadow:none;
+    font-size: 12px;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:16px;
+}
+
+
+#map{  
+   margin-top:88px;
+   float: left;
+}
+
+#locationSelect{
+    width:100%;
+    visibility:hidden;
+}
+
+.form-control{
+    margin-bottom:0;
+}
+
+.results{
+    width:100%;
+    height:565px;
+    overflow:scroll;
+    border: 1px solid #EDEDED;
+}
+
+.result{
+    margin-bottom:18px;
+    margin-left:10px;
+}
+
+.result .arrow{
+    background:url("../img/desktop/map-list-icon.png") no-repeat;
+    width:15px;
+    height:15px;
+    display:block;
+    float:left;
+}
+
+.result .index{
+    font-family: 'Raleway', sans-serif;
+    color:#2c3e50;
+    font-size:14px;
+    float:left;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.result p{
+    font-family: 'Raleway', sans-serif;
+    color:#2c3e50;
+    font-size:14px;
+    margin-bottom:1px;
+}
+
+/**JScrollPane**/
+  
+.jspPane{
+     margin-top:18px !important;
+}
+
+.jspDrag{
+    background-color:#F2F2F2 !important;
+}
+ 
+ .jspTrack{
+     background-color:#2C3E50 !important;
+}
+
+.jspArrowUp{
+    background:#F2F2F2 url("../img/desktop/scroll-up-arrow.png") no-repeat !important;
+    width:20px;
+    height:20px;
+}
+
+.jspArrowDown{
+    background:#F2F2F2 url("../img/desktop/scroll-down-arrow.png") no-repeat !important;
+    width:20px;
+    height:20px;
+}
+
+/*Google Maps elements*/
+
+.gm-style .gm-style-iw{
+    font-family: 'Raleway', sans-serif;
+    font-size:16px;
+    color:#2C3E50;
+}
+
+.instructions{
+    width:582px;
+    float:left;
+    margin-top:32px;
+}
+
+.instructions h4{
+    color:#2c3e50;
+    font-size:20px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-shadow:none;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:14px;
+}
+
+.instructions p{
+     font-family: 'Raleway', sans-serif;
+     color:#2c3e50;
+     font-size:14px;
+     margin-bottom:8px;
+     line-height:20px;
+}
+
+.instructions p strong{
+    font-weight:bold;
+}
+
+.instructions p:last-child{
+     margin-bottom:0;
+}
+
+.instructions .zoom-icon{
+    background:url("../img/desktop/map-zoom-icon.png") no-repeat;
+    width:41px;
+    height:17px;
+    display:inline-block;
+    position:relative;
+    top:4px;
+    left:4px;
+}
+
+.instructions .pin-icon{
+    background:url("../img/desktop/map-pin-icon.png") no-repeat;
+    width:19px;
+    height:19px;
+    display:inline-block;
+    position:relative;
+    top:4px;
+    left:4px;
+}
+
+.instructions .address-icon{
+    background:url("../img/desktop/map-address-icon.png") no-repeat;
+    width:52px;
+    height:25px;
+    display:inline-block;
+    position:relative;
+    top:8px;
+    left:4px;
+}
+
+.instructions .toggle-icon{
+    background:url("../img/desktop/map-toggle-icon.png") no-repeat;
+    width:52px;
+    height:20px;
+    display:inline-block;
+    position:relative;
+    top:4px;
+    left:4px;
+}
+
+.
+
+
+/*****************************************************************Modal*****************************************************************/
+
+#modal-screen .btn-primary{
+    display:none;
+}
+
+
+/*****************************************************************Contact Form*****************************************************************/
+
+.contact{
+    
+}
+
+#contactForm{
+    height: auto;
+}
+
+#contactForm label{
+    margin-left:0; 
+    width:auto;
+}
+
+textarea {
+    resize: none;
+}
+
+#message-error{
+    margin-top:-147px;
+}
+
+#contactForm label.error {
+    float: right;
+    position:relative;
+}
+
+
+/*****************************************************************Footer *****************************************************************/
+.footer {
+    font-family: 'Raleway', sans-serif;
+    color:#F2F2F2;
+    font-size: 12px;
+    background-color:#2C3E50;
+    margin-bottom:48px;
+}
+
+.footer ul{
+    margin-bottom:0;
+    list-style: none;
+    padding:0;
+    margin-top:48px;
+    margin-left:auto;
+    margin-right:auto;
+    width:650px;
+}
+
+.footer.navbar.navbar-default li{
+    margin-right:14px;
+    float:left;
+    margin-bottom:48px;
+}
+
+.footer.navbar.navbar-default li.social{
+    margin-right:10px;
+}
+
+.footer.navbar.navbar-default li.social:last-child{
+    margin-right:0;
+}
+
+.facebook-icon{
+    background:url("../img/desktop/facebook-icon.png") no-repeat;
+    width:14px;
+    height:27px;
+    display:block;
+    margin-left: -4px;
+    margin-top: -4px;
+}
+
+.twitter-icon{
+    background:url("../img/desktop/twitter-icon.png") no-repeat;
+    width:25px;
+    height:21px;
+    display:block;
+    margin-left: -10px;
+    margin-top: 0;
+}
+
+.btn-social{
+    width:40px;
+    max-height:43px;
+}
+
+.brand{
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom:48px;
+}
+
+/***************************************************************** Buttons *****************************************************************/
+
+.btn-primary{
+    background-color:#68DDDD;
+    color:#34495e;
+    border: 2px solid #59BFC1;
+    font-size:14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active{
+    background-color:#A6A6FF;
+    color:#6459C4;
+    border: 2px solid #6459C4;
+    font-size:14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+}
+
+.btn-lg, .btn-group-lg > .btn{
+    border-radius:0;
+}
+
+.btn-default{
+    background-color:#DEE1E3;
+    border: 2px solid #34495E;
+    color: #34495E;
+    border-radius: 0;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active{
+    background-color:#34495E;
+    color:#DEE1E3;
+    border: 2px solid #DEE1E3;
+    font-size:14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+}
+
+/*Btn Primary inside Thumbnail */
+
+ a.thumbnail:hover .btn-primary,  a.thumbnail:focus .btn-primary{
+    background-color:#A6A6FF;
+    color:#6459C4;
+    border: 2px solid #6459C4;
+    font-size:14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+}
+
+/*btn Primary inside Footer*/
+
+.footer .btn-primary{
+    background-color:#34495E;
+    color:#F2F2F2;
+    border: 2px solid #DEE1E3;
+}
+
+.footer .btn-primary:hover, .footer .btn-primary:focus, .footer .btn-primary:active, .footer .btn-primary.active{
+    background-color:#DEE1E3;
+    color:#34495E;
+    border: 2px solid #34495E;
+}
+
+.footer .btn-primary:hover .facebook-icon, .footer .btn-primary:focus .facebook-icon, .footer .btn-primary:active .facebook-icon, .footer .btn-primary.active .facebook-icon{
+     background:url("../img/desktop/facebook-icon-hover.png") no-repeat;
+}
+
+.footer .btn-primary:hover .twitter-icon, .footer .btn-primary:focus .twitter-icon, .footer .btn-primary:active .twitter-icon, .footer .btn-primary.active .twitter-icon{
+     background:url("../img/desktop/twitter-icon-hover.png") no-repeat;
+}
+
+/*btn Default inside search*/
+
+.controls .btn-default{
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:4px;
+    padding-right:4px;
+    float:right;
+}
+
+.controls .btn-default:hover .search-icon, .controls .btn-default:focus .search-icon, .controls .btn-default:active .search-icon, .controls .btn-default.active .search-icon{
+    background:url("../img/desktop/map-search-icon-hover.png") no-repeat !important;
+}
