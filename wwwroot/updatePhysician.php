@@ -32,7 +32,7 @@
 		function loadPhysicianData($row)
 		{
 		 echo"<script src='js/jquery-1.11.0.min.js'></script><script src='js/bootstrap.js'></script><script src='js/jquery.validate.js'></script><script src='js/admin.js'></script>";
-    	 echo"<div>
+    	 	echo"<div>
     	 	<div class='container'>
 	    	  	<!-- Main component for a primary marketing message or call to action -->
 			      <div class='jumbotron iframe-jumbotron'>
@@ -63,8 +63,9 @@
 						</div>
 						<div>
 							<label>State</label>
-							<input name='state' id='state' type='text' size='2' value='".$row[7]."' class='form-control' maxlength='40'/>
-						</div>
+							<input name='state' id='state' type='text' size='2' value='".$row[7]."' class='form-control' maxlength='40'/>";
+							include 'includes/states.php';
+						echo "</div>
 						<div>
 							<label>Zip</label>
 							<input name='zip' id='zip' type='text' size='5' value='".$row[8]."' class='form-control' maxlength='5' onKeyPress='return numbersonly(this, event)'/>
@@ -102,7 +103,7 @@
     	 </div><!-- End Wrapper -->
     	 ";
     	 echo "<script>
-    	 		adjustUpdateIframe('".$row[0]."', '".$row[9]."');				
+    	 		adjustUpdateIframe('".$row[0]."', '".$row[9]."', '".$row[7]."');				
 			</script>";
     	 }
     	 ?>

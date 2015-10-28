@@ -8,6 +8,8 @@
 /* Global Variables */
 
 var countryLocation = "United States";
+var stateLocation = "";
+var isUS = true;
 var fullLocation = "";
 var locationLat = 0.0;
 var locationLng = 0.0;
@@ -19,7 +21,8 @@ $(document).ready(function() {
 	if(!$(document.body).hasClass("body-iframe") && !$(document.body).hasClass("body-results") )//If Document is not the iframe
 	{
 		addDashboardTabs();
-		addDropDown();
+		addDropDownCountries();
+		addDropDownStates();
 		addEventsInsertForm();
 		addEventsSearchForm();
 		configModal();
@@ -49,13 +52,40 @@ function addDashboardTabs()
 /*Bootstrap Component DropDown
  *For the Add Physician Panel
  * */
-function addDropDown()
+function addDropDownCountries()
 {
-	$( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
+	$( document.body ).on( 'click', '#btn-countries .dropdown-menu li', function( event ) {
       var $target = $( event.currentTarget );
       //console.log($target.attr("value"))
       //countryLocation = $target.attr("value");
+      //$(this).closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryName );
       countryLocation = $target.find("a").text();
+      if(countryLocation != "United States")
+      {
+          $("#btn-states").hide();
+           $("#insertForm").find("input[name='state']").show();
+      }else
+      {
+          $("#btn-states").show();
+          $("#insertForm").find("input[name='state']").hide();
+      }
+      searchLocations(fullLocation);
+      $target.closest( '.btn-group' )
+         .find( '[data-bind="label"]' ).text( $target.text() )
+            .end()
+         .children( '.dropdown-toggle' ).dropdown( 'toggle' );
+      return false;
+   });
+   $("#btn-countries .dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryLocation );
+   $("#insertForm").find("input[name='state']").hide();
+}
+
+function addDropDownStates()
+{
+    $( document.body ).on( 'click', '#btn-states .dropdown-menu li', function( event ) {
+      var $target = $( event.currentTarget );
+      stateLocation = $target.find("a").text();
+      $("#insertForm").find("input[name='state']").val(stateLocation);
       searchLocations(fullLocation);
       $target.closest( '.btn-group' )
          .find( '[data-bind="label"]' ).text( $target.text() )
@@ -602,7 +632,8 @@ $('<iframe />');
     }).appendTo('#modal-screen .modal-body');
     
     	 $("#update").load(function(){
-    	 	addDropDownIframe($(this).contents().find('body'));
+    	 	addDropDownCountriesIframe($(this).contents().find('body'));
+    	 	addDropDownStatesIframe($(this).contents().find('body'));
     	 	addClickEventsIframe($(this).contents().find('body')); 
     	 	addEventsUpdateForm($(this).contents().find('body'));
           });
@@ -611,10 +642,29 @@ $('<iframe />');
 /*Bootstrap Component DropDown
  *For the Update/Edit Physician Panel
  * */
-function addDropDownIframe(iframe)
+function addDropDownCountriesIframe(iframe)
 {
-	 $( iframe ).on( 'click', '.dropdown-menu li', function( event ) {
+	 $( iframe ).on( 'click', '#btn-countries .dropdown-menu li', function( event ) {
       var $target = $( event.currentTarget );
+      
+      $target.closest( '.btn-group' )
+         .find( '[data-bind="label"]' ).text( $target.text() )
+            .end()
+         .children( '.dropdown-toggle' ).dropdown( 'toggle' );
+      //return false;
+   });
+   $( iframe ).find("#updateForm #btn-countries .dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryLocation );
+   $( iframe ).find("#updateForm").find("input[name='state']").hide();
+}
+
+function addDropDownStatesIframe(iframe)
+{
+     $( iframe ).on( 'click', '#btn-states .dropdown-menu li', function( event ) {
+      var $target = $( event.currentTarget );
+      alert($target.find("a").text() + " >>> " +  $( iframe ).find("#updateForm input#state").val());
+      var stateSelected = $target.find("a").text();
+      $( iframe ).find("#updateForm input#state").val(stateSelected);
+      
       $target.closest( '.btn-group' )
          .find( '[data-bind="label"]' ).text( $target.text() )
             .end()
@@ -624,16 +674,33 @@ function addDropDownIframe(iframe)
 }
 
 /*Update Iframe - Form value per DataBase received information*/
-function adjustUpdateIframe(formID, countryName)
+function adjustUpdateIframe(formID, countryName, stateName)
 {
 	//Set the country
- 	$("#updateForm .dropdown-menu li a").each(function(){
+ 	$("#updateForm #btn-countries .dropdown-menu li a").each(function(){
 		if($(this).text() == countryName){
 		 	$(this).closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryName );
 		}	
 	});
+	//Set the state
+    $("#updateForm #btn-states .dropdown-menu li a").each(function(){
+        if($(this).text() == stateName){
+            $(this).closest( '.btn-group' ).find( '[data-bind="label"]' ).text( stateName );
+        }   
+    });
+    
 	//set Physician ID to Form
 	$("form#updateForm").attr("PhysicianID", formID);
+	
+	if(countryName === "United States")
+	{
+	     $("#updateForm #btn-states").show();
+         $("#updateForm").find("input[name='state']").hide();       
+     }else
+     {
+          $("#updateForm #btn-states").hide();
+          $("#updateForm").find("input[name='state']").show();
+     }
 }
 
 /*Handling Click Events Update Physician Form*/

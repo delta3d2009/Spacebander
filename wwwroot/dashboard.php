@@ -61,6 +61,7 @@
 									<div>
 										<label>State</label>
 										<input name="state" id="state" type="text" size="2" value="" class="form-control" maxlength="40"/>
+										<?php include 'includes/states.php';?>
 									</div>
 								</div>
 								<div class="right-side">
