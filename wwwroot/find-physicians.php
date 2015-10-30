@@ -28,27 +28,7 @@
     </head>
  	    <body>
     	<div id="header" class="purple">
-		    <nav class="navbar navbar-inverse">
-				<div class="container-fluid">
-				    <div class="navbar-header">	
-				      	<a class="navbar-brand"  href="index.php"><img class="img-responsive" src="img/desktop/spacebander-logo.jpg"></a>
-				      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					        	<span class="icon-bar"></span>
-					        	<span class="icon-bar"></span>
-					       		<span class="icon-bar"></span> 
-				      	</button>
-				    </div>
-
-				    <div id="myNavbar" class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-right">
-					        <li><a href='index.php'>HOME</a></li>
-					        <li><a href='about.php'>ABOUT</a></li>
-					        <li class='active'><a href='find-physicians.php'>FIND A PHYSICIAN</a></li>
-					        <li><a href='contact.php'>CONTACT</a></li>
-						</ul>
-				    </div>
-				</div>
-			</nav>
+		    <?php include 'includes/header.php';?>
 		</div>
 
 	<!-- Header================================================== -->
