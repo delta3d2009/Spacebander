@@ -30,6 +30,15 @@ $(document).ready(function() {
 	}
 });
 
+/*$(window).on('beforeunload', function ()
+{
+    console.log("Exit from Site. Closing Session.");
+});*/
+
+$(window).unload(function () {
+    //console.log("Exit from Site. Closing Session. " + event);
+});
+
 /*Bootstrap Component Nav Tabs*/
 function addDashboardTabs()
 {
@@ -62,11 +71,11 @@ function addDropDownCountries()
       countryLocation = $target.find("a").text();
       if(countryLocation != "United States")
       {
-          $("#btn-states").hide();
+          $("#insertForm #btn-states").hide();
            $("#insertForm").find("input[name='state']").show();
       }else
       {
-          $("#btn-states").show();
+          $("#insertForm #btn-states").show();
           $("#insertForm").find("input[name='state']").hide();
       }
       searchLocations(fullLocation);
@@ -76,7 +85,7 @@ function addDropDownCountries()
          .children( '.dropdown-toggle' ).dropdown( 'toggle' );
       return false;
    });
-   $("#btn-countries .dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryLocation );
+   $("#insertForm #btn-countries .dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryLocation );
    $("#insertForm").find("input[name='state']").hide();
 }
 
@@ -369,7 +378,7 @@ function addEventsUpdateForm(iframe)
             state = $form.find("input[name='state']").val();
             zip = $form.find("input[name='zip']").val();
             //country = $form.find(".dropdown-menu li a").text();
-            country =  $form.find(".dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text();
+            country =  $form.find("#btn-countries .dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text();
             phone = $form.find("input[name='phone']").val();
             cell = $form.find("input[name='cell']").val();
             fax = $form.find("input[name='fax']").val();
@@ -653,17 +662,16 @@ function addDropDownCountriesIframe(iframe)
          .children( '.dropdown-toggle' ).dropdown( 'toggle' );
       //return false;
    });
-   $( iframe ).find("#updateForm #btn-countries .dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryLocation );
-   $( iframe ).find("#updateForm").find("input[name='state']").hide();
 }
 
 function addDropDownStatesIframe(iframe)
 {
      $( iframe ).on( 'click', '#btn-states .dropdown-menu li', function( event ) {
       var $target = $( event.currentTarget );
-      alert($target.find("a").text() + " >>> " +  $( iframe ).find("#updateForm input#state").val());
+      //alert($target.find("a").text() + " >>> " +  $( iframe ).find("#updateForm input#state").val());
       var stateSelected = $target.find("a").text();
       $( iframe ).find("#updateForm input#state").val(stateSelected);
+      //$( iframe ).find("#updateForm input#state").show();
       
       $target.closest( '.btn-group' )
          .find( '[data-bind="label"]' ).text( $target.text() )
@@ -695,11 +703,12 @@ function adjustUpdateIframe(formID, countryName, stateName)
 	if(countryName === "United States")
 	{
 	     $("#updateForm #btn-states").show();
-         $("#updateForm").find("input[name='state']").hide();       
+         $("#updateForm").find("input[name='state']").hide();    
      }else
      {
           $("#updateForm #btn-states").hide();
           $("#updateForm").find("input[name='state']").show();
+          alert($("#updateForm").find("input[name='state']").val());
      }
 }
 
@@ -735,7 +744,7 @@ function addEventClickRemove(id)
 		var posting = $.post("php/removePhysician.php", {id:id});
 		posting.done(function( data ) {
 			$('#modal-screen .modal-footer .btn-default').text("OK");
-			$('#modal-screen .modal-footer .btn-primary').hide()
+			$('#modal-screen .modal-footer .btn-primary').hide();
 			if(parseInt(data) != 0)
 			{
 				showModal("Remove Physician", "Physician was Removed.","");
@@ -751,7 +760,7 @@ function addEventClickRemove(id)
 		
 		$("#modal-screen").on('hide.bs.modal', function (e) {
   			window.location.reload();
-		})
+		});
 	});
 }
 

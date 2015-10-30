@@ -1,56 +1,154 @@
 /*****************************************************************Login*****************************************************************/
 
-.controls{
-    float:left;    
+h1{
+    color:#2c3e50;
+    font-size:36px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-shadow:none;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:0;
+    background-color:#FFFFFF;
+    text-align:center;
+    line-height:124px;
+}
+
+.admin-section .container{
+    background-color:#2C3E50;
+    margin-bottom:88px;
+}
+
+h2{
+    color:#2c3e50;
+    font-size:16px;
+    font-family: 'Raleway', serif;
+    font-weight:bolder;
+    text-shadow:none;
+    margin: 0 auto;
+    text-align: center;
+    margin-top:0;
+    margin-bottom:14px;
+    width:240px;
+    line-height: 20px;
+}
+
+.content{
+    margin-bottom:88px;
 }
 
 form{
-    /*margin: 0 auto;*/
-    width:300px;
-    height:200px;
+    margin: 0 auto;
+    width:auto;
+    height:auto;
+}
+
+#signin{
+    background-color:#ededed;
+    width:466px;
+    padding-left:32px;
+    padding-right:32px;
+    padding-top:32px;
+    margin-top:48px;
+}
+
+#username{
+    margin-bottom:16px;
+}
+
+label{
+    color:#2c3e50;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+    text-shadow:none;
+    font-size: 16px;
+    text-align:left;
+    margin-top:0;
+    margin-bottom:4px;
+    text-transform:uppercase;
 }
 
 .required{
     position:absolute;
     display:none;
-    margin-top: 5px;
+    margin-top: 0px;
+    margin-left:-6px;
 }
 
-label{
-    width: 90px;
-    margin-left: 8px;
-}
-
-input{
+.admin-section input{
     margin-bottom:10px;
-    width:150px;
+    width:400px;
+    height:48px;
+    border:1px solid #68DDDD;
+    box-shadow:none;
+    transition:none;   
+    border-radius:0;
+}
+
+.btn-login{
+    width:190px;
+    display: block;
+    margin: 0 auto;
+    margin-top:48px;
+    margin-bottom:32px;
+}
+
+.admin-section input:focus, .admin-section input:active{
+    border:1px solid #FF884D;
+    box-shadow:none;
+    transition:none;
+     border-radius:0;
+}
+
+a.link{
+    color:#4e43ba;
+    font-family: 'Raleway', sans-serif;
+    font-size:14px;
+    text-decoration:underline;
+    width: 150px;
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a.link:hover, a.link:active, a.link:focus{
+    color:#59BFC1;
 }
 
 #output{
+    height:32px;
     margin-top: 10px;
-    margin-bottom: 15px; 
     text-align: center;   
+    font-family: 'Raleway', sans-serif;
 }
 
-#locationSelect{
+/*#locationSelect{
     width:300px;
 }
 
 .results{
     width:300px;
     height:500px;
-}
+}*/
 
 /*****************************************************************Dashboard Admin*****************************************************************/
 
+.container-admin{
+    
+}
+
 .tab-content{
-    background-color: #ffffff;
+    background-color: #F2F2F2;
     padding:20px;
     min-height: 920px;
 }
 
 .container-admin{
     width: 100%;
+}
+
+.tabs-dashboard{
+    margin-top:48px;
 }
 
 .container-admin .jumbotron{
@@ -64,16 +162,40 @@ input{
     text-align: center;   
 }
 
-.container-admin .navbar-brand{
-    padding:0 !important;
-    margin-bottom:10px;
+.container-admin .nav.nav-tabs{
+    margin-left:0;
 }
 
-.container-admin .nav.nav-tabs{
-    margin-left:85px;
-}
 .container-admin .nav-tabs > li{
-    top: 19px;
+  margin-bottom:0;
+}
+
+.container-admin .nav-tabs > li > a{
+    border-radius: 0;
+    margin-right:0;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+     font-family: 'Raleway', sans-serif;
+     font-size:14px;
+     font-weight: bold;
+     color:#34495e;
+     padding:32px;
+     text-transform:uppercase;
+}
+
+.nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus{
+     font-family: 'Raleway', sans-serif;
+     font-size:14px;
+     font-weight: bold;
+     color:#34495e;
+     padding:32px;
+     text-transform:uppercase;
+     background-color:#7c8a98;
+}
+
+#map{
+    display:none;
 }
 
 /*****************************************************************Modal Bootstrap*****************************************************************/
@@ -149,11 +271,6 @@ label.error {
 
 /*****************************************************************Database Table Search/Edit*****************************************************************/
 
-.container-admin .navbar-brand{
-    font-size: 14px;
-    height: auto;
-    padding: 10px 15px;
-}
 
 #edit .table td{
     width:10%;

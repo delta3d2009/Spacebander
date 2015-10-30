@@ -1,3 +1,14 @@
+<?php
+	session_start();  
+	//echo "------------------ " . $_SESSION["username"]; 
+	if (empty($_SESSION["username"])) 
+	{
+		header("Location: exit.php");
+		session_unset($_SESSION["username"]);
+		session_destroy ();
+	}
+?>
+
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->
@@ -13,25 +24,31 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/admin.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/mobile.css">-->
+        <!-- Google Fonts -->
+       <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+       <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
          <!-- Google Maps API -->
         <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
     </head>
-    <body>
+    <body class="admin-section">
     	 <div id="wrapper" >
     	 	<div class="container container-admin">
+    	 		<?php include 'includes/header.php';?>
+    	 		<h1>Staff Dashboard.</h1>
 	    	  	<!-- Main component for a primary marketing message or call to action -->
 			      <div class="jumbotron">
-			      	<div class="">
-				      	<a class='navbar-brand' href='index.php'><img src='img/desktop/spacebander-logo.png' /></a>
+			      	<div class="tabs-dashboard">
 				        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-						  <li role="presentation" class="active"><a href="#insert" data-toggle="tab">Add</a></li>
-						  <li role="presentation"><a href="#edit"data-toggle="tab">Search/Edit/Delete</a></li>
-						  <li role="presentation"><a href="#report" data-toggle="tab">Reports </a></li>
+				        	  <li role="presentation"><a href="#edit"data-toggle="tab">Directory</a></li>
+						  <li role="presentation" class="active"><a href="#insert" data-toggle="tab">Add New</a></li>
+						  <li role="presentation"><a href="#report" data-toggle="tab">Run Reports </a></li>
+						  <a class="link" href="exit.php">Logout</a>
 						</ul>
 					</div>
 					<div id="tab-content" class="tab-content">
-						<div class="tab-pane active" id="insert">
+						<div class="tab-pane" id="insert">
 							<form id="insertForm" autocomplete="off">
 								<div class="left-side">
 									<div>
@@ -100,7 +117,7 @@
 								<div id="output"></div>
 							</form>
 						</div>
-						<div class="tab-pane" id="edit">
+						<div class="tab-pane active" id="edit">
 							<div class="filter">
 								<h3>directory of registered physicians and practices:</h3>
 								<form id="searchForm" autocomplete="off">

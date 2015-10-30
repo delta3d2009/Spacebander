@@ -1,3 +1,13 @@
+<?php
+	session_start();  
+	if (empty($_SESSION["username"])) 
+	{
+		header("Location: exit.php");
+		session_unset($_SESSION["username"]);
+		session_destroy ();
+	}
+?>
+
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->

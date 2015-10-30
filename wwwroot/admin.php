@@ -13,15 +13,21 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/admin.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/mobile.css">-->
+        <!-- Google Fonts -->
+       <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+       <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body class="admin-section">
     	 <div id="wrapper" >
     	 	<div class="container">
 	    	  	<?php include 'includes/header.php';?>
+	    	  	<h1>Staff Dashboard.</h1>
 	    	  	<!-- Main component for a primary marketing message or call to action -->
-			      <div class="jumbotron">
+			      <div class="content">
 			        <form id="signin">
+			        	<h2>ENTER YOUR USERNAME AND PASSWORD TO LOGIN:</h2>
 						<div id="username">
 							<span class="required">*</span>
 							<label>User</label>
@@ -32,10 +38,10 @@
 							<label>Password</label>
 							<input name="pass" type="password" size="32" value="" class="form-control"/>
 						</div>
-						<button type="submit" class="btn btn-default">Log In</button>
+						<button class="btn btn-lg btn-primary btn-login" href="#" role="button">LOGIN</button>
+						<a class="link" href="#" onClick='configModalForgot(); return false;'>Forgot Your Password</a>
 						<div id="output"></div>
-					</form>
-					<a href="#" onClick='configModalForgot(); return false;'>Forgot Your Password</a>
+					</form>					
 			      </div><!-- End Main component for a primary marketing message or call to action -->
 			 </div><!-- End Container -->
 			 <?php include 'includes/footer.php';?>
