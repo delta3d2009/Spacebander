@@ -20,9 +20,11 @@
        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
     </head>
     <body class="admin-section">
-    	 <div id="wrapper" >
-    	 	<div class="container">
-	    	  	<?php include 'includes/header.php';?>
+    	 	
+  		<div id="header" class="purple">
+			<?php include 'includes/header.php';?>
+		</div>
+		<div class="admin-container">
 	    	  	<h1>Staff Dashboard.</h1>
 	    	  	<!-- Main component for a primary marketing message or call to action -->
 			      <div class="content">
@@ -38,14 +40,13 @@
 							<label>Password</label>
 							<input name="pass" type="password" size="32" value="" class="form-control"/>
 						</div>
-						<button class="btn btn-lg btn-primary btn-login" href="#" role="button">LOGIN</button>
+						<button class="btn-green btn-login" href="#" role="button">LOGIN</button>
 						<a class="link" href="#" onClick='configModalForgot(); return false;'>Forgot Your Password</a>
 						<div id="output"></div>
 					</form>					
 			      </div><!-- End Main component for a primary marketing message or call to action -->
 			 </div><!-- End Container -->
 			 <?php include 'includes/footer.php';?>
-    	 </div><!-- End Wrapper -->
     	 <?php include 'includes/interstitial.php';?>
     	<!-- Bootstrap core JavaScript
     	================================================= -->

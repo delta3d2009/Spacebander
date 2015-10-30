@@ -14,7 +14,7 @@ h1{
     line-height:124px;
 }
 
-.admin-section .container{
+.admin-section .admin-container{
     background-color:#2C3E50;
     margin-bottom:88px;
 }
@@ -65,7 +65,9 @@ label{
     text-align:left;
     margin-top:0;
     margin-bottom:4px;
+    margin-left:0;
     text-transform:uppercase;
+    width:100%;
 }
 
 .required{
