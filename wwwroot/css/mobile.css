@@ -1,141 +1,62 @@
+@media (max-width: 320px) {}
+@media (min-width: 480px) {}
+@media (min-width: 640px) {}
+@media (min-width: 768px) {}
+@media (min-width: 980px) {}
+@media (min-width: 1200px) {}
 
+@media (max-width: 320px) { ... }
+@media (min-width: 480px) and (max-width: 768px) { ... }
+@media (min-width: 768px) and (max-width: 991px) { ... }
+@media (min-width: 992px) and (max-width: 1199px) { ... }
+@media (min-width: 1200px) { ... }
 
-/*Tablet landscape and small desktop breakpoint*/
-@media screen and (max-width: 1400px){
+/***************************************************************** Top Navigation  *****************************************************************/
 
-body.body-iframe{
-    min-width:100%;
-    min-height: 100%;
+@media (max-width: 320px) {
+      .navbar-nav li a {
+      padding-left: 50px;
+      padding-right: 0;
+      margin-right: 0;
+      font-size: 12px;
+      }
+
+.navbar-inverse .navbar-brand {
+  width: 75%;
 }
-    
-table{
-    /*font-size: 1vw;*/
-   font-size: 13px;
-}
-
-.hide-for-tablet{
-    display:none;
-}
-
-}
-
-@media screen and (max-width: 1024px){
-
-body.body-iframe{
-    min-width:100%;
-    min-height: 100%;
-}
-
-table{
-   font-size: 11px;
+      /********************* TOGGLE *********************/
+.navbar-toggle { float: left;margin-left: 16px;}
 }
 
-}
-
-/*Tablet portrait and phone*/
-@media screen and (max-width: 768px){
-
-/*Login*/
-
-body{
-    /*font-size: 1vw;*/
-   min-width:640px;
-}
-
-body.body-iframe{
-    min-width:100%;
-    min-height: 100%;
-}
-
-#update body{
-    min-width:100%;
-}
-
-form{
-    width:100%;
-    height:200px;
-}
-
-/*Find a Physician Mobile*/
-
-.activate-mobile-location{
-    display:block;
-}
-
-.controls form label{
-    display:none;
-}
-
-.controls form input[type=text]{
-    display:none;
+@media (min-width: 480px) and (max-width: 768px) {
+      
 }
 
 
-.controls form .btn-default{
-    display:none;
+@media (min-width: 768px) {
+        
+}
+
+/*------------------ CAROUSEL -------------------------*/
+
+@media (max-width: 320px) {
+  .carousel-caption { width: 63% !important;}
+  .carousel .item h1 {letter-spacing: -0.5px;}
+  .carousel .item h1.slide1 {font-size: 22px !important; line-height: 22px; margin-bottom: 20px; }
+  .carousel .item h1.slide2 {font-size: 18px !important;line-height: 18px; margin-bottom: 20px;}
+  .carousel .item h1.slide3 {font-size: 17px !important;line-height: 17px !important; margin-bottom: 20px;}
+  .carousel-caption {margin-top: 16px !important; margin-left: 16px !important;}
+  .carousel .item h2{ display: none;}
+
+.carousel-indicators li{
+    background-color:#9493ff;
+    width:18px;
+    height:18px;
+    border:none;
+    margin:0;
+    border: 2px solid #fff;
+}
+
 }
 
 
-.required{
-    margin-left: -10px;
-}
-
-label{
-    margin-left: 0px;
-}
-
-input{
-    width:150px;
-}
-
-input[type=text]{
-    
-}
-
-input[type=submit]{
-    margin-top:10px;
-}
-
-#output{
-     text-align: left;   
-}
-
-/*Admin Panel*/
-
-/**/
-.nav > li{
-    width: 100%;
-}
-
-.nav-tabs > li > a{
-    margin-right:0;
-}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-    border-color:#FFFFFF;
-}
-
-.hide-for-mobile{
-    display:none;
-}
-
-#edit .table td{
-    word-wrap:break-all;
-}
-
-#edit .table th{
-    word-wrap:break-all;
-}
-
-.carousel {
-  margin-bottom: 0px;
-}
-
-/**/
-    
-table{
-    font-size: 11px;
-}
-
-
-}/*Close Media Querie*/ 
