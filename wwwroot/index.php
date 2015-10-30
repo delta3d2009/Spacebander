@@ -97,7 +97,7 @@
 		<div id="callouts" class="container-fluid">
     		<div class="callouts row">
 			
-	        	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	        	<div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
 	        		<a href="about.php" class="callout thumbnail ">
 	        			<div>
 	        				<h3>About Hemorrhoids</h3>
@@ -106,16 +106,16 @@
 	        			</div>
 	    			</a>
 	    		</div>
-	    		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	    		<div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
 	        		<a href="about.php" class="callout thumbnail">
 	        			<div>
-	        				<h3>What is SpaceBander®?</h3>
+	        				<h3>What is SpaceBander&#174;?</h3>
 	        				<p>SpaceBander® is a small plastic device that deploys a tiny rubber band around the base of your hemorrhoid.  The procedure is painless, non-surgical, takes less than 2 minutes in a doctor’s office, and will permanently eliminate your hemorrhoids.</p>
 	        				<div class="btn-green" role="button">ABOUT</div>
 	        			</div>
 	        		</a>
 	    		</div>
-	    		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	    		<div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
 	        		<a href="find-physicians.php" class="callout thumbnail">
 	        			<div>
 	        				<h3>Find a Physician</h3>
@@ -132,14 +132,14 @@
 		<div id="cta_area" class="purple">
     		<div class="container-fluid">
 	    		<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
 						<img class="center-block physician" src="img/desktop/spacebander_certified_physician.png">
 					</div>
-					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">	
+					<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">	
 			  				<h4>I’D LIKE TO PERMANENTLY</br>ELIMINATE MY HEMORRHOIDS</h4>
 			  				<h5>Please help me find a</br>SpaceBander&#174; Certified Physician</h5>
 			  		</div>
-			  		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 dark-purple">
+			  		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 dark-purple">
 			  			<a href="#"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
 			  		</div>
 			  	</div>	

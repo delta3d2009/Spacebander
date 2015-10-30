@@ -13,6 +13,9 @@
 
 /***************************************************************** Top Navigation  *****************************************************************/
 
+
+
+
 @media (max-width: 320px) {
       .navbar-nav li a {
       padding-left: 50px;
@@ -59,4 +62,42 @@
 
 }
 
+
+/*------------------ (min-width: 768px) and (max-width: 991px) -------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) { 
+
+/******Home page callouts*****************************************************************/
+
+    .callout{
+        margin-bottom: 24px;
+    }
+
+    .callout p{
+        height: auto;
+    }
+
+
+/******* navbar-inverse  *****************************************************************/
+
+    .navbar-inverse {
+      margin-right: 10px;
+    }
+
+    .navbar-inverse .navbar-brand {
+      padding: 0;
+    }
+
+    .navbar-inverse .navbar-brand a {
+      background-color: none;
+
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 26px 18px;
+    }
+
+
+ }
+/*------------------ (min-width: 768px) and (max-width: 991px) -------------------------*/
 

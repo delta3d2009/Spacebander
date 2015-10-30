@@ -96,14 +96,14 @@
 		<div id="cta_area" class="purple">
     		<div class="container-fluid">
 	    		<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 						<img class="center-block physician" src="img/desktop/spacebander_certified_physician_2.png">
 					</div>
-					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">	
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">	
 			  				<h4>I’D LIKE TO PERMANENTLY</br>ELIMINATE MY HEMORRHOIDS</h4>
 			  				<h5>Please help me find a</br>SpaceBander&#174; Certified Physician</h5>
 			  		</div>
-			  		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 dark-purple">
+			  		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 dark-purple">
 			  			<a href="#"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
 			  		</div>
 			  	</div>	
