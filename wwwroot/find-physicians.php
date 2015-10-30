@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en-US"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Find </title>
+        <title>Find Physicians</title>
         <meta name="description" content="">
+        <!-- Viewport tags-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- jQuery for Mobile CSS -->
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
-        <!-- styles needed by jScrollPane -->
-		<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
         <!-- Google Maps API -->
         <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
-        <!-- Viewport tags-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <!-- Google Fonts -->
-       <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
-       <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
+        <!-- Google fonts -->
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
     </head>
- 	<body>
-    	 <div id="wrapper" >
-    	 	<div class="container">
-	    	  	<?php include 'includes/header.php';?>
-	    	  	<!-- Main component for a primary marketing message or call to action -->
-			      <div class="jumbotron">
-			      	<div class='banner'>
-			      		<div class="content-banner">
-			      			<h1>This is how your patients will benefit from this treatment.</h1>
-					         <h2>Curabitur sed nulla eu diam dictum accumsan Aliquam accumsan tincidunt mollised quis.</h2>
-					    </div>
-			      	</div>
-			      	<div class="find">
+ 	    <body>
+    	<div id="header" class="purple">
+		    <nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+				    <div class="navbar-header">	
+				      	<a class="navbar-brand"  href="index.php"><img class="img-responsive" src="img/desktop/spacebander-logo.jpg"></a>
+				      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					        	<span class="icon-bar"></span>
+					        	<span class="icon-bar"></span>
+					       		<span class="icon-bar"></span> 
+				      	</button>
+				    </div>
+
+				    <div id="myNavbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+					        <li><a href='index.php'>HOME</a></li>
+					        <li><a href='about.php'>ABOUT</a></li>
+					        <li class='active'><a href='find-physicians.php'>FIND A PHYSICIAN</a></li>
+					        <li><a href='contact.php'>CONTACT</a></li>
+						</ul>
+				    </div>
+				</div>
+			</nav>
+		</div>
+
+	<!-- Header================================================== -->
+		<div id="about_header">
+    		<div class="container-fluid">
+    			<div class="row">
+					<div class="banner_bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="headline col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<h1>Find a Physician in your area!</h1>
+							<h2>SpaceBander&reg; is inexpensive and completely covered by all insurance companies</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header================================================== -->
+
+		<!-- content ================================================== -->
+		<div id="find-physicians" class="content green">
+    		<div class="container-fluid">
+    			<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+
+						<div class="find">
 				      	<div class="controls">
-				      		<h3>How this tool works.</h3>
-				      		<p>Brief explanation how this tool should works and instructions lorem ipsum.</p>
+				      		
 				        <form>
 				        		<label>SEARCH BY ZIP CODE</label>
 						        <input type="text" id="addressInput" size="10" class="form-control"/>
@@ -79,8 +115,13 @@
 						 	<p>5. You can toggle the view options of the map in the button located in the top left corner of the map:<span class="toggle-icon"></span></p>
 						 </div>
 					 </div>
-			      </div><!-- End Main component for a primary marketing message or call to action -->
-			 </div><!-- End Container -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+			      	
 			 <?php include 'includes/footer.php';?>
     	 </div><!-- End Wrapper -->
     	<!-- Bootstrap core JavaScript

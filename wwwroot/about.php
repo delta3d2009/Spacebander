@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en-US"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>About SpaceBander&reg;</title>
+        <meta name="description" content="">
+        <!-- Viewport tags-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- jQuery for Mobile CSS -->
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+        <!-- Custom Styles -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <!-- Google fonts -->
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    	<div id="header" class="purple">
+		    <nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+				    <div class="navbar-header">	
+				      	<a class="navbar-brand"  href="index.php"><img class="img-responsive" src="img/desktop/spacebander-logo.jpg"></a>
+				      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					        	<span class="icon-bar"></span>
+					        	<span class="icon-bar"></span>
+					       		<span class="icon-bar"></span> 
+				      	</button>
+				    </div>
+
+				    <div id="myNavbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+					        <li><a href='index.php'>HOME</a></li>
+					        <li class='active'><a href='about.php'>ABOUT</a></li>
+					        <li><a href='find-physicians.php'>FIND A PHYSICIAN</a></li>
+					        <li><a href='contact.php'>CONTACT</a></li>
+						</ul>
+				    </div>
+				</div>
+			</nav>
+		</div>
+
+	<!-- Header================================================== -->
+		<div id="about_header" class="banner_bg">
+    		<div class="container-fluid ">
+    			<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="headline col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<h1>Say Hello to SpaceBander&reg; and Goodbye to your Hemorrhoids</h1>
+							<h2>Permanently eliminate your hemorrhoids in less than 2 minutes with the safe, effective, and painless SpaceBander®</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header================================================== -->
+
+<!-- content ================================================== -->
+		<div id="what_are_hemorrhoids" class="content green">
+    		<div class="container-fluid">
+    			<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+						<h3>WHAT ARE HEMORRHOIDS?</h3>
+						<p>If you have symptoms of rectal bleeding, itching, discomfort, or anal pain, you may be one of the millions of people experiencing symptoms of hemorrhoids. Hemorrhoids are swollen veins in the lower rectum and are very common.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="treatments" class="content purple">
+    		<div class="container-fluid">
+    			<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+						<h3>HEMORRHOID TREATMENT OPTIONS</h3>
+							<h4>RUBBER BAND LIGATION</h4>
+								<p>Rubber band ligation is the most widely utilized and most successful treatment for internal hemorrhoids.  A rubber band is deployed at the base of an internal hemorrhoid.  As the blood supply to the hemorrhoid is reduced, shrinkage and degeneration occurs. Your hemorrhoidal symptoms will then permanently disappear.</p>
+							<h4>OVER-THE-COUNTER TOPICAL CREAMS &amp; SITZ BATHS</h4>
+								<p>Over-the-counter topical creams and sitz baths are ineffective, costly, tedious, and are only temporary solutions.  In fact, many topical creams contain steroids, which may cause thinning of the skin and other dangerous side effects.</p>
+							<h4>SURGICAL APPROACHES</h4>
+								<p>Surgical approaches are very painful, expensive, and require anesthesia.  They also lead to long uncomfortable recoveries and missed time from work.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="why" class="content light-gray">
+    		<div class="container-fluid">
+    			<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+						<h3>WHY SPACEBANDER&reg;?</h3>
+						<p>After extensive research, SpaceBander Corporation has drastically improved and modernized rubber band ligation treatment.  The SpaceBander&reg; is the most comfortable and modern rubber band ligation technique available.  The non-surgical procedure is safe, effective, painless, and takes less than 2 minutes in the comfort of your doctor’s office.  Most importantly, SpaceBander® will permanently eliminate your hemorrhoids and nagging symptoms.</p>					
+					</div>
+					<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img class="img_responsive" src="img/desktop/spacebander_1.png"></div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img class="img_responsive" src="img/desktop/spacebander_2.png"></div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img class="img_responsive" src="img/desktop/spacebander_3.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- Header================================================== -->
+
+
+		<div id="cta_area" class="purple">
+    		<div class="container-fluid">
+	    		<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+						<img class="center-block physician" src="img/desktop/spacebander_certified_physician_2.png">
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">	
+			  				<h4>I’D LIKE TO PERMANENTLY</br>ELIMINATE MY HEMORRHOIDS</h4>
+			  				<h5>Please help me find a</br>SpaceBander&#174; Certified Physician</h5>
+			  		</div>
+			  		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 dark-purple">
+			  			<a href="#"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
+			  		</div>
+			  	</div>	
+			</div>	
+		</div><!-- End Row-->
+
+<!-- footer===================== -->	
+		<?php include 'includes/footer.php';?>
+
+
+	</div>	<!-- END Body===================== -->
+
+    	<!-- Bootstrap core JavaScript
+    	================================================= -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!--<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
+        <script src="js/bootstrap.js"></script>
+        <!-- Custom Script -->
+        <script src="js/core.js"></script>
+    </body>
+</html>
