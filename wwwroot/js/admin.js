@@ -25,6 +25,7 @@ $(document).ready(function() {
 		addDropDownStates();
 		addEventsInsertForm();
 		addEventsSearchForm();
+		configSearchForm();
 		configModal();
 		addEventsExcelForm();
 	}
@@ -432,6 +433,28 @@ function addEventsSearchForm()
             });*/
         }
     }); 
+}
+
+function configSearchForm()
+{
+    var defaultValue = "SEARCH...";
+    $("#parameter").val(defaultValue);
+    
+    $("#parameter").focus(function(){
+        var currentValue = $(this).val(); 
+            if(currentValue === defaultValue)
+            {
+                 $(this).val("");
+                 //(this).css("color","#363737");
+            }
+    });
+    $("#parameter").blur(function(){
+        var currentValue = $(this).val();
+        if(currentValue === "")
+        {
+          $(this).val(defaultValue);
+        }
+    });
 }
 
 function resetInsertForm()

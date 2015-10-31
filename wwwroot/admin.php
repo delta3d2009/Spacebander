@@ -20,7 +20,6 @@
        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
     </head>
     <body class="admin-section">
-    	 	
   		<div id="header" class="purple">
 			<?php include 'includes/header.php';?>
 		</div>
@@ -44,7 +43,7 @@
 						<a class="link" href="#" onClick='configModalForgot(); return false;'>Forgot Your Password</a>
 						<div id="output"></div>
 					</form>					
-			      </div><!-- End Main component for a primary marketing message or call to action -->
+			      </div><!-- End Content -->
 			 </div><!-- End Container -->
 			 <?php include 'includes/footer.php';?>
     	 <?php include 'includes/interstitial.php';?>

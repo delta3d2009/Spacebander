@@ -54,45 +54,45 @@
 								$rowCount = mysqli_num_rows($result);
 	
 								if($rowCount) {
-									echo "<div><table class='table table-bordered table-striped'><thead><tr>
-									<th class='tiny-row hide-for-tablet'>ID</th>
-									<th class='big-row'>Company</th>
-									<th class='big-row'>First Name</th>
-									<th class='big-row'>Second Name</th>
-									<th class='huge-row'>Address</th>
-									<th class='huge-row'>Suite</th>
+									echo "<div class='table-container'><table class='table table-bordered table-striped'><thead><tr>
+									<th>ID</th>
+									<th>Company</th>
+									<th>First Name</th>
+									<th>Second Name</th>
+									<th>Address</th>
+									<th>Suite</th>
 									<th>City</th>
 									<th>State</th>
-									<th class='med-row'>Zip</th>
-									<th class='hide-for-mobile hide-for-tablet'>Country</th>
+									<th>Zip</th>
+									<th>Country</th>
 									<th>Office Phone</th>
 									<th>Physician's Cell</th>
 									<th>Office Fax</th>
-									<th class='hide-for-mobile'>Physician\'sEmail</th>
-									<th class='hide-for-mobile'>Office Contact Name</th>
-									<th class='med-row'></th>
-									<th class='med-row'></th>
+									<th>Physician'sEmail</th>
+									<th>Office Contact Name</th>
+									<th></th>
+									<th></th>
 									</tr></thead>";
 									while($rows = mysqli_fetch_array($result))
 									{
 										echo "<tr>";
-										echo "<td class='tiny-row hide-for-tablet'>". $rows['ID']."</td>";
-										echo "<td class='big-row'>". $rows['Company']. "</td>";
-									    echo "<td class='big-row'>". $rows['FirstName']. "</td>";
-									    echo "<td class='big-row'>". $rows['LastName']. "</td>";
-									    echo "<td class='huge-row'>". $rows['Address']. "</td>";
-									    echo "<td class='huge-row'>". $rows['Suite']. "</td>";
+										echo "<td>". $rows['ID']."</td>";
+										echo "<td>". $rows['Company']. "</td>";
+									    echo "<td>". $rows['FirstName']. "</td>";
+									    echo "<td>". $rows['LastName']. "</td>";
+									    echo "<td>". $rows['Address']. "</td>";
+									    echo "<td>". $rows['Suite']. "</td>";
 									    echo "<td>". $rows['City']. "</td>";
 									    echo "<td>". $rows['State']. "</td>";
-										echo "<td class='med-row'>". $rows['Zip']. "</td>";
-										echo "<td class='hide-for-mobile hide-for-tablet'>". $rows['Country']. "</td>";
+										echo "<td>". $rows['Zip']. "</td>";
+										echo "<td>". $rows['Country']. "</td>";
 										echo "<td>". $rows['Phone']. "</td>";
 										echo "<td>". $rows['Cell']. "</td>";
 										echo "<td>". $rows['Fax']. "</td>";
-										echo "<td class='hide-for-mobile'>". $rows['Email']. "</td>";
-										echo "<td class='hide-for-mobile'>". $rows['Office']. "</td>";
-										echo "<td class='med-row'><a class='edit' href='#' onClick='configModalForm(this.id); return false;' id=". $rows['ID']. ">Edit</a></td>";
-										echo "<td class='med-row'><a class='remove' href='#' onClick='configModalRemove(this.id); return false;' id=". $rows['ID']. ">Remove</a></td>";
+										echo "<td>". $rows['Email']. "</td>";
+										echo "<td>". $rows['Office']. "</td>";
+										echo "<td><a class='edit' href='#' onClick='configModalForm(this.id); return false;' id=". $rows['ID']. ">Edit</a></td>";
+										echo "<td><a class='remove' href='#' onClick='configModalRemove(this.id); return false;' id=". $rows['ID']. ">Remove</a></td>";
 										//echo "<td>". $rows['Lat']. "</td>";
 										//echo "<td>". $rows['Lng']. "</td>";
 										echo "</tr>";

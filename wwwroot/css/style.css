@@ -400,7 +400,9 @@ sup {
 
 /*****************************************************************Buttons*****************************************************************/
 
-
+button{
+    border:none;
+}
 
 .btn-green {
     color: #34495e;
@@ -437,6 +439,24 @@ sup {
     border: 1px solid #3e3594;
     text-decoration: none;
 
+}
+
+.btn-magnifying-glass{
+    background: url("../img/desktop/map-search-icon.png") no-repeat;
+    width:40px;
+    height:40px;
+    float:left;
+    background-color:#FFFFFF;
+    background-position:center;
+}
+
+.btn-magnifying-glass:hover{
+    background: url("../img/desktop/map-search-icon-hover.png") no-repeat;
+    width:40px;
+    height:40px;
+    float:left;
+    background-color:#FFFFFF;
+    background-position:center;
 }
 
 /*****************************************************************Home page callouts*****************************************************************/
@@ -799,228 +819,6 @@ box-shadow: 5px 5px 1px #121922;
     margin-bottom:10px;
 }
 
-
-/*****************************************************************Login*****************************************************************/
-
-form{
-    margin: 0 auto;
-    width:300px;
-    height:200px;
-}
-
-.required{
-    position:absolute;
-    display:none;
-    margin-top: 5px;
-}
-
-label{
-    width: 90px;
-    margin-left: 8px;
-}
-
-input{
-    margin-bottom:10px;
-    width:150px;
-}
-
-#output{
-    margin-top: 10px;
-    margin-bottom: 15px; 
-    text-align: center;   
-}
-
-/*****************************************************************Dashboard Admin*****************************************************************/
-
-.tab-content{
-    background-color: #ffffff;
-    padding:20px;
-    min-height: 920px;
-}
-
-.container-admin{
-    width: 100%;
-}
-
-.container-admin .jumbotron{
-    background-color:transparent;
-}
-
-.container-admin h4{
-    text-align: center;   
-}
-.container-admin p{
-    text-align: center;   
-}
-
-.container-admin .navbar-brand{
-    padding:0 !important;
-    margin-bottom:10px;
-}
-
-.container-admin .nav.nav-tabs{
-    margin-left:85px;
-}
-.container-admin .nav-tabs > li{
-    top: 19px;
-}
-
-/*****************************************************************Modal Bootstrap*****************************************************************/
-
-.modal-footer{
-    margin-top:0;
-}
-
-/*****************************************************************Insert form*****************************************************************/
-
-form#insertForm{
-    height: 880px;
-}
-
-#insertForm label{
-    margin-left:0px;
-}
-
-#countries {
-    height: 120px;
-    overflow: scroll;
-}
-
-.dropdown-menu{
-    width:auto;
-}
-
-#btn-countries{
-    width:100%;
-}
-
-label.error {
-    margin-left: 80px !important;
-    margin-top: -68px;
-    position: absolute;
-    text-align: left;
-    width: auto;
-    font-size:12px;
-    color:#1e99a4;
-}
-
-#insertForm input.error{
-   border: 1px solid #1e99a4;
-}
-
-#insertForm #map{
-    margin-top:20px;
-    margin-bottom:20px;
-}
-
-#customInfoWindow{
-    color:#FF0000;
-}
-
-#customInfoWindow p{
-    font-size:12px;
-    margin-bottom:0px
-}
-
-#launch-modal{
-    display:none;
-}
-
-.pagination{
-    margin:0;
-}
-
-.pagination ul{
-    margin:0;
-    padding:0;
-    list-style-type: none;
-}
-
-/*****************************************************************Modal*****************************************************************/
-
-#modal-screen .btn-primary{
-    display:none;
-}
-
-
-
-/*****************************************************************Database Table Search/Edit*****************************************************************/
-
-.container-admin .navbar-brand{
-    font-size: 14px;
-    height: auto;
-    padding: 10px 15px;
-}
-
-#edit .table td{
-    width:10%;
-}
-
-#edit .table th{
-    width:10%;
-}
-
-#edit .table .tiny-row{
-    width:2%;
-}
-
-#edit .table .med-row{
-    width:3%;
-}
-
-#edit .table .big-row{
-    width:12%;
-}
-
-#edit .table .huge-row{
-    width:20%;
-}
-
-
-/*****************************************************************Update iFrame Popup*****************************************************************/
-
-iframe{
-    width:100%;
-    height:700px;
-    border:none;
-}
-
-iframe #wrapper{
-    margin:0;
-}
-
-.iframe-jumbotron{
-    margin-bottom:0;
-}
-
-#updateForm{
-    height:100%;
-}
-
-
-/*****************************************************************SpreadSheet generator form*****************************************************************/
-
-#report{
-    text-align:center;
-}
-
-#report input[type=radio]{
-    width:50px;
-    margin-left:0;
-    float:none;
-}
-
-#report label{
-    text-align:left;
-    float:left;
-    margin-left:0;
-}
-
-#report .radio{
-    margin: 0 auto;
-    margin-bottom:20px;
-    width:60%;    
-}
 
 /*****************************************************************Footer *****************************************************************/
 .footer {

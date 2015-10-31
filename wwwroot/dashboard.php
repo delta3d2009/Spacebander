@@ -33,12 +33,13 @@
         <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
     </head>
     <body class="admin-section">
-    	 <div id="wrapper" >
-    	 	<div class="container container-admin">
-    	 		<?php include 'includes/header.php';?>
+    	 <div id="header" class="purple">
+		<?php include 'includes/header.php';?>
+	</div>
+    	 	<div class="admin-container dashboard">
     	 		<h1>Staff Dashboard.</h1>
 	    	  	<!-- Main component for a primary marketing message or call to action -->
-			      <div class="jumbotron">
+			      <div class="content">
 			      	<div class="tabs-dashboard">
 				        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
 				        	  <li role="presentation"><a href="#edit"data-toggle="tab">Directory</a></li>
@@ -122,7 +123,7 @@
 								<h3>directory of registered physicians and practices:</h3>
 								<form id="searchForm" autocomplete="off">
 									<input name="parameter" id="parameter" type="text" size="50" value="" class="form-control" maxlength="50"/>
-									<button type="submit" class="btn btn-primary">Search</button>
+									<button type="submit" class="btn-magnifying-glass"></button>
 								</form>
 							</div>
 							<?php include 'php/searchPhysician.php';?>
@@ -144,8 +145,8 @@
 						</div>			
 					</div> 
 			      </div><!-- End Main component for a primary marketing message or call to action -->
-			      <?php include 'includes/footer.php';?>
 			 </div><!-- End Container -->
+			 <?php include 'includes/footer.php';?>
     	 </div><!-- End Wrapper -->
 	<?php include 'includes/interstitial.php';?>
     	<!-- Bootstrap core JavaScript

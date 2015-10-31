@@ -15,7 +15,7 @@ h1{
 }
 
 .admin-section .admin-container{
-    background-color:#2C3E50;
+    background-color:#222e3f;
     margin-bottom:88px;
 }
 
@@ -35,6 +35,12 @@ h2{
 
 .content{
     margin-bottom:88px;
+    margin-left:4.68%;
+    margin-right:4.68%;
+}
+
+.admin-section .content{
+    padding-top:0;
 }
 
 form{
@@ -135,17 +141,15 @@ a.link:hover, a.link:active, a.link:focus{
 
 /*****************************************************************Dashboard Admin*****************************************************************/
 
-.container-admin{
-    
-}
 
 .tab-content{
-    background-color: #F2F2F2;
-    padding:20px;
+    background-color: #ededed;
+    padding:32px;
     min-height: 920px;
+    overflow:scroll;
 }
 
-.container-admin{
+.admin-container{
     width: 100%;
 }
 
@@ -153,28 +157,35 @@ a.link:hover, a.link:active, a.link:focus{
     margin-top:48px;
 }
 
-.container-admin .jumbotron{
+.admin-container .jumbotron{
     background-color:transparent;
 }
 
-.container-admin h4{
-    text-align: center;   
+.admin-container h3{
+    font-size:18px;
 }
-.container-admin p{
+
+.admin-container h4{
     text-align: center;   
 }
 
-.container-admin .nav.nav-tabs{
+.admin-container p{
+    text-align: center;   
+}
+
+.admin-container .nav.nav-tabs{
     margin-left:0;
+    border:0px solid transparent;
 }
 
-.container-admin .nav-tabs > li{
+.admin-container .nav-tabs > li{
   margin-bottom:0;
 }
 
-.container-admin .nav-tabs > li > a{
+.admin-container .nav-tabs > li > a{
     border-radius: 0;
     margin-right:0;
+    text-decoration:none;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
@@ -184,6 +195,7 @@ a.link:hover, a.link:active, a.link:focus{
      color:#34495e;
      padding:32px;
      text-transform:uppercase;
+     background-color:#ededed;
 }
 
 .nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus{
@@ -195,10 +207,71 @@ a.link:hover, a.link:active, a.link:focus{
      text-transform:uppercase;
      background-color:#7c8a98;
 }
+.nav-tabs .link{
+    float: left;
+    font-size: 16px;
+    padding: 29px;
+    text-transform: uppercase;
+}
 
 #map{
     display:none;
 }
+
+.filter{
+    float:left;
+    margin-bottom:32px;
+    width:100%;
+}
+
+.filter h3{
+    text-align: left;
+    width: 300px;
+    float:left;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+#searchForm{
+    float:right;
+}
+
+#searchForm input{
+    height:40px;
+    width:314px;
+    float: left;
+}
+
+.table-container{
+    float:left;
+}
+
+#edit table thead{
+    background-color:#FFFFFF;
+}
+
+#edit table th{
+    white-space: nowrap;
+    text-align:center;
+    font-family:  'Raleway', Arial,sans-serif;
+}
+
+#edit table a{
+    font-family:  'Raleway', Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#edit table tr{
+    white-space: nowrap;
+    font-family:  'Raleway', Arial,sans-serif;
+}
+
+
+
 
 /*****************************************************************Modal Bootstrap*****************************************************************/
 
@@ -269,33 +342,6 @@ label.error {
     margin:0;
     padding:0;
     list-style-type: none;
-}
-
-/*****************************************************************Database Table Search/Edit*****************************************************************/
-
-
-#edit .table td{
-    width:10%;
-}
-
-#edit .table th{
-    width:10%;
-}
-
-#edit .table .tiny-row{
-    width:2%;
-}
-
-#edit .table .med-row{
-    width:3%;
-}
-
-#edit .table .big-row{
-    width:12%;
-}
-
-#edit .table .huge-row{
-    width:20%;
 }
 
 
