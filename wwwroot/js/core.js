@@ -14,9 +14,14 @@ var isMobile;
 
 $(document).ready(function() {
 	//Handler for .ready() called.
+	currentPage = document.body.className;
 	isMobile = window.matchMedia && window.matchMedia(media_query).matches;
 	
-	addEventsContactForm();
+	validateNavigation();
+	if(currentPage != "find-physicians-section")
+	{
+	   addEventsContactForm();
+	}
 	configModal();
 	configCarousel();
 	if(isMobile)
@@ -182,4 +187,31 @@ function configCarouselMobile()
     $("#myCarousel").swipeleft(function() {
         $(this).carousel('next');
     });
+}
+
+function validateNavigation()
+{
+    switch(currentPage)
+    {
+      
+        case "homepage-section":
+            $("#myNavbar ul.navbar-nav li").eq(0).find("a").addClass("active");
+        break;
+        
+        case "about-section":
+            $("#myNavbar ul.navbar-nav li").eq(1).find("a").addClass("active");
+        break;
+        
+        case "find-physicians-section":
+           $("#myNavbar ul.navbar-nav li").eq(2).find("a").addClass("active");
+        break;
+            
+        case "contact-section":
+             $("#myNavbar ul.navbar-nav li").eq(3).find("a").addClass("active");
+        break;
+
+        default:
+        break;
+        
+    }
 }

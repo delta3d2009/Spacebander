@@ -24,7 +24,7 @@
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
     </head>
-    <body>
+    <body class="about-section">
     	<div id="header" class="purple">
 		    <?php include 'includes/header.php';?>
 		</div>

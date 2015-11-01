@@ -224,11 +224,19 @@ sup {
     text-decoration: none;
 }
 
+.navbar-inverse .navbar-nav > li > a.active{
+    background-color:#68DDDD;
+}
+
 
 .navbar-inverse .navbar-nav > li > a:hover{
   color: #ffffff;
   background-color: #4e43ba;
-    border: none;
+  border: none;
+}
+
+.navbar-inverse .navbar-nav > li > a.active:hover{
+  background-color:#68DDDD;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus {

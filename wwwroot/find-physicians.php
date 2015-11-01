@@ -26,7 +26,7 @@
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
     </head>
- 	    <body>
+ 	    <body class="find-physicians-section">
     	<div id="header" class="purple">
 		    <?php include 'includes/header.php';?>
 		</div>
@@ -111,6 +111,7 @@
         <script src="js/bootstrap.js"></script>
         <!-- Custom Script -->
         <script src="js/geo-location.js" type="text/javascript"></script>
+        <script src="js/core.js" type="text/javascript"></script>
         <!-- the mousewheel plugin - optional to provide mousewheel support -->
 		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 		<!-- the jScrollPane script -->
