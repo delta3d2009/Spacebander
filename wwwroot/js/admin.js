@@ -28,6 +28,7 @@ $(document).ready(function() {
 		configSearchForm();
 		configModal();
 		addEventsExcelForm();
+		configRadioButtons();
 	}
 });
 
@@ -73,11 +74,11 @@ function addDropDownCountries()
       if(countryLocation != "United States")
       {
           $("#insertForm #btn-states").hide();
-           $("#insertForm").find("input[name='state']").show();
+          //$("#insertForm").find("input[name='state']").show();
       }else
       {
           $("#insertForm #btn-states").show();
-          $("#insertForm").find("input[name='state']").hide();
+          //$("#insertForm").find("input[name='state']").hide();
       }
       searchLocations(fullLocation);
       $target.closest( '.btn-group' )
@@ -87,7 +88,7 @@ function addDropDownCountries()
       return false;
    });
    $("#insertForm #btn-countries .dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryLocation );
-   $("#insertForm").find("input[name='state']").hide();
+   //$("#insertForm").find("input[name='state']").hide();
 }
 
 function addDropDownStates()
@@ -97,6 +98,9 @@ function addDropDownStates()
       stateLocation = $target.find("a").text();
       $("#insertForm").find("input[name='state']").val(stateLocation);
       searchLocations(fullLocation);
+      //$("label[for='state']") add the both following lines to restart error label over drop down states
+      $("#state-error").hide();
+      $("input#state").removeClass("error");
       $target.closest( '.btn-group' )
          .find( '[data-bind="label"]' ).text( $target.text() )
             .end()
@@ -399,10 +403,6 @@ function addEventsUpdateForm(iframe)
         }
     }); 
     
-    $( "#updateForm button:reset" ).on( 'click', function( event ) {
-        resetUpdateForm();
-    });
-    
 }
 
 function addEventsSearchForm()
@@ -459,7 +459,8 @@ function configSearchForm()
 
 function resetInsertForm()
 {
-	$( "#btn-countries button span:first-child" ).text("Select Countries");
+	$( "#btn-countries button span:first-child" ).text("United States");
+	$( "#btn-states button span:first-child" ).text("Select State");
 	$( "label.error" ).hide();
 	$( "#insertForm input.error" ).css("border-color","#cccccc");
 	$( "#insertForm input:text" ).val("");
@@ -472,7 +473,8 @@ function resetInsertForm()
 
 function resetUpdateForm(iframe)
 {
-    $("#updateForm #btn-countries button span:first-child" ).text("Select Countries");
+    $(iframe).find("#updateForm #btn-countries button span:first-child" ).text($(iframe).find("#updateForm").attr("physicianCountry"));
+    $(iframe).find("#updateForm #btn-states button span:first-child" ).text($(iframe).find("#updateForm").attr("physicianState"));
     $("#updateForm label.error" ).hide();
     $("#updateForm input.error" ).css("border-color","#cccccc");
     $("#updateForm input:text" ).val("");
@@ -485,159 +487,6 @@ function  closeIframe()
     $("#modal-screen iframe").remove();
     setTimeout(function(){ $('#modal-screen').modal('hide');}, 3000);
     setTimeout(function(){ window.location.reload();}, 5000);
-}
-
-function initMap() {
-	//Handler for .ready() called.
-	google.maps.event.addDomListener(window, 'load', initialize);
-	google.maps.event.addDomListener(window, "resize", function() {
-	 var center = map.getCenter();
-	 google.maps.event.trigger(map, "resize");
-	 map.setCenter(center); 
-	
-	 $("#map").width($("#insertForm").width());
-	 $("#map").height($("#insertForm input").height() * 9);	});	
-	 //Resize map on document ready
-	 $("#map").width($("#insertForm").width());
-	 $("#map").height($("#insertForm input").height() * 9);
-}
-
-/* Google Maps Initialize Implementation 
- * More Info about API Version 3 at https://developers.google.com/maps/web/ 
- */
-
-function initialize() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: new google.maps.LatLng(40, -100),
-    zoom: 3,
-    mapTypeId: 'roadmap',
-    mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU}
-  });
-}
-
-function searchLocations(address) {
- var geocoder = new google.maps.Geocoder();
- geocoder.geocode({address: address}, function(results, status) {
- //console.log(">>>>>> " + address + " >>>>>> " + status)
- if (status == google.maps.GeocoderStatus.OK) {
-    locateAddress(results);
-   } else {
-     //alert(address + ' not found');
-     }
-  });
-}
-
-function locateAddress(results){
-	var center = results[0].geometry.location;
-	var center = new google.maps.LatLng(center.lat(), center.lng());
-	//console.log(results[0])
-	locationLat = center.lat();
-	locationLng = center.lng();
-	
-	var arrAddress = results[0].address_components;
-	var itemRoute = '';
-	var itemLocality = '';
-	var itemCountry = '';
-	var itemCity = '';
-	var itemState = '';
-	var itemZip = '';
-	var itemStreetnumber = '';
-	var itemStreet = '';
-	
-	// iterate through address_component array
-	$.each(arrAddress, function (i, address_component) {
-	    //console.log('address_component:'+i);
-	
-	    if (address_component.types[0] == "route"){
-	        itemRoute = address_component.long_name;
-	    }
-	
-	    if (address_component.types[0] == "locality"){
-	        itemLocality = address_component.long_name;
-	    }
-	    if (address_component.types[0] == "country"){ 
-	        itemCountry = address_component.long_name;
-	    }
-	    if (address_component.types[0] == "sublocality"){
-			itemCity = address_component.long_name;
-		}
-		if (address_component.types[0] == "neighborhood"){
-			itemCity = address_component.long_name;
-		}
-		if (address_component.types[0] == "administrative_area_level_3"){
-			itemCity = abddress_component.long_name;
-		}
-		if (address_component.types[0] == "city"){
-			itemCity = address_component.long_name;
-		}
-	    if (address_component.types[0] == "postal_code_prefix"){ 
-	        itemPc = address_component.long_name;
-	    }
-	    if (address_component.types[0] == "street_number"){ 
-	        itemStreetnumber = address_component.long_name;
-	    }
-	    if (address_component.types[0] == "postal_code"){
-	        itemZip = address_component.long_name;
-	    }
-	    if (address_component.types[0] == "administrative_area_level_1"){
-    		itemState = address_component.short_name;
-		}
-	    //return false; // break the loop   
-	    
-	    //console.log("Address : " + itemStreetnumber + " " + itemRoute + " Town : " + itemLocality + " Country : " + itemCountry + " City : " + itemCity + " Zip : " + itemZip + " State " + itemState);
-	});
-	
-	//Move the map to located address
-	map.panTo(center);
-	map.setZoom(12);
-	 //Put the marker/pin
-	 var marker = new google.maps.Marker({
-	  position: center,
-	  map: map,
-	  title: 'Click to set this Address'
-	});
-	
-	var infoWindow = new google.maps.InfoWindow();
-	var html = "<div id='customInfoWindow'><p>" + itemStreetnumber + " " + itemRoute + "<p>" + itemLocality + ", " + itemState + " " + itemZip + "</p>" + "<p>" + itemCountry + "</p><a href='#' onClick='return false;'>Use This</a></div>";
-	
-	google.maps.event.addListener(marker, 'click', function() {
-    	
-    	infoWindow.setContent(html);
-    	infoWindow.open(map, marker);
-    	
-    	$("#customInfoWindow a").on( 'click', function( event ) {
-			setLocationIntoForm(itemStreetnumber, itemRoute, itemLocality, itemCountry, itemCity, itemZip, itemState);
-		});
-  	});
-}
-
-function setLocationIntoForm(itemStreetnumber, itemRoute, itemLocality, itemCountry, itemCity, itemZip, itemState)
-{
-	console.log("Address : " + itemStreetnumber + " " + itemRoute + " Town : " + itemLocality + " Country : " + itemCountry + " City : " + itemCity + " Zip : " + itemZip + " State " + itemState);
-	var $form = $("#insertForm");
-	if(itemRoute == "")
-	{
-		$form.find("input[name='address']").val(itemLocality);
-	}else
-	{
-		$form.find("input[name='address']").val(itemStreetnumber + " " + itemRoute);
-	}
-	if(itemCity == "")
-	{
-		$form.find("input[name='city']").val(itemLocality);
-	}else
-	{
-		$form.find("input[name='city']").val(itemCity);
-	}
-	if(itemZip == "")
-	{
-		$form.find("input[name='zip']").val("0");
-	}else
-	{
-		$form.find("input[name='zip']").val(itemZip);
-	}
-	$form.find("input[name='state']").val(itemState);
-	$( "#btn-countries button span:first-child" ).text(itemCountry);
 }
 
 /*Bootstrap Interstitial Modal Window*/
@@ -655,7 +504,9 @@ function configModalForm(id)
 	showModal("Edit Physician","","");
 	$('#modal-screen p').hide();
 	$('#modal-screen .modal-footer button').text("Close");
+	$('#modal-screen .modal-footer .btn-green').hide();
 	$('#modal-screen .modal-body iframe').remove();
+	$('#modal-screen .modal-dialog').width(850);
 $('<iframe />');
     $('<iframe />', {
         name: 'update',
@@ -722,6 +573,10 @@ function adjustUpdateIframe(formID, countryName, stateName)
     
 	//set Physician ID to Form
 	$("form#updateForm").attr("PhysicianID", formID);
+	//set Physician State to Form
+    $("form#updateForm").attr("PhysicianState", stateName);
+    //set Physician Country to Form
+    $("form#updateForm").attr("PhysicianCountry", countryName);
 	
 	if(countryName === "United States")
 	{
@@ -753,8 +608,9 @@ function configModal()
 function configModalRemove(id)
 {
 	showModal("Remove Physician","Are You Sure you want to remove this Physician ?","");
-	$('#modal-screen .modal-footer .btn-default').text("No");
-	$('#modal-screen .modal-footer .btn-primary').text("Yes");
+	$('#modal-screen .modal-footer .btn-orange').text("No");
+	$('#modal-screen .modal-footer .btn-green').text("Yes");
+    $('#modal-screen .modal-footer .btn-green').show();
 	$('#modal-screen .modal-footer .btn-primary').show();
 	$('#modal-screen .modal-body iframe').remove();
 	$('#modal-screen .modal-body p').show();
@@ -763,11 +619,11 @@ function configModalRemove(id)
 
 function addEventClickRemove(id)
 {
-	$( "#modal-screen .modal-footer .btn-primary" ).on( 'click', function( event ) {
+	$( "#modal-screen .modal-footer .btn-green" ).on( 'click', function( event ) {
 		var posting = $.post("php/removePhysician.php", {id:id});
 		posting.done(function( data ) {
-			$('#modal-screen .modal-footer .btn-default').text("OK");
-			$('#modal-screen .modal-footer .btn-primary').hide();
+			$('#modal-screen .modal-footer .btn-orange').text("OK");
+			$('#modal-screen .modal-footer .btn-green').hide();
 			if(parseInt(data) != 0)
 			{
 				showModal("Remove Physician", "Physician was Removed.","");
@@ -806,6 +662,15 @@ function addEventsExcelForm(){
 	});
 }
 
+/*Radio buttons and checkboxes plugin http://screwdefaultbuttons.com/*/
+function configRadioButtons()
+{
+    $('input:radio').screwDefaultButtons({
+        image: 'url("img/desktop/sprite-radio-buttons.png")',
+        width: 24,
+        height: 24
+    });
+}
 
 // copyright 1999 Idocs, Inc. http://www.idocs.com
 // Distribute this script freely but keep this notice in place
@@ -839,4 +704,159 @@ function numbersonly(myfield, e, dec)
 	   }
 	else
 	   return false;
+}
+
+
+/* Google Maps Initialize Implementation 
+ * More Info about API Version 3 at https://developers.google.com/maps/web/ 
+ */
+
+function initialize() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: new google.maps.LatLng(40, -100),
+    zoom: 3,
+    mapTypeId: 'roadmap',
+    mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU}
+  });
+}
+
+function initMap() {
+    //Handler for .ready() called.
+    google.maps.event.addDomListener(window, 'load', initialize);
+    google.maps.event.addDomListener(window, "resize", function() {
+     var center = map.getCenter();
+     google.maps.event.trigger(map, "resize");
+     map.setCenter(center); 
+    
+     $("#map").width($("#insertForm").width());
+     $("#map").height($("#insertForm input").height() * 9); }); 
+     //Resize map on document ready
+     $("#map").width($("#insertForm").width());
+     $("#map").height($("#insertForm input").height() * 9);
+}
+
+
+function searchLocations(address) {
+ var geocoder = new google.maps.Geocoder();
+ geocoder.geocode({address: address}, function(results, status) {
+ //console.log(">>>>>> " + address + " >>>>>> " + status)
+ if (status == google.maps.GeocoderStatus.OK) {
+    locateAddress(results);
+   } else {
+     //alert(address + ' not found');
+     }
+  });
+}
+
+function locateAddress(results){
+    var center = results[0].geometry.location;
+    var center = new google.maps.LatLng(center.lat(), center.lng());
+    //console.log(results[0])
+    locationLat = center.lat();
+    locationLng = center.lng();
+    
+    var arrAddress = results[0].address_components;
+    var itemRoute = '';
+    var itemLocality = '';
+    var itemCountry = '';
+    var itemCity = '';
+    var itemState = '';
+    var itemZip = '';
+    var itemStreetnumber = '';
+    var itemStreet = '';
+    
+    // iterate through address_component array
+    $.each(arrAddress, function (i, address_component) {
+        //console.log('address_component:'+i);
+    
+        if (address_component.types[0] == "route"){
+            itemRoute = address_component.long_name;
+        }
+    
+        if (address_component.types[0] == "locality"){
+            itemLocality = address_component.long_name;
+        }
+        if (address_component.types[0] == "country"){ 
+            itemCountry = address_component.long_name;
+        }
+        if (address_component.types[0] == "sublocality"){
+            itemCity = address_component.long_name;
+        }
+        if (address_component.types[0] == "neighborhood"){
+            itemCity = address_component.long_name;
+        }
+        if (address_component.types[0] == "administrative_area_level_3"){
+            itemCity = abddress_component.long_name;
+        }
+        if (address_component.types[0] == "city"){
+            itemCity = address_component.long_name;
+        }
+        if (address_component.types[0] == "postal_code_prefix"){ 
+            itemPc = address_component.long_name;
+        }
+        if (address_component.types[0] == "street_number"){ 
+            itemStreetnumber = address_component.long_name;
+        }
+        if (address_component.types[0] == "postal_code"){
+            itemZip = address_component.long_name;
+        }
+        if (address_component.types[0] == "administrative_area_level_1"){
+            itemState = address_component.short_name;
+        }
+        //return false; // break the loop   
+        
+        //console.log("Address : " + itemStreetnumber + " " + itemRoute + " Town : " + itemLocality + " Country : " + itemCountry + " City : " + itemCity + " Zip : " + itemZip + " State " + itemState);
+    });
+    
+    //Move the map to located address
+    map.panTo(center);
+    map.setZoom(12);
+     //Put the marker/pin
+     var marker = new google.maps.Marker({
+      position: center,
+      map: map,
+      title: 'Click to set this Address'
+    });
+    
+    var infoWindow = new google.maps.InfoWindow();
+    var html = "<div id='customInfoWindow'><p>" + itemStreetnumber + " " + itemRoute + "<p>" + itemLocality + ", " + itemState + " " + itemZip + "</p>" + "<p>" + itemCountry + "</p><a href='#' onClick='return false;'>Use This</a></div>";
+    
+    google.maps.event.addListener(marker, 'click', function() {
+        
+        infoWindow.setContent(html);
+        infoWindow.open(map, marker);
+        
+        $("#customInfoWindow a").on( 'click', function( event ) {
+            setLocationIntoForm(itemStreetnumber, itemRoute, itemLocality, itemCountry, itemCity, itemZip, itemState);
+        });
+    });
+}
+
+function setLocationIntoForm(itemStreetnumber, itemRoute, itemLocality, itemCountry, itemCity, itemZip, itemState)
+{
+    console.log("Address : " + itemStreetnumber + " " + itemRoute + " Town : " + itemLocality + " Country : " + itemCountry + " City : " + itemCity + " Zip : " + itemZip + " State " + itemState);
+    var $form = $("#insertForm");
+    if(itemRoute == "")
+    {
+        $form.find("input[name='address']").val(itemLocality);
+    }else
+    {
+        $form.find("input[name='address']").val(itemStreetnumber + " " + itemRoute);
+    }
+    if(itemCity == "")
+    {
+        $form.find("input[name='city']").val(itemLocality);
+    }else
+    {
+        $form.find("input[name='city']").val(itemCity);
+    }
+    if(itemZip == "")
+    {
+        $form.find("input[name='zip']").val("0");
+    }else
+    {
+        $form.find("input[name='zip']").val(itemZip);
+    }
+    $form.find("input[name='state']").val(itemState);
+    $( "#btn-countries button span:first-child" ).text(itemCountry);
 }

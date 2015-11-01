@@ -441,6 +441,31 @@ button{
 
 }
 
+.btn-orange {
+    color: #FFFFFF;
+    background-color:#FF884D;
+    border: 1px solid #FF6B57;
+    border-radius: none;
+    letter-spacing: 0.7px;
+    font-size:14px;
+    line-height: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow:none;
+    text-align:center;
+    margin:0 auto;
+    padding: 12px 40px;
+    text-decoration: none;
+}
+
+.btn-orange:hover, .btn-orange:focus, .btn-orange:active {
+    color:#ffffff;
+    background-color:#FF6B57;
+    border: 1px solid #FF6B57;
+    text-decoration: none;
+}
+
 .btn-magnifying-glass{
     background: url("../img/desktop/map-search-icon.png") no-repeat;
     width:40px;

@@ -113,11 +113,11 @@ function addPagination($orderby, $startrow, $rowCount, $type)
 		//only print a "Previous" link if a "Next" was clicked
 		if ($prev >= 0)
 		{
-		    echo "<li class='prev'><a href='".$_POST['PHP_SELF']."?startrow=".$prev."&orderby=".$orderby."&type=".$type."#edit'><< Previous</a></li></ul></div>";
+		    echo "<li class='prev'><a class='btn-green'  href='".$_POST['PHP_SELF']."?startrow=".$prev."&orderby=".$orderby."&type=".$type."#edit'><< Previous</a></li></ul></div>";
 		}
 		if ($next <= $rowCount)
 		{
-			echo "<li class='next'><a href='".$_POST['PHP_SELF']."?startrow=".$next."&orderby=".$orderby."&type=".$type."#edit'>Next >></a></li></ul></div>";
+			echo "<li class='next'><a class='btn-green'  href='".$_POST['PHP_SELF']."?startrow=".$next."&orderby=".$orderby."&type=".$type."#edit'>Next >></a></li></ul></div>";
 		}
 	}
 }

@@ -13,8 +13,8 @@ echo "
         <p>For Searching, Editing or Removing use other tabs.</p>
       </div>
       <div class='modal-footer'>
-        <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
-       <button type='button' class='btn btn-primary'>Accept</button>
+        <button type='button' class='btn-orange' data-dismiss='modal'>Close</button>
+       <button type='button' class='btn-green'>Accept</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
