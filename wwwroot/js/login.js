@@ -61,7 +61,9 @@ function configModalForgot()
     showModal("Forgot Your Password","","");
     $('#modal-screen p').hide();
     $('#modal-screen .modal-footer button').text("Close");
+    $('#modal-screen .modal-footer .btn-green').hide();
     $('#modal-screen .modal-body iframe').remove();
+    $('#modal-screen .modal-dialog').width(466);
 $('<iframe />');
     $('<iframe />', {
         name: 'forgot',
@@ -95,11 +97,9 @@ function addClickEventsForgot(iframe)
 
 function resetForgotForm(iframe)
 {
-    $("#forgotForm label.error" ).hide();
-    $("#forgotForm input.error" ).css("border-color","#cccccc");
-    $("#forgotForm input:text" ).val("");
-    $("#forgotForm #email").val("");
-    $("#forgotForm #output" ).empty();
+    $(iframe).find("#forgotForm label.error" ).hide();
+    $(iframe).find("#forgotForm input:text" ).val("");
+    $(iframe).find("#forgotForm #output" ).empty();
 }
 
 function  closeIframeForgot()

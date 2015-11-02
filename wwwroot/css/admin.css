@@ -87,7 +87,7 @@ label{
     margin-left:-6px;
 }
 
-.admin-section input[type=text]{
+.admin-section input[type=text], .admin-section input[type=email]{
     margin-bottom:10px;
     width:400px;
     height:48px;
@@ -95,6 +95,11 @@ label{
     box-shadow:none;
     transition:none;   
     border-radius:0;
+}
+
+.form-control{
+    border-radius:0;
+    height:48px;
 }
 
 .btn-login{
@@ -500,4 +505,31 @@ iframe{
 }
 
 .styledCheckbox {
+}
+
+/*****************************************************************Forgot Form*****************************************************************/
+
+iframe#forgot{
+    width: 400px;
+    height: 300px;
+}
+
+.forgot-section{
+    min-height:200px;
+}
+
+.content-forgot{
+    margin-top: 40px;
+}
+
+#forgotForm input[type=email]{
+    width:400px;
+}
+
+#forgotForm button{
+    margin-top:40px;
+}
+
+#forgotForm #output{
+    
 }

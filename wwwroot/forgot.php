@@ -13,23 +13,20 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/admin.css">
     </head>
-    <body class="body-iframe">
+    <body class="forgot-section body-iframe admin-section">
 		<div>
-    	 	<div class='container'>
-	    	  	<!-- Main component for a primary marketing message or call to action -->
-			      <div class='jumbotron iframe-jumbotron'>
-					<form id='forgotForm' autocomplete='off'>
-						<div>
-							<label>Email</label>
-							<input name='email' id='email' type='email' size='20' value='' class='form-control' maxlength='30'/>
-						</div>
-						<button type='submit' class='btn btn-primary'>Send</button>
-						<button type='reset' class='btn btn-default'>Reset</button>
-						<div id='output'></div>
-					</form>			
-			      </div><!-- End Main component for a primary marketing message or call to action -->
+    	 	<div class='content-forgot'>
+				<form id='forgotForm' autocomplete='off'>
+					<div>
+						<label>Email</label>
+						<input name='email' id='email' type='email' size='20' value='' class='form-control' maxlength='30'/>
+					</div>
+					<button type='submit' class='btn-green'>Send</button>
+					<button type='reset' class='btn-orange'>Reset</button>
+					<div id='output'></div>
+				</form>			
 			 </div><!-- End Container -->
     	 </div><!-- End Wrapper -->
     </body>
