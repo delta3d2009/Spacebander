@@ -42,7 +42,7 @@
 			      <div class="content">
 			      	<div class="tabs-dashboard">
 				        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-				        	  <li role="presentation" class="active"><a href="#edit"data-toggle="tab">Directory</a></li>
+				          <li role="presentation" class="active"><a href="#edit"data-toggle="tab">Directory</a></li>
 						  <li role="presentation"><a href="#insert" data-toggle="tab">Add New</a></li>
 						  <li role="presentation"><a href="#report" data-toggle="tab">Run Reports </a></li>
 						  <a class="link" href="exit.php">Logout</a>

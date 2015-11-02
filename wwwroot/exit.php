@@ -19,16 +19,17 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/admin.css">
     </head>
-    <body>
-    <div id='wrapper' >
-    	 	<div class='container'>
-    	 		<div class='jumbotron'>
-    	 			Your session has finished please login again.
-    	 		</div>
-    	 	</div>
-	</div>
+    <body class="admin-section">
+    	<div id="header" class="purple">
+			<?php include 'includes/header.php';?>
+		</div>
+		<div class="content-exit">
+    		<h3>Your session has finished please login again.</h3>
+    		<button class="btn-green btn-login" onclick="window.location.href='admin.php'" role="button">LOGIN</button>
+		</div>
+		 <?php include 'includes/footer.php';?>
     </body>
 </html>
 

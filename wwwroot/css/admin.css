@@ -261,19 +261,21 @@ a.link:hover, a.link:active, a.link:focus{
 
 .table-container{
     float:left;
+    overflow: scroll;
+    width: 1230px;
 }
 
-#edit table thead{
+table thead{
     background-color:#FFFFFF;
 }
 
-#edit table th{
+table th{
     white-space: nowrap;
     text-align:center;
     font-family:  'Raleway', Arial,sans-serif;
 }
 
-#edit table a{
+table a{
     font-family:  'Raleway', Arial,sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -282,7 +284,7 @@ a.link:hover, a.link:active, a.link:focus{
     text-decoration: none;
 }
 
-#edit table tr{
+table tr{
     white-space: nowrap;
     font-family:  'Raleway', Arial,sans-serif;
 }
@@ -512,6 +514,31 @@ iframe{
 .styledCheckbox {
 }
 
+/*****************************************************************Search Results Page*****************************************************************/
+
+
+.content-results{
+    margin-left: 4.68%;
+    margin-right: 4.68%;
+}
+
+.content-results .table-container{
+    margin-left: 4.68%;
+    margin-right: 4.68%;
+    margin-top: 40px;
+    background-color: #222e3f;
+    min-height: 600px;
+    overflow: scroll;
+    width: 1200px;
+}
+
+.btn-container{
+    margin-top:40px;  
+    margin-bottom:40px;   
+}
+
+
+
 /*****************************************************************Forgot Form*****************************************************************/
 
 iframe#forgot{
@@ -558,4 +585,12 @@ iframe#forgot{
 
 #resetForm button{  
     margin-top:40px;
+}
+
+
+/***************************************************************** Exit Page*****************************************************************/
+
+.content-exit{
+    margin-bottom: 240px;
+    margin-top: 160px;
 }
