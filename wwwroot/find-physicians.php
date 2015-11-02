@@ -38,7 +38,7 @@
 					<div class="banner_bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="headline col-lg-6 col-md-6 col-sm-6 col-xs-6">
 							<h1>Find a Physician in your area!</h1>
-							<h2>SpaceBander&reg; is inexpensive and completely covered by all insurance companies</h2>
+							<h2>SpaceBander<sup>&reg;</sup> is inexpensive and completely covered by all insurance companies</h2>
 						</div>
 					</div>
 				</div>

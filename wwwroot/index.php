@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Welcome to SpaceBander&reg;</title>
+        <title>Welcome to SpaceBander<sup>&reg;</sup></title>
         <meta name="description" content="">
         <!-- Viewport tags-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,17 +48,17 @@
 					            <div class="container">
 						            <div class="carousel-caption">
 						              <h1 class="slide1">Say goodbye to your hemorrhoids</h1>
-						              <h2>Permanently eliminate your hemorrhoids</br>with the non-surgical SpaceBander&reg;</h2>
+						              <h2>Permanently eliminate your hemorrhoids</br>with the non-surgical SpaceBander<sup>&reg;</sup></h2>
 						              <p><a class="btn-green" href="about.php" role="button">LEARN MORE</a></p>
 						            </div>
 					            </div>
 					        </div>
 
 					        <div class="item">
-					            <img class="second-slide" src="img/desktop/brandbox-2.jpg" alt="SpaceBander&reg; is quick, effective, and painless">
+					            <img class="second-slide" src="img/desktop/brandbox-2.jpg" alt="SpaceBander<sup>&reg;</sup> is quick, effective, and painless">
 					            <div class="container">
 						            <div class="carousel-caption">
-						                <h1 class="slide2">SpaceBander&reg; is quick, effective, and painless</h1>
+						                <h1 class="slide2">SpaceBander<sup>&reg;</sup> is quick, effective, and painless</h1>
 						                <h2>Eliminate your hemorrhoids in less than 2 minutes in the comfort of a doctor’s office</h2>
 						                <p><a class="btn-green" href="about.php" role="button">LEARN MORE</a></p>
 						            </div>
@@ -70,7 +70,7 @@
 					            <div class="container">
 						            <div class="carousel-caption">
 						                <h1 class="slide3">No more ineffective creams or painful surgery</h1>
-						                <h2>SpaceBander&#174; is an effective and painless procedure with no need for recovery time</h2>
+						                <h2>SpaceBander<sup>&reg;</sup> is an effective and painless procedure with no need for recovery time</h2>
 						                <p><a class="btn-green" href="about.php" role="button">LEARN MORE</a></p>
 						            </div>
 					            </div>
@@ -97,7 +97,7 @@
 		<div id="callouts" class="container-fluid">
     		<div class="callouts row">
 			
-	        	<div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
+	        	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 	        		<a href="about.php" class="callout thumbnail ">
 	        			<div>
 	        				<h3>About Hemorrhoids</h3>
@@ -106,20 +106,20 @@
 	        			</div>
 	    			</a>
 	    		</div>
-	    		<div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
+	    		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 	        		<a href="about.php" class="callout thumbnail">
 	        			<div>
-	        				<h3>What is SpaceBander&#174;?</h3>
-	        				<p>SpaceBander® is a small plastic device that deploys a tiny rubber band around the base of your hemorrhoid.  The procedure is painless, non-surgical, takes less than 2 minutes in a doctor’s office, and will permanently eliminate your hemorrhoids.</p>
+	        				<h3>What is SpaceBander<sup>&reg;</sup>?</h3>
+	        				<p>SpaceBander<sup>&reg;</sup> is a small plastic device that deploys a tiny rubber band around the base of your hemorrhoid.  The procedure is painless, non-surgical, takes less than 2 minutes in a doctor’s office, and will permanently eliminate your hemorrhoids.</p>
 	        				<div class="btn-green" role="button">ABOUT</div>
 	        			</div>
 	        		</a>
 	    		</div>
-	    		<div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
+	    		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 	        		<a href="find-physicians.php" class="callout thumbnail">
 	        			<div>
 	        				<h3>Find a Physician</h3>
-	        				<p>Are you ready to take the next step?  Find a physician in your area that is knowledgeable about hemorrhoids and certified to conduct the non-surgical SpaceBander® procedure in the comfort of your doctor’s office.</p>
+	        				<p>Are you ready to take the next step?  Find a physician in your area that is knowledgeable about hemorrhoids and certified to conduct the non-surgical SpaceBander<sup>&reg;</sup> procedure in the comfort of your doctor’s office.</p>
 	        				<div class="btn-green" role="button">SEARCH</div>
 	        			</div>
 	        		</a>
@@ -137,10 +137,10 @@
 					</div>
 					<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">	
 			  				<h4>I’D LIKE TO PERMANENTLY</br>ELIMINATE MY HEMORRHOIDS</h4>
-			  				<h5>Please help me find a</br>SpaceBander&#174; Certified Physician</h5>
+			  				<h5>Please help me find a</br>SpaceBander<sup>&reg;</sup> Certified Physician</h5>
 			  		</div>
 			  		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 dark-purple">
-			  			<a href="#"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
+			  			<a href="about.php"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
 			  		</div>
 			  	</div>	
 			</div>	

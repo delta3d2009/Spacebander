@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>SpaceBander&reg; Privacy Policy</title>
+        <title>SpaceBander<sup>&reg;</sup> Privacy Policy</title>
         <meta name="description" content="">
         <!-- Viewport tags-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">

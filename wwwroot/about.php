@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>About SpaceBander&reg;</title>
+        <title>About SpaceBander<sup>&reg;</sup></title>
         <meta name="description" content="">
         <!-- Viewport tags-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,7 @@
     			<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="headline col-lg-6 col-md-6 col-sm-6 col-xs-6">
-							<h1>Say Hello to SpaceBander&reg; and Goodbye to your Hemorrhoids</h1>
+							<h1>Say Hello to SpaceBander<sup>&reg;</sup> and Goodbye to your Hemorrhoids</h1>
 							<h2>Permanently eliminate your hemorrhoids in less than 2 minutes with the safe, effective, and painless SpaceBander®</h2>
 						</div>
 					</div>
@@ -77,8 +77,8 @@
     		<div class="container-fluid">
     			<div class="row">
 					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-						<h3>WHY SPACEBANDER&reg;?</h3>
-						<p>After extensive research, SpaceBander Corporation has drastically improved and modernized rubber band ligation treatment.  The SpaceBander&reg; is the most comfortable and modern rubber band ligation technique available.  The non-surgical procedure is safe, effective, painless, and takes less than 2 minutes in the comfort of your doctor’s office.  Most importantly, SpaceBander® will permanently eliminate your hemorrhoids and nagging symptoms.</p>					
+						<h3>WHY SPACEBANDER<sup>&reg;</sup>?</h3>
+						<p>After extensive research, SpaceBander Corporation has drastically improved and modernized rubber band ligation treatment.  The SpaceBander<sup>&reg;</sup> is the most comfortable and modern rubber band ligation technique available.  The non-surgical procedure is safe, effective, painless, and takes less than 2 minutes in the comfort of your doctor’s office.  Most importantly, SpaceBander<sup>&reg;</sup> will permanently eliminate your hemorrhoids and nagging symptoms.</p>					
 					</div>
 					<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img class="img_responsive" src="img/desktop/spacebander_1.png"></div>
@@ -101,10 +101,10 @@
 					</div>
 					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">	
 			  				<h4>I’D LIKE TO PERMANENTLY</br>ELIMINATE MY HEMORRHOIDS</h4>
-			  				<h5>Please help me find a</br>SpaceBander&#174; Certified Physician</h5>
+			  				<h5>Please help me find a</br>SpaceBander<sup>&reg;</sup> Certified Physician</h5>
 			  		</div>
 			  		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 dark-purple">
-			  			<a href="#"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
+			  			<a href="about.php"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
 			  		</div>
 			  	</div>	
 			</div>	

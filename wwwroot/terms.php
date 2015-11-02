@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>SpaceBander&reg; Terms of Use</title>
+        <title>SpaceBander<sup>&reg;</sup> Terms of Use</title>
         <meta name="description" content="">
         <!-- Viewport tags-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +61,7 @@
 							<h6>COPYRIGHTS</h6>
 							<p>The Site and the Content are protected by one or more copyrights, patents, database rights, trademarks, service marks and/or other intellectual property and proprietary rights that are owned by SpaceBander Corporation. All contents of the Site are copyrighted unless otherwise noted and may not be used except as provided herein without the express written permission of SpaceBander Corporation. Except as expressly provided above, nothing contained herein shall be construed as conferring any license or right under any SpaceBander Corporation copyright.</p>
 							<h6>TRADEMARKS</h6>
-							<p>All product names, logos, and service marks displayed on the Site, that are identified by ® or ™ or appearing in type form different from that of the surrounding text (collectively, the “Trademarks”), are registered or unregistered trademarks owned by or licensed to SpaceBander Corporation, unless otherwise identified as being owned by another entity. Nothing contained herein shall be construed as conferring by implication, estoppel, or otherwise any license or right, either express or implied, under any patent or Trademark of SpaceBander Corporation or any third party. No use of any Trademark may be made without our prior written authorization, except to identify the product or services of the company.</p>
+							<p>All product names, logos, and service marks displayed on the Site, that are identified by &reg; or &#153; or appearing in type form different from that of the surrounding text (collectively, the “Trademarks”), are registered or unregistered trademarks owned by or licensed to SpaceBander Corporation, unless otherwise identified as being owned by another entity. Nothing contained herein shall be construed as conferring by implication, estoppel, or otherwise any license or right, either express or implied, under any patent or Trademark of SpaceBander Corporation or any third party. No use of any Trademark may be made without our prior written authorization, except to identify the product or services of the company.</p>
 							<h6>USER RESPONSIBILITY</h6>
 							<p>Each user of the Site assumes full responsibility and all risks arising from said use. In no event shall any of SpaceBander Corporation, its shareholders, officers, directors, employees, agents, representatives, information providers, and licensors, and their respective heirs and assigns be liable for any damages of any kind or nature, including, but not limited to, direct, indirect, incidental, consequential, exemplary, special, loss of profit, punitive, or other damages arising from or in connection with the existence or use of the Site, regardless of whether SpaceBander Corporation or any of the other entities or persons listed above has been advised as to the possibility of such damages. This includes damages to, or for viruses that may affect your computer equipment.</p>
 							<p>If you rely on this Site or any information, product, or service available through this Site, you do so at your own risk. There may be delays, omissions, interruptions, inaccuracies, and/or other problems with the information, products, and services published on or promoted over this Site.</p>
@@ -91,7 +91,7 @@
 							<p>We may change these Terms of Use. Any changes to these Terms of Use will become effective when we post the revised Terms of Use on the Site. Your use of the Site following these changes means that you accept the revised Terms of Use. These Terms of Use were last updated on October 31, 2015.</p>
 							<h6>CONTACTING US</h6>
 							<p>If you have any questions about these Terms of Use, please contact us at: <a href="mailto:legal@spacebander.com">legal@spacebander.com.</a></p>
-							<p>Copyright © SpaceBander Corporation 2015. All Rights Reserved.</p>
+							<p>Copyright &copy; SpaceBander Corporation 2015. All Rights Reserved.</p>
 
 
 						</div>
