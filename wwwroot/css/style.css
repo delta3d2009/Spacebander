@@ -224,10 +224,11 @@ sup {
     text-decoration: none;
 }
 
+/*Active navigation on hover*/
 .navbar-inverse .navbar-nav > li > a.active{
     background-color:#68DDDD;
+    color:#222e3f;
 }
-
 
 .navbar-inverse .navbar-nav > li > a:hover{
   color: #ffffff;
@@ -235,8 +236,10 @@ sup {
   border: none;
 }
 
+/*Active navigation on hover*/
 .navbar-inverse .navbar-nav > li > a.active:hover{
   background-color:#68DDDD;
+  color:#222e3f;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus {
