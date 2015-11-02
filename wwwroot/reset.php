@@ -13,9 +13,12 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/admin.css">
     </head>
-    <body>
+    <body class="admin-section">
+    	<div id="header" class="purple">
+			<?php include 'includes/header.php';?>
+		</div>
     <?php
 		require_once 'php/database_connection.php';
 		
@@ -26,43 +29,35 @@
 			$user = $_GET['user'];
 			echo "<script src='js/jquery-1.11.0.min.js'></script><script src='js/bootstrap.js'></script><script src='js/jquery.validate.js'></script><script src='js/login.js'></script>";
 		}
-    	echo "<div id='wrapper' >
-    	 	<div class='container'>";
-    	 		?>
-    	 		<?php include 'includes/header.php';?>
-			      <?php
-			      echo "<div class='jumbotron'>
-					<form id='resetForm' autocomplete='off' token='".$token."'>
-						<div>
-							<label>User</label>
-							<input name='user' id='user' type='text' size='30'  value='".$user."' class='form-control' maxlength='30' required/>
-						</div>
-						<div>
-							<label>Email</label>
-							<input name='email' id='email' type='text' size='30'  value='".$email."' class='form-control' maxlength='30' required/>
-						</div>
-						<div>
-							<label>Password</label>
-							<input name='password' id='password' type='password' size='30' value='' class='form-control' maxlength='30' required/>
-						</div>
-						<div>
-							<label>Confirm Password</label>
-							<input name='confirmpassword' id='confirmpassword' type='password' size='30' value='' class='form-control' maxlength='30' required/>
-						</div>
-						<button type='submit' class='btn btn-default'>Submit</button>
-						<button type='reset' class='btn btn-default'>Reset</button>
-						<div id='output'></div>
-					</form> 
-			      </div>";
-			      ?>
-			      <?php include 'includes/footer.php';?>
-			 	  <?php include 'includes/interstitial.php';?>
-			 <?php
-			 echo "</div>
-    	 </div>
+	      echo "<div class='content-reset'>
+	      		<h2>Please fill out this form with the new password.</h2>
+	      		<form id='resetForm' autocomplete='off' token='".$token."'>
+				<div>
+					<label>User</label>
+					<input name='user' id='user' type='text' size='30'  value='".$user."' class='form-control' maxlength='30' required/>
+				</div>
+				<div>
+					<label>Email</label>
+					<input name='email' id='email' type='text' size='30'  value='".$email."' class='form-control' maxlength='30' required/>
+				</div>
+				<div>
+					<label>Password</label>
+					<input name='password' id='password' type='password' size='30' value='' class='form-control' maxlength='30' required/>
+				</div>
+				<div>
+					<label>Confirm Password</label>
+					<input name='confirmpassword' id='confirmpassword' type='password' size='30' value='' class='form-control' maxlength='30' required/>
+				</div>
+				<button type='submit' class='btn-green'>Submit</button>
+				<button type='reset' class='btn-orange'>Reset</button>
+				<div id='output'></div>
+			</form>
     	 <script>setResetForm();</script>
+    	 </div>";
+    	 ?>
+    	 <?php include 'includes/footer.php';?>
+		<?php include 'includes/interstitial.php';?>
     </body>
-</html>";
-?>
+</html>
 
 
