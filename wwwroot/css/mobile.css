@@ -98,6 +98,275 @@
     }
 
 
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+      margin-top: 18px;
+    }
+
+    .carousel .item h1{
+        margin-bottom:18px;
+    }
+
+    .carousel .item h1.slide1 {
+        font-size:40px;
+        line-height: 40px;
+    }
+
+    .carousel .item h1.slide2 {
+        font-size:40px;
+        line-height: 40px;
+    }
+
+    .carousel .item h1.slide3 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .carousel .item h2{
+        font-size:20px;
+        line-height: 20px;
+        margin-bottom:32px;
+    }
+
  }
-/*------------------ (min-width: 768px) and (max-width: 991px) -------------------------*/
+/*------------------END  (min-width: 768px) and (max-width: 991px) -------------------------*/
+
+
+
+/*------------------ (min-width: 480px) and (max-width: 768px) -------------------------*/
+
+
+@media (min-width: 480px) and (max-width: 768px) { 
+
+
+      /* CUSTOMIZE THE CAROUSEL
+      -------------------------------------------------- */
+
+    
+
+      /* Since positioning the image, we need to help out the caption */
+      .carousel-caption {
+        margin-left: 56px;
+        margin-top: 0px;
+      }
+
+      .carousel-caption .btn-green {
+        font-size:11px;
+        line-height: 11px;
+        padding: 8px 24px;
+ }
+
+      .carousel .item h1{
+          margin-bottom: 8px;
+          letter-spacing: -1px;
+      }
+
+      .carousel .item h1.slide1 {
+          font-size:26px;
+          line-height: 26px;
+      }
+
+      .carousel .item h1.slide2 {
+          font-size: 24px;
+          line-height: 24px;
+      }
+
+      .carousel .item h1.slide3 {
+          font-size: 24px;
+          line-height: 24px;
+      }
+
+      .carousel .item h2{
+          font-size:14px;
+          line-height: 14px;
+          margin-bottom: 20px;
+          letter-spacing: -0.5px;
+      }
+
+
+      .carousel-indicators li{
+          background-color:#9493ff;
+          width:16px;
+          height:16px;
+      }
+
+      .carousel-indicators .active{
+          width:16px;
+          height:16px;
+      }
+
+
+      .carousel-control, .carousel-control:hover, .glyphicon-chevron-left, .glyphicon-chevron-right{
+          color:#4e43ba;
+          text-shadow: none;
+      }
+
+      
+      .carousel-control.left{
+          background-image:none;
+          background-repeat:no-repeat;
+          margin-left: 10px;
+      }
+
+      .carousel-control.right{
+          background-image:none;
+           background-repeat:no-repeat;
+          margin-right: 10px;
+          
+      }
+
+/*******Home page callouts*****************************************************************/
+
+.callout{
+    margin: 0 24px 16px 24px;
+}
+
+.callout p{
+    height: auto; 
+}
+
+
+/********CTA AREA *****************************************************************/
+
+      #cta_area {
+          margin-top: 40px;
+              margin-bottom: 40px;
+      }
+
+      #cta_area  h4 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+
+      #cta_area h5 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 32px;
+      }
+
+      #cta_area img.physician {
+        margin-bottom: 16px;
+      }  
+
+      #cta_area a  {
+        background-color: #4e43ba;
+      width: 100px;
+      text-decoration: none;
+
+      } 
+
+      #cta_area img.go_find_btn {
+        margin-top: 32px;
+      margin-bottom: 32px;
+      }  
+
+
+
+/****************Footer*****************************************************************/
+
+
+#footer  {
+  margin: 0 auto;
+  padding: 48px 0;
+ text-align: center;
+} 
+
+#footer .bottom_links {
+ margin-bottom: 24px;
+
+}  
+
+
+#footer .bottom_links li {
+ display: list-item; 
+ margin-bottom: 32px;
+} 
+
+#footer .bottom_links a.btn_footer {
+    padding: 10px 64px;
+}
+ 
+#footer .bottom_links a.btn_footer:hover,
+#footer .bottom_links a.btn_footer:focus {
+   background-color: #f2f2f2;
+  border: 1px solid #28384c;
+    color: #28384c;
+    text-decoration: none; 
+} 
+
+/******** social *************/
+
+
+#footer .bottom_links a.social-facebook  {
+   margin-right: 6px;
+   margin-left: 8px;
+   width: 40px;
+   height: 40px;
+   display: inline-block;
+} 
+#footer .bottom_links a.social-facebook:hover  {
+-moz-box-shadow: 5px 5px 1px #121922;
+-webkit-box-shadow: 5px 5px 1px #121922;
+box-shadow: 5px 5px 1px #121922;
+} 
+
+#footer .bottom_links a.social-facebook:focus  {
+-moz-box-shadow: 5px 5px 1px #121922;
+-webkit-box-shadow: 5px 5px 1px #121922;
+box-shadow: 5px 5px 1px #121922;
+} 
+
+#footer .bottom_links a.social-twitter  {
+   margin-right: 6px;
+   margin-left: 8px;
+   width: 40px;
+   height: 40px;
+   display: inline-block;
+} 
+#footer .bottom_links a.social-twitter:hover  {
+-moz-box-shadow: 5px 5px 1px #121922;
+-webkit-box-shadow: 5px 5px 1px #121922;
+box-shadow: 5px 5px 1px #121922;
+} 
+
+#footer .bottom_links a.social-twitter:focus  {
+-moz-box-shadow: 5px 5px 1px #121922;
+-webkit-box-shadow: 5px 5px 1px #121922;
+box-shadow: 5px 5px 1px #121922;
+} 
+
+/******** copyright *************/
+
+#footer p {
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+#footer p a{
+    color: #9493ff;
+    text-decoration: underline;
+
+}
+
+#footer p a:hover, a:focus {
+    color: #50b2b4;
+}
+
+
+
+ }
+
+/*------------------ (END min-width: 480px) and (max-width: 768px) -------------------------*/
 

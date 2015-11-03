@@ -3,7 +3,7 @@ echo "
 		<div id='footer' class='dark-gray'>
 			<div class='container'>
 				<div class='row bottom_links'>
-					<div class='col-lg-10 col-lg-offset-1'>
+					<div class='col-lg-10 col-lg-offset-1 col-sm-12'>
 						<ul>
 							<li><a class='btn_footer' href='portal.php'>Physician Portal</a></li>
 							<li><a class='btn_footer' href='privacy.php'>Privacy Policy</a></li>
