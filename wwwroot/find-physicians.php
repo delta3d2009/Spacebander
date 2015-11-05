@@ -32,11 +32,11 @@
 		</div>
 
 	<!-- Header================================================== -->
-		<div id="about_header">
-    		<div class="container-fluid">
+		<div id="about_header" class="banner_bg">
+    		<div class="container-fluid ">
     			<div class="row">
-					<div class="banner_bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="headline col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="headline col-lg-9 col-md-8 col-sm-6 col-xs-6">
 							<h1>Find a Physician in your area!</h1>
 							<h2>SpaceBander<sup>&reg;</sup> is inexpensive and completely covered by all insurance companies</h2>
 						</div>
@@ -47,7 +47,7 @@
 
 	<!-- Header================================================== -->
 
-		<!-- content ================================================== -->
+	<!-- content ================================================== -->
 		<div id="find-physicians" class="content green">
     		<div class="container-fluid">
     			<div class="row">

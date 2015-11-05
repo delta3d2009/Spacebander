@@ -34,9 +34,9 @@
     		<div class="container-fluid ">
     			<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="headline col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<div class="headline col-lg-9 col-md-8 col-sm-6 col-xs-6">
 							<h1>Say Hello to SpaceBander<sup>&reg;</sup> and Goodbye to your Hemorrhoids</h1>
-							<h2>Permanently eliminate your hemorrhoids in less than 2 minutes with the safe, effective, and painless SpaceBander®</h2>
+							<h2>Permanently eliminate your hemorrhoids in less than 2 minutes with the safe, effective, and painless SpaceBander<sup>&reg;</sup></h2>
 						</div>
 					</div>
 				</div>

@@ -602,34 +602,28 @@ margin-bottom: 138px;
 
 
 .banner_bg {
-    background: url(../img/desktop/header_about.jpg) no-repeat;
-  width: 100%;
-  height: 600px;
-  background-position: top 0 right 0;
+  background: url(../img/desktop/header_about.jpg) no-repeat;
+  height: 480px;
+  background-size:cover;
+  background-position: top -20px right 0px;
 }
 
-.banner_bg  img {
+.banner_bg img {
   width:100%;
   height: auto;
 }
 
-#about_header .headline {
-    padding-top: 48px;
-    padding-left: 48px;
+.headline {
+    margin-top: 88px;
 }
 
 #about_header .headline h1 {
-    font-size: 36px;
-    line-height: 36px;
-        padding-top: 32px;
-    padding-left: 0;
-    padding-right: 80px;
+    font-size: 50px;
+    line-height: 52px;
     text-align: left;
 }
 
 #about_header .headline h2 {
-    padding-left:0;
-        padding-right: 80px;
         text-align: left;
 }
 
