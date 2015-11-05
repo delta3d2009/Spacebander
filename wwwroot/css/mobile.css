@@ -11,38 +11,28 @@
 @media (min-width: 992px) and (max-width: 1199px) { ... }
 @media (min-width: 1200px) { ... }
 
-/***************************************************************** Top Navigation  *****************************************************************/
+/**********************************************************************************************************************************/
 
-
-
+/***************************************************************** max-width: 320px  *****************************************************************/
 
 @media (max-width: 320px) {
-      .navbar-nav li a {
+
+/*********Top Navigation  *****************************************************************/
+
+    .navbar-nav li a {
       padding-left: 50px;
       padding-right: 0;
       margin-right: 0;
       font-size: 12px;
       }
 
-.navbar-inverse .navbar-brand {
-  width: 75%;
-}
-      /********************* TOGGLE *********************/
-.navbar-toggle { float: left;margin-left: 16px;}
-}
-
-@media (min-width: 480px) and (max-width: 768px) {
-      
-}
+    .navbar-inverse .navbar-brand {width: 75%;}
+    .navbar-toggle { float: left;margin-left: 16px;}
 
 
-@media (min-width: 768px) {
-        
-}
 
 /*------------------ CAROUSEL -------------------------*/
 
-@media (max-width: 320px) {
   .carousel-caption { width: 63% !important;}
   .carousel .item h1 {letter-spacing: -0.5px;}
   .carousel .item h1.slide1 {font-size: 22px !important; line-height: 22px; margin-bottom: 20px; }
@@ -51,28 +41,70 @@
   .carousel-caption {margin-top: 16px !important; margin-left: 16px !important;}
   .carousel .item h2{ display: none;}
 
-.carousel-indicators li{
-    background-color:#9493ff;
-    width:18px;
-    height:18px;
-    border:none;
-    margin:0;
-    border: 2px solid #fff;
-}
+  .carousel-indicators li{
+      background-color:#9493ff;
+      width:18px;
+      height:18px;
+      border:none;
+      margin:0;
+      border: 2px solid #fff;
+  }
 
 }
 
+/***************************************************************** END max-width: 320px  *****************************************************************/
+
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
 
 /*------------------ (min-width: 768px) and (max-width: 991px) -------------------------*/
 
 @media (min-width: 768px) and (max-width: 991px) { 
 
-/******Home page callouts*****************************************************************/
 
-    .callout{
+
+/* CAROUSEL-------------------------------------------------- */
+
+    .carousel-caption {
+      margin-left: 80px;
+      margin-top: 16px;
+      width: 60%;
+    }
+
+
+    .carousel .item h1{
+        margin-bottom: 16px;
+    }
+
+    .carousel .item h1.slide1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .carousel .item h1.slide2 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .carousel .item h1.slide3 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .carousel .item h2{
+        font-size:20px;
+        line-height: 20px;
         margin-bottom: 24px;
     }
 
+
+
+/******Home page callouts*****************************************************************/
+  
+  .callout{
+    margin: 0 32px 16px 32px;
+}
+ 
     .callout p{
         height: auto;
     }
@@ -98,48 +130,18 @@
     }
 
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-    /* Since positioning the image, we need to help out the caption */
-    .carousel-caption {
-      margin-top: 18px;
-    }
-
-    .carousel .item h1{
-        margin-bottom:18px;
-    }
-
-    .carousel .item h1.slide1 {
-        font-size:40px;
-        line-height: 40px;
-    }
-
-    .carousel .item h1.slide2 {
-        font-size:40px;
-        line-height: 40px;
-    }
-
-    .carousel .item h1.slide3 {
-        font-size: 38px;
-        line-height: 38px;
-    }
-
-    .carousel .item h2{
-        font-size:20px;
-        line-height: 20px;
-        margin-bottom:32px;
-    }
 
  }
 /*------------------END  (min-width: 768px) and (max-width: 991px) -------------------------*/
 
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
 
 
-/*------------------ (min-width: 480px) and (max-width: 768px) -------------------------*/
+/*------------------ (min-width: 480px) and (max-width: 767px) -------------------------*/
 
 
-@media (min-width: 480px) and (max-width: 768px) { 
+@media (min-width: 480px) and (max-width: 767px) { 
 
 
       /* CUSTOMIZE THE CAROUSEL
@@ -368,5 +370,5 @@ box-shadow: 5px 5px 1px #121922;
 
  }
 
-/*------------------ (END min-width: 480px) and (max-width: 768px) -------------------------*/
+/*------------------ (END min-width: 480px) and (max-width: 767px) -------------------------*/
 
