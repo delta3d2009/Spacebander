@@ -53,7 +53,7 @@
 							<h3>Spacebander Corporation</h3>
 								<p>Call • 908.334.1323</p>
 								<p>Send • PO Box 221, Belmar, NJ 07719</p>
-								<p>Email • support@spacebander.com</p>
+								<p>Email • <a href="mailto:support@spacebander.com">support@spacebander.com</a></p>
 						</div>
 							
 						<div>
@@ -79,7 +79,7 @@
 									<input name="confirmemail" id="confirmemail" type="email" size="20" value="" class="form-control" maxlength="30" required/>
 								</div>
 								<div>
-									<label>Phone</label>
+									<label>Phone *(<em>optional</em>)</label>
 									<input name="phone" id="phone" type="text" size="20" value="" class="form-control" maxlength="20"/>
 								</div>	
 								<div>
