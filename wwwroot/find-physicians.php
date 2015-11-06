@@ -31,14 +31,16 @@
 		    <?php include 'includes/header.php';?>
 		</div>
 
-	<!-- Header================================================== -->
-		<div id="about_header" class="banner_bg">
-    		<div class="container-fluid ">
+		<!-- Header================================================== -->
+		<div id="about_header">
+    		<div class="container-fluid"> 
     			<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="headline col-lg-9 col-md-8 col-sm-6 col-xs-6">
-							<h1>Find a Physician in your area!</h1>
-							<h2>SpaceBander<sup>&reg;</sup> is inexpensive and completely covered by all insurance companies</h2>
+						<div class="banner_bg_about col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="headline col-lg-7 col-md-5 col-sm-12 col-xs-12">
+								<h1>Find a Physician in your area!</h1>
+								<h2>SpaceBander<sup>&reg;</sup> is inexpensive and completely covered by all insurance companies</h2>
+							</div>
 						</div>
 					</div>
 				</div>

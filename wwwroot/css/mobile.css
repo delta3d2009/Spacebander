@@ -6,10 +6,16 @@
 @media (min-width: 1200px) {}
 
 @media (max-width: 320px) { ... }
+@media (min-width: 360px) and (max-width: 479px) { ... }
 @media (min-width: 480px) and (max-width: 768px) { ... }
 @media (min-width: 768px) and (max-width: 991px) { ... }
 @media (min-width: 992px) and (max-width: 1199px) { ... }
 @media (min-width: 1200px) { ... }
+
+
+
+
+
 
 /**********************************************************************************************************************************/
 
@@ -31,111 +37,90 @@
 
 
 
-/*------------------ CAROUSEL -------------------------*/
+    /*------------------ CAROUSEL -------------------------*/
 
-  .carousel-caption { width: 63% !important;}
-  .carousel .item h1 {letter-spacing: -0.5px;}
-  .carousel .item h1.slide1 {font-size: 22px !important; line-height: 22px; margin-bottom: 20px; }
-  .carousel .item h1.slide2 {font-size: 18px !important;line-height: 18px; margin-bottom: 20px;}
-  .carousel .item h1.slide3 {font-size: 17px !important;line-height: 17px !important; margin-bottom: 20px;}
-  .carousel-caption {margin-top: 16px !important; margin-left: 16px !important;}
-  .carousel .item h2{ display: none;}
+      .carousel-caption { 
+        margin-left:16px;
+       margin-top: 0px;
+       width: 60%;
+    }
 
-  .carousel-indicators li{
-      background-color:#9493ff;
-      width:18px;
-      height:18px;
-      border:none;
-      margin:0;
-      border: 2px solid #fff;
-  }
+      .carousel .item h1 {letter-spacing: -0.5px;margin-top: 12px; }
+      .carousel .item h1.slide1 {font-size: 22px !important; line-height: 22px;  }
+      .carousel .item h1.slide2 {font-size: 20px !important;line-height: 20px;}
+      .carousel .item h1.slide3 {font-size: 20px !important;line-height: 20px !important; }
+     
+      .carousel .item h2{ display: none;}
+        .carousel-caption .btn-green { display: none;}
+
+
+      .carousel-indicators li{
+          width:16px;
+          height:16px;
+      }
+    .carousel-indicators .active{
+          width:16px;
+          height:16px;
+      }
+      .carousel-control{
+        width:35px;
+        height:34px;
+        top:60%;
+    }
+    .carousel-control.left{
+        margin-left: 8px;
+    }
+
+    .carousel-control.right{
+        margin-right: 8px;
+        
+    }
+
+
+
+    /********Home page callouts*****************************************************************/
+
+    .callout{
+        margin: 0 16px 16px 16px;
+    }
+
+
+    .callout h3{
+        color: #34495e;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        margin-bottom: 24px;
+        margin-top: 0px;
+        text-transform: uppercase;
+        letter-spacing: -0.1px;
+    }
+
+    .callout p{
+        color:#34495e;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight:400;
+        margin-bottom: 24px;
+        letter-spacing: 0.5px;
+        height: 190px; 
+    }
+
+
+
 
 }
 
 /***************************************************************** END max-width: 320px  *****************************************************************/
 
-/**********************************************************************************************************************************/
-/**********************************************************************************************************************************/
-
-/*------------------ (min-width: 768px) and (max-width: 991px) -------------------------*/
-
-@media (min-width: 768px) and (max-width: 991px) { 
-
-
-
-/* CAROUSEL-------------------------------------------------- */
-
-    .carousel-caption {
-      margin-left: 80px;
-      margin-top: 16px;
-      width: 60%;
-    }
-
-
-    .carousel .item h1{
-        margin-bottom: 16px;
-    }
-
-    .carousel .item h1.slide1 {
-        font-size: 40px;
-        line-height: 40px;
-    }
-
-    .carousel .item h1.slide2 {
-        font-size: 38px;
-        line-height: 38px;
-    }
-
-    .carousel .item h1.slide3 {
-        font-size: 38px;
-        line-height: 38px;
-    }
-
-    .carousel .item h2{
-        font-size:20px;
-        line-height: 20px;
-        margin-bottom: 24px;
-    }
-
-
-
-/******Home page callouts*****************************************************************/
-  
-  .callout{
-    margin: 0 32px 16px 32px;
-}
- 
-    .callout p{
-        height: auto;
-    }
-
-
-/******* navbar-inverse  *****************************************************************/
-
-    .navbar-inverse {
-      margin-right: 10px;
-    }
-
-    .navbar-inverse .navbar-brand {
-      padding: 0;
-    }
-
-    .navbar-inverse .navbar-brand a {
-      background-color: none;
-
-    }
-
-    .navbar-inverse .navbar-nav > li > a {
-        padding: 26px 18px;
-    }
-
-
-
- }
-/*------------------END  (min-width: 768px) and (max-width: 991px) -------------------------*/
 
 /**********************************************************************************************************************************/
+@media (min-width: 360px) and (max-width: 479px) { ... }
+
+
+
 /**********************************************************************************************************************************/
+
 
 
 /*------------------ (min-width: 480px) and (max-width: 767px) -------------------------*/
@@ -371,4 +356,128 @@ box-shadow: 5px 5px 1px #121922;
  }
 
 /*------------------ (END min-width: 480px) and (max-width: 767px) -------------------------*/
+
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+
+
+/*------------------ (min-width: 768px) and (max-width: 991px) -------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) { 
+
+
+
+/* CAROUSEL-------------------------------------------------- */
+
+    .carousel-caption {
+      margin-left: 80px;
+      margin-top: 16px;
+      width: 60%;
+    }
+
+
+    .carousel .item h1{
+        margin-bottom: 16px;
+    }
+
+    .carousel .item h1.slide1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .carousel .item h1.slide2 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .carousel .item h1.slide3 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .carousel .item h2{
+        font-size:20px;
+        line-height: 20px;
+        margin-bottom: 24px;
+    }
+
+
+
+/******Home page callouts*****************************************************************/
+  
+  .callout{
+    margin: 0 32px 16px 32px;
+}
+ 
+    .callout p{
+        height: auto;
+    }
+
+
+/******* navbar-inverse  *****************************************************************/
+
+    .navbar-inverse {
+      margin-right: 10px;
+    }
+
+    .navbar-inverse .navbar-brand {
+      padding: 0 0 0 10px;
+    }
+
+    .navbar-inverse .navbar-brand a {
+      background-color: none;
+
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 26px 18px;
+    }
+
+
+
+ }
+/*------------------END  (min-width: 768px) and (max-width: 991px) -------------------------*/
+
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+
+/*------------------ (min-width: 992px) and (max-width: 1199px) -------------------------*/
+
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+  /********* ABOUT ****************************************************************/
+
+
+    .banner_bg_about  {
+      background: url(../img/desktop/header_about.jpg) no-repeat;
+      height: 387px;
+      background-size: cover;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .headline {
+        padding-left: 32px;
+        padding-top: 64px;
+    }
+
+    #about_header .headline h1 {
+        font-size: 38px;
+        line-height: 42px;
+        text-align: left;
+
+    }
+
+    #about_header .headline h2 {
+       text-align: left;
+       font-size: 24px;
+      line-height: 28px;
+    }
+
+}
+
+/********* ABOUT ****************************************************************/
+
+
 
