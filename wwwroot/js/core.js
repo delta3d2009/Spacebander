@@ -108,7 +108,8 @@ function addEventsContactForm()
 function resetContactForm()
 {
 	$( "label.error" ).hide();
-	$( "#contactForm input.error" ).css("border-color","#cccccc");
+	$( "#contactForm input.error" ).css("border-color","#68DDDD");
+	$( "#contactForm textarea.error" ).css("border-color","#68DDDD");
 	$( "#contactForm input:text" ).val("");
 	$( "#contactForm #email").val("");
 	$( "#contactForm #message").val("");

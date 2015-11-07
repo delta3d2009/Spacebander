@@ -44,9 +44,6 @@
 	<!-- content ================================================== -->
 		<div id="contact-us" class="content green">
     		<div class="container-fluid">
-    			<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-						
 					<div class="contact-container">
 						<div class="contact-container-2">
 							<img class="logo" src="img/desktop/spacebander-logo-sm.jpg" alt="SpaceBander Logo">
@@ -93,10 +90,7 @@
 						
 						<h5>Thanks for your interest.</br>We will contact you shortly!</h5>
 							
-						</div>
-
 					</div>
-				</div>
 			</div>
 		</div>
 
