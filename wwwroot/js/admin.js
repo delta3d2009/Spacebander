@@ -86,7 +86,7 @@ function addDropDownCountries()
          .find( '[data-bind="label"]' ).text( $target.text() )
             .end()
          .children( '.dropdown-toggle' ).dropdown( 'toggle' );
-      return false;
+      //return false;
    });
    $("#insertForm #btn-countries .dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryLocation );
    //$("#insertForm").find("input[name='state']").hide();
@@ -106,7 +106,7 @@ function addDropDownStates()
          .find( '[data-bind="label"]' ).text( $target.text() )
             .end()
          .children( '.dropdown-toggle' ).dropdown( 'toggle' );
-      return false;
+      //return false;
    });
 }
 
@@ -866,28 +866,10 @@ function addDropDownPageSize()
 {
     $( document.body ).on( 'click', '#btn-pagesize .dropdown-menu li', function( event ) {
       var $target = $( event.currentTarget );
-      //event.preventDefault();
-      // $target.find("a").text();
-      //console.log();
-     // app.controller('customersCrtl', function ($scope){
-         // $scope.entryLimit = $target.find("a").text();
-      //});
-      
-      /*angular.module('SpacebanderApp').controller('add', ['$scope',function($scope) {
-           $scope.entryLimit = 32;
-    }]);*/
-   
-   /*var scope = angular.element($("#outer")).scope();
-    scope.$apply(function(){
-        scope.msg = 'Superhero';
-    })*/
-          
-      //console.log( app.controller('physiciansControler').scope);
-      console.log( app);
       $target.closest( '.btn-group' )
          .find( '[data-bind="label"]' ).text( $target.text() )
             .end()
          .children( '.dropdown-toggle' ).dropdown( 'toggle' );
-      return false;
+      //return false;
    });
 }

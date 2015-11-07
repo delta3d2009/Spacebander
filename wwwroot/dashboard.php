@@ -122,7 +122,7 @@
 						</div>
 						<!--------------------------------------------------------------------------------- Angular JS Data Grid --------------------------------------------------------------------------------->
 						<div class="tab-pane active" id="edit">
-							<h3>directory of registered physicians and practices:</h3>
+							<h3>directory of registered physicians and practices:</h3>
 							<!--<div class="filter">
 								<h3>directory of registered physicians and practices:</h3>
 								<form id="searchForm" autocomplete="off">
@@ -132,9 +132,8 @@
 							</div>
 							<?php include 'php/searchPhysician.php';?>-->
 							<div ng-controller="physiciansControler">
-								<div class="container">
-								<br/>
-								    <div class="row">
+								<div>
+								    <div class="row control-bar">
 								        <div class="col-md-2">PageSize:<br/>
 								            <!--<select ng-model="entryLimit" class="">
 								                <option>5</option>
@@ -144,15 +143,14 @@
 								                <option>100</option>
 								            </select>-->
 								            <div class="btn-group" id="btn-pagesize">
-											 <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" ng-model="entryLimit">
+											 <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
 											   <span data-bind="label">Select Page Size</span>&nbsp;<span class="caret"></span>
 											 </button>
 											 <ul class="dropdown-menu form-control" role="menu" id="pagesize">
-											    <li value="5"><a href="#">5</a></li>
-												<li value="10"><a href="#">10</a></li>
-												<li value="20"><a href="#">20</a></li>
-												<li value="50"><a href="#">50</a></li>
-												<li value="100"><a href="#">100</a></li>
+											    <li ng-click="OnItemClick('5')"><a href="#">5</a></li>
+												<li ng-click="OnItemClick('10')"><a href="#">10</a></li>
+												<li ng-click="OnItemClick('25')"><a href="#">20</a></li>
+												<li ng-click="OnItemClick('50')"><a href="#">50</a></li>
 											 </ul>
 											</div>
 								        </div>
@@ -164,11 +162,11 @@
 								            <h5>Filtered {{ filtered.length }} of {{ totalItems}} total physicians</h5>
 								        </div>
 								    </div>
-								    <br/>
 								    <div class="row">
-								        <div class="col-md-12" ng-show="filteredItems > 0">
+								        <div class="col-md-12 table-container" ng-show="filteredItems > 0">
 								            <table class="table table-striped table-bordered">
 								            <thead>
+								            	<th>ID&nbsp;<a ng-click="sort_by('ID');"><i class="glyphicon glyphicon-sort"></i></a></th>
 								            <th>Company&nbsp;<a ng-click="sort_by('Company');"><i class="glyphicon glyphicon-sort"></i></a></th>
 								            <th>First Name&nbsp;<a ng-click="sort_by('FirstName');"><i class="glyphicon glyphicon-sort"></i></a></th>
 								            <th>Last Name&nbsp;<a ng-click="sort_by('LastName');"><i class="glyphicon glyphicon-sort"></i></a></th>
@@ -183,9 +181,12 @@
 								            <th>Fax&nbsp;<a ng-click="sort_by('Fax');"><i class="glyphicon glyphicon-sort"></i></a></th>
 								            <th>Email&nbsp;<a ng-click="sort_by('Email');"><i class="glyphicon glyphicon-sort"></i></a></th>
 								            <th>Office Contact&nbsp;<a ng-click="sort_by('Office');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th></th>
+								            <th></th>
 								            </thead>
 								            <tbody>
 								                <tr ng-repeat="data in filtered = (list | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
+								                    <td>{{data.ID}}</td>
 								                    <td>{{data.Company}}</td>
 								                    <td>{{data.FirstName}}</td>
 								                    <td>{{data.LastName}}</td>
@@ -200,6 +201,9 @@
 								                    <td>{{data.Fax}}</td>
 								                    <td>{{data.Email}}</td>
 								                    <td>{{data.Office}}</td>
+								                    <td><a class='edit' href='#' onClick='configModalForm(this.id); return false;' id={{data.ID}}>Edit</a></td>
+								                    <td><a class='remove' href='#' onClick='configModalRemove(this.id); return false;' id={{data.ID}}>Remove</a></td>
+								                      
 								                </tr>
 								            </tbody>
 								            </table>
@@ -251,7 +255,7 @@
         <script src="js/angular.min.js"></script>
 		<script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>      
         <!-- Custom Script -->
-        <script src="js/admin.js"></script>
-        <script src="js/grid.js"></script>               
+        <script src="js/grid.js"></script>
+        <script src="js/admin.js"></script>          
     </body>
 </html>

@@ -178,6 +178,7 @@ a.link:hover, a.link:active, a.link:focus{
 
 .admin-container h3{
     font-size:18px;
+    margin-top:0 !important;
 }
 
 .admin-container h4{
@@ -259,10 +260,16 @@ a.link:hover, a.link:active, a.link:focus{
     padding-left:12px;
 }
 
+.control-bar{
+    margin-bottom:40px;
+}
+
+
 .table-container{
     float:left;
     overflow: scroll;
     width: 1230px;
+    margin-bottom:40px;
 }
 
 table thead{
@@ -302,6 +309,19 @@ h5{
     margin-bottom:0;
 }
 
+.pagination{
+    border-radius: 0;
+}
+
+.pagination > li > a, .pagination > li > span{
+    color:#4e43ba;
+    font-family: "Raleway",sans-serif;
+    font-size: 17px;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color:#4e43ba;
+}
 
 /*****************************************************************Modal Bootstrap*****************************************************************/
 

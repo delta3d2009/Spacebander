@@ -13,6 +13,7 @@ app.filter('startFrom', function() {
         return [];
     };
 });
+
 app.controller('physiciansControler', function ($scope, $http, $timeout) {
     $http.get('php/getPhysiciansDataGrid.php').success(function(data){
         $scope.list = data;
@@ -33,4 +34,7 @@ app.controller('physiciansControler', function ($scope, $http, $timeout) {
         $scope.predicate = predicate;
         $scope.reverse = !$scope.reverse;
     };
+    $scope.OnItemClick = function(event) {
+      $scope.entryLimit = event;
+  };
 });
