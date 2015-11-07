@@ -12,7 +12,8 @@
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+	<html ng-app="spaceBanderApp" ng-app lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -119,16 +120,105 @@
 								<div id="output"></div>
 							</form>
 						</div>
+						<!--------------------------------------------------------------------------------- Angular JS Data Grid --------------------------------------------------------------------------------->
 						<div class="tab-pane active" id="edit">
-							<div class="filter">
+							<h3>directory of registered physicians and practices:</h3>
+							<!--<div class="filter">
 								<h3>directory of registered physicians and practices:</h3>
 								<form id="searchForm" autocomplete="off">
 									<input name="parameter" id="parameter" type="text" size="50" value="" maxlength="50"/>
 									<button type="submit" class="btn-magnifying-glass"></button>
 								</form>
 							</div>
-							<?php include 'php/searchPhysician.php';?>
+							<?php include 'php/searchPhysician.php';?>-->
+							<div ng-controller="physiciansControler">
+								<div class="container">
+								<br/>
+								    <div class="row">
+								        <div class="col-md-2">PageSize:<br/>
+								            <!--<select ng-model="entryLimit" class="">
+								                <option>5</option>
+								                <option>10</option>
+								                <option>20</option>
+								                <option>50</option>
+								                <option>100</option>
+								            </select>-->
+								            <div class="btn-group" id="btn-pagesize">
+											 <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" ng-model="entryLimit">
+											   <span data-bind="label">Select Page Size</span>&nbsp;<span class="caret"></span>
+											 </button>
+											 <ul class="dropdown-menu form-control" role="menu" id="pagesize">
+											    <li value="5"><a href="#">5</a></li>
+												<li value="10"><a href="#">10</a></li>
+												<li value="20"><a href="#">20</a></li>
+												<li value="50"><a href="#">50</a></li>
+												<li value="100"><a href="#">100</a></li>
+											 </ul>
+											</div>
+								        </div>
+								        <div class="col-md-3">
+								        	&nbsp;
+								            <input type="text" ng-model="search" ng-change="filter()" placeholder="SEARCH..." class="form-control" />
+								        </div>
+								        <div class="col-md-4">
+								            <h5>Filtered {{ filtered.length }} of {{ totalItems}} total physicians</h5>
+								        </div>
+								    </div>
+								    <br/>
+								    <div class="row">
+								        <div class="col-md-12" ng-show="filteredItems > 0">
+								            <table class="table table-striped table-bordered">
+								            <thead>
+								            <th>Company&nbsp;<a ng-click="sort_by('Company');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>First Name&nbsp;<a ng-click="sort_by('FirstName');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Last Name&nbsp;<a ng-click="sort_by('LastName');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Address&nbsp;<a ng-click="sort_by('Address');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Suite #&nbsp;<a ng-click="sort_by('Suite');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>City&nbsp;<a ng-click="sort_by('City');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>State&nbsp;<a ng-click="sort_by('State');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Zip&nbsp;<a ng-click="sort_by('Zip');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Country&nbsp;<a ng-click="sort_by('Country');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Phone&nbsp;<a ng-click="sort_by('Phone');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Cell&nbsp;<a ng-click="sort_by('Cell');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Fax&nbsp;<a ng-click="sort_by('Fax');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Email&nbsp;<a ng-click="sort_by('Email');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            <th>Office Contact&nbsp;<a ng-click="sort_by('Office');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            </thead>
+								            <tbody>
+								                <tr ng-repeat="data in filtered = (list | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
+								                    <td>{{data.Company}}</td>
+								                    <td>{{data.FirstName}}</td>
+								                    <td>{{data.LastName}}</td>
+								                    <td>{{data.Address}}</td>
+								                    <td>{{data.Suite}}</td>
+								                    <td>{{data.City}}</td>
+								                    <td>{{data.State}}</td>
+								                    <td>{{data.Zip}}</td>
+								                    <td>{{data.Country}}</td>
+								                    <td>{{data.Phone}}</td>
+								                    <td>{{data.Cell}}</td>
+								                    <td>{{data.Fax}}</td>
+								                    <td>{{data.Email}}</td>
+								                    <td>{{data.Office}}</td>
+								                </tr>
+								            </tbody>
+								            </table>
+								        </div>
+								        <div class="col-md-12" ng-show="filteredItems == 0">
+								            <div class="col-md-12">
+								                <h4>No customers found</h4>
+								            </div>
+								        </div>
+								        <div class="col-md-12" ng-show="filteredItems > 0">    
+								            <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
+								            
+								            
+								        </div>
+								    </div>
+								</div>
+								</div>
 						</div>
+						<!--------------------------------------------------------------------------------- Angular JS Data Grid --------------------------------------------------------------------------------->
 						<div class="tab-pane" id="report">
 							<h3>SELECT FILTERS TO RUN REPORT:</h3>
 							<form id="excelForm" autocomplete="off">
@@ -158,7 +248,10 @@
         <script src="js/bootstrap.js"></script>
         <script src="js/jquery.validate.js"></script>
         <script src="js/jquery.screwdefaultbuttonsV2.js"></script>
+        <script src="js/angular.min.js"></script>
+		<script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>      
         <!-- Custom Script -->
         <script src="js/admin.js"></script>
+        <script src="js/grid.js"></script>               
     </body>
 </html>

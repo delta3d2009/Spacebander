@@ -13,15 +13,46 @@
 @media (min-width: 1200px) { ... }
 
 
+@media screen and (max-width: 1024px) {
+    
+    body{
+        min-width: 640px;
+    }
+    
+    .banner_bg_about  {
+      background: url(../img/desktop/header_about.jpg) no-repeat;
+      height: auto;
+      background-size: cover;
+      width: 100%;
+      padding: 0;
+      padding-bottom:37.79% !important; /*37.79% is   387 x 100 / 1024  to create height auto fluid*/
+    }
+    
+    .headline{
+        position: absolute;
+    }
+    
+    #about_header .headline h1{
+        font-size: 32px;
+        line-height: 32px;
+        width: 50%;
+    }
+    
+    #about_header .headline h2{
+        font-size: 18px;
+        line-height: 18px;
+        width: 50%;
+    }
+    
+}
 
 
 
+/********************************This is all sreens after breakpoint**************************************************************************************************/
 
-/**********************************************************************************************************************************/
+/***************************************************************** max-width: 768px  *****************************************************************/
 
-/***************************************************************** max-width: 320px  *****************************************************************/
-
-@media (max-width: 320px) {
+@media (max-width: 768px) {
 
 /*********Top Navigation  *****************************************************************/
 
@@ -105,8 +136,21 @@
         letter-spacing: 0.5px;
         height: 190px; 
     }
-
-
+    
+    .headline{
+        margin-top:0;
+    }
+    
+    #about_header .headline h1{
+        font-size: 28px;
+        line-height: 28px;
+        width: 50%;
+    }
+    
+    #about_header .headline h2{
+        font-size: 15px;
+        line-height: 15px;
+    }
 
 
 }
@@ -439,7 +483,10 @@ box-shadow: 5px 5px 1px #121922;
 /*------------------END  (min-width: 768px) and (max-width: 991px) -------------------------*/
 
 /**********************************************************************************************************************************/
-/**********************************************************************************************************************************/
+/**********************************************************************************************************************************
+
+
+
 
 /*------------------ (min-width: 992px) and (max-width: 1199px) -------------------------*/
 
@@ -449,13 +496,13 @@ box-shadow: 5px 5px 1px #121922;
   /********* ABOUT ****************************************************************/
 
 
-    .banner_bg_about  {
+   /* .banner_bg_about  {
       background: url(../img/desktop/header_about.jpg) no-repeat;
       height: 387px;
       background-size: cover;
       width: 100%;
       padding: 10px;
-    }
+    }*/
 
     .headline {
         padding-left: 32px;

@@ -289,7 +289,18 @@ table tr{
     font-family:  'Raleway', Arial,sans-serif;
 }
 
+.col-md-3{
+    width:auto;
+}
 
+.col-md-2{
+    width:auto;
+}
+
+h5{
+    margin-top:35px;
+    margin-bottom:0;
+}
 
 
 /*****************************************************************Modal Bootstrap*****************************************************************/
@@ -344,7 +355,7 @@ form#insertForm{
     background-color:transparent;
 }
 
-#countries, #states{
+#countries, #states, #pagesize{
     border: 1px solid #68dddd;
     border-radius: 0;
     height: 120px;
@@ -362,17 +373,47 @@ form#insertForm{
     float:left;
 }
 
+
 #insertForm #btn-states{
     top:-58px;
     background-color: #ededed;
 }
 
-.btn-group > .btn, .btn-group-vertical > .btn{
+.btn-group > .btn, .btn-group-vertical > .btn, select{
     background-color: transparent;
     border: 1px solid #68dddd;
     border-radius: 0;
     box-shadow: none;
     height: 48px;
+}
+
+select{
+    width:200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333333;
+    ont-family: "Raleway",sans-serif;
+}
+
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
+select option {
+    border: 0px solid #68dddd;
+    border-radius: 0;
+    height: 48px;
+    margin-top: 0px;
+    overflow: scroll;
+    width: 200px;
+    background-color:#FFFFFF;
+}
+
+#btn-pagesize{
+    width:200px;
 }
 
 .btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle{
