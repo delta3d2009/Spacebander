@@ -31,12 +31,12 @@
 		    <?php include 'includes/header.php';?>
 		</div>
 
-		<!-- Header================================================== -->
-		<div id="about_header">
+	<!-- Header================================================== -->
+		<div id="find_header">
     		<div class="container-fluid"> 
     			<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="banner_bg_about col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="banner_bg_find col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<div class="headline col-lg-7 col-md-5 col-sm-12 col-xs-12">
 								<h1>Find a Physician in your area!</h1>
 								<h2>SpaceBander<sup>&reg;</sup> is inexpensive and completely covered by all insurance companies</h2>
@@ -56,6 +56,9 @@
 					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 
 						<div class="find">
+						<h3>Search for Physicians in your area</h3>
+						      			<p>Are you ready to take the next step?  Find a physician in your area that is knowledgeable about hemorrhoids and certified to conduct the non-surgical SpaceBander<sup>&reg;</sup> procedure in the comfort of your doctor’s office.</p>
+							        		
 				      	<div class="controls">
 				      		
 				        <form>
@@ -81,7 +84,7 @@
 			                 </ul>
 			            </div>-->			
 						    <!--<input type="button" onclick="searchLocations()" value="Search"/>-->
-						    <button type="button" onclick="searchLocations()" class="btn btn-default"><span class="search-icon"></span></button>
+						    <button type="button" onclick="searchLocations()" class="search-icon"><span class="search-icon"></span></button>
 						 </form>
 						 	<label>PHYSICIANS CLOSEST TO YOUR ZIP CODE</label>
 						 	<div class="results scroll-pane"></div>
@@ -90,12 +93,14 @@
 						 <div id="map"></div>
 						 <div class="instructions">
 						 	<h4>HOW TO NAVIGATE THE MAP</h4>
-						 	<p>1. <strong>CLICK</strong> and <strong>DRAG</strong> to <strong>MOVE</strong> around the area of your map.</p>
-						 	<p>2. To <strong>ZOOM IN</strong> or <strong>ZOOM OUT</strong> use the plus and minus signs: <span class="zoom-icon"></span></br>located in the botton-right corner of the map.</p>
-						 	<p>3. You search results will show up highlighted with this icon: <span class="pin-icon"></span></p>
-						 	<p>4. Click on the icon to get an Address<span class="address-icon"></span></p>
-						 	<p>5. You can toggle the view options of the map in the button located in the top left corner of the map:<span class="toggle-icon"></span></p>
-						 </div>
+						 	<ol>
+							 	<li><strong>CLICK</strong> and <strong>DRAG</strong> to <strong>MOVE</strong> around the area of your map.</li>
+							 	<li>To <strong>ZOOM IN</strong> or <strong>ZOOM OUT</strong> use the plus and minus signs: <span class="zoom-icon"></span></br>located in the botton-right corner of the map.</li>
+							 	<li>You search results will show up highlighted with this icon: <span class="pin-icon"></span></li>
+							 	<li>Click on this icon to get an address <span class="address-icon"></span></li>
+							 	<li>You can toggle the view options of the map in the button located in the top left corner of the map: <span class="toggle-icon"></span></li>
+							</ol>
+						</div>
 					 </div>
 
 					</div>

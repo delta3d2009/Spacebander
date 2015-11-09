@@ -915,10 +915,32 @@ box-shadow: 5px 5px 1px #121922;
 
 /*****************************************************************Find Physicians*****************************************************************/
 
+#find-physicians label { font-weight: 400; letter-spacing: 1px; text-align: left;}
+
+#find-physicians form { margin: 48px 0;}
+
+.search-icon {  background-image: url(../img/desktop/map-search-icon.png); background-repeat: no-repeat; height: 40px; width: 40px;}
+.search-icon:hover {  background-image: url(../img/desktop/map-search-icon-hover.png);}
+.search-icon:focus {  background-image: url(../img/desktop/map-search-icon-hover.png);}
+
+
+
 #map{
-   
-    margin:0 auto;
+    margin: 0 auto;
 }
+
+.instructions { margin-top: 48px;}
+.instructions ol {margin-top: 24px;}
+.instructions ol li {margin-bottom: 16px;}
+
+
+
+.zoom-icon { background-image: url(../img/desktop/map-zoom-icon.png); background-repeat: no-repeat; height: 18px; width: 43px; display: inline-block;}
+.pin-icon { background-image: url(../img/desktop/map-pin-icon.png); background-repeat: no-repeat; height: 19px; width: 19px; display: inline-block;}
+.address-icon { background-image: url(../img/desktop/map-address-icon.png); background-repeat: no-repeat; height: 24px; width: 52px; display: inline-block;}
+.toggle-icon { background-image: url(../img/desktop/map-toggle-icon.png); background-repeat: no-repeat; height: 20px; width: 51px; display: inline-block;}
+
+
 
 #locationSelect{
     width:100%;
@@ -928,6 +950,36 @@ box-shadow: 5px 5px 1px #121922;
 .form-control{
     margin-bottom:10px;
 }
+
+        #find_header .banner_bg_find  {
+          background-image: url(../img/desktop/header_find.jpg);
+          background-repeat: no-repeat;
+          height: 387px;
+          width: 100%;
+          position: relative;
+          top: 0;
+          right: 0;
+          margin-left: auto;      
+            margin-right: auto;   
+        }
+
+        #find_header .headline {
+        margin-top: 48px;
+              margin-left: 24px;
+        }
+
+        #find_header .headline h1 {
+            font-size: 52px;
+            line-height: 52px;
+            text-align: left;
+        }
+
+        #find_header .headline h2 {
+           text-align: left;
+           font-size: 24px;
+          line-height: 28px;
+          margin-right: 24px;
+        }
 
 
 /*****************************************************************Footer *****************************************************************/
