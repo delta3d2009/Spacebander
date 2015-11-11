@@ -204,7 +204,7 @@ function searchLocationsNear(center) {
          bounds.extend(latlng);
        }      
         map.fitBounds(bounds);
-         $('.scroll-pane').jScrollPane({showArrows: false,verticalDragMinHeight: 40,verticalDragMaxHeight: 40});
+         $('.scroll-pane').jScrollPane({showArrows: false,verticalDragMinHeight: 40,verticalDragMaxHeight: 40, contentWidth: '0px'});
         //locationSelect.style.visibility = "visible";
    }
   
@@ -234,7 +234,7 @@ function createOption(company, name, address, phone, distance, num) {
   option.innerHTML = name + "(" + distance.toFixed(1) + ")";
   locationSelect.appendChild(option);*/
   num++;
-  var option = "<div class='result'><span class='arrow'></span><span class='index'>" + num + "</span><p>"+ company +"</p><p>"+ name +"</p><p>"+ address +"</p><p>" + phone + "</p><p>" + distance.toFixed(1) + " milles</p></div>";
+  var option = "<div class='result'><span class='arrow'></span><span class='index'>" + num + "</span><div class='info'><p>"+ company +"</p><p>"+ name +"</p><p>"+ address +"</p><p>" + phone + "</p><p>" + distance.toFixed(1) + " milles</p></div></div>";
   $(".results").append(option);
 }
 

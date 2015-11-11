@@ -1021,6 +1021,8 @@ margin-top: 48px;
   margin-bottom:18px;      
   margin-left:10px;
   text-align:left;
+  float:left;
+  width:100%;
 }
 
 .result .arrow{
@@ -1037,11 +1039,15 @@ margin-top: 48px;
     font-size:14px;
     font-weight:bold;
     float:left;
-    height: 100px;
     margin-left: 10px;
     margin-right: 10px;
-    height:132px;
-    font-weight: bold;
+    line-height:14px;
+}
+
+.result .info{
+    float:left;
+    width:75%;
+    margin-top: -3px;
 }
 
 .result p{
