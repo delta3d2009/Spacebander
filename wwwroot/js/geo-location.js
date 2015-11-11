@@ -30,8 +30,8 @@ $(document).ready(function() {
 	}else
 	{
 	    google.maps.event.addDomListener(window, 'load', initialize);
-	    mapContainerWidth = 582;
-	    mapContainerHeight = 530;
+	    mapContainerWidth = 624;
+	    mapContainerHeight = 655;
 	}
 	
 	google.maps.event.addDomListener(window, "resize", function() {
@@ -50,6 +50,7 @@ $(document).ready(function() {
 	 configInputField();
 	 isMobile = window.matchMedia && window.matchMedia(media_query).matches;
 	 
+	 addFindFormEvents();
 });
 
 /* Google Maps Initialize Implementation 
@@ -72,6 +73,17 @@ function initialize() {
       google.maps.event.trigger(markers[markerNum], 'click');
         }
       };
+}
+
+function addFindFormEvents()
+{
+    $("#findForm").submit(function( event ) {
+        // Stop form from submitting normally
+        event.preventDefault();
+        // Get some values from elements on the page:
+        var $form = $(this);
+        searchLocations();
+    });
 }
 
 function searchLocations() {
@@ -192,7 +204,7 @@ function searchLocationsNear(center) {
          bounds.extend(latlng);
        }      
         map.fitBounds(bounds);
-         $('.scroll-pane').jScrollPane({showArrows: true});
+         $('.scroll-pane').jScrollPane({showArrows: false,verticalDragMinHeight: 40,verticalDragMaxHeight: 40});
         //locationSelect.style.visibility = "visible";
    }
   

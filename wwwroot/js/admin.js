@@ -24,23 +24,47 @@ $(document).ready(function() {
 		addDropDownCountries();
 		addDropDownStates();
 		addDropDownPageSize();
+		addTableScroll();
 		addEventsInsertForm();
 		addEventsSearchForm();
 		configSearchForm();
 		configModal();
 		addEventsExcelForm();
 		configRadioButtons();
+		initSession();
 	}
 });
 
-/*$(window).on('beforeunload', function ()
+$(window).on('beforeunload', function ()
 {
     console.log("Exit from Site. Closing Session.");
-});*/
+    closeSession();
+});
 
 $(window).unload(function () {
-    //console.log("Exit from Site. Closing Session. " + event);
+    console.log("Exit from Site. Closing Session. ");
+    closeSession();
 });
+
+function closeSession()
+{
+    var posting = $.post("php/closeSession.php", {close:true});
+    posting.done(function( data ) {
+    });
+    posting.fail(function( data ) {ssage();
+    });
+}
+
+function initSession()
+{
+    console.log("Starting Session...");
+    setTimeout(function(){ alert("Your session will expire in 5 minutes"); finishSession();}, 1500000);
+}
+
+function finishSession()
+{
+    setTimeout(function(){ window.location.href = "exit.php";}, 300000);
+}
 
 /*Bootstrap Component Nav Tabs*/
 function addDashboardTabs()
@@ -872,4 +896,20 @@ function addDropDownPageSize()
          .children( '.dropdown-toggle' ).dropdown( 'toggle' );
       //return false;
    });
+}
+
+function addTableScroll()
+{
+    $('#scrollbox').enscroll({
+        horizontalScrolling: true,
+        horizontalTrackClass: 'horizontal-track',
+        horizontalHandleClass: 'horizontal-handle',
+        cornerClass: 'corner',
+        verticalScrolling: false,
+        propagateWheelEvent:false,
+        easingDuration:50,
+        zIndex:0
+    });
+    //$('.horizontal-handle').css("left","0px");
+    //$('#scrollbox').scrollLeft(0);
 }

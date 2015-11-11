@@ -14,11 +14,13 @@
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
-        <!-- jQuery for Mobile CSS -->
-        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <!-- styles needed by jScrollPane -->
+		<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+        <!-- jQuery for Mobile CSS -->
+        <!--<link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">-->
         <!-- Google Maps API -->
         <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
         <!-- Google fonts -->
@@ -53,7 +55,7 @@
 		<div id="find-physicians" class="content green">
     		<div class="container-fluid">
     			<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+					<div>
 
 						<div class="find">
 						<h3>Search for Physicians in your area</h3>
@@ -61,7 +63,7 @@
 							        		
 				      	<div class="controls">
 				      		
-				        <form>
+				        <form id="findForm">
 				        		<label>SEARCH BY ZIP CODE</label>
 						        <input type="text" id="addressInput" size="10" class="form-control"/>
 						        <a class="activate-mobile-location" href="#" onclick="searchLocations()">SEARCH BY LOCATION</a>
@@ -84,7 +86,7 @@
 			                 </ul>
 			            </div>-->			
 						    <!--<input type="button" onclick="searchLocations()" value="Search"/>-->
-						    <button type="button" onclick="searchLocations()" class="search-icon"><span class="search-icon"></span></button>
+						    <button type="submit" class="search-icon"></button>
 						 </form>
 						 	<label>PHYSICIANS CLOSEST TO YOUR ZIP CODE</label>
 						 	<div class="results scroll-pane"></div>
@@ -109,7 +111,7 @@
 		</div>
 
 			      	
-			 <?php include 'includes/footer.php';?>
+	<?php include 'includes/footer.php';?>
     	 </div><!-- End Wrapper -->
     	<!-- Bootstrap core JavaScript
     	================================================= -->

@@ -729,7 +729,7 @@ margin-bottom: 138px;
     width:100%;
 }
 
-#contactForm input, #contactForm textarea {
+#contactForm input, #contactForm textarea, #findForm input {
     margin-bottom:10px;
     width:100%;
     height:48px;
@@ -749,7 +749,7 @@ margin-bottom: 138px;
     height:150px;
 }
 
-#contactForm input:focus, #contactForm input:active, #contactForm textarea:focus, #contactForm textarea:active{
+#contactForm input:focus, #contactForm input:active, #contactForm textarea:focus, #contactForm textarea:active, #findForm input:focus, #findForm input:active{
     border:1px solid #FF884D;
     box-shadow:none;
     transition:none;
@@ -915,11 +915,9 @@ box-shadow: 5px 5px 1px #121922;
 
 /*****************************************************************Find Physicians*****************************************************************/
 
-#find-physicians label { font-weight: 400; letter-spacing: 1px; text-align: left;}
+#find-physicians label { font-weight: bold; letter-spacing: 1px; text-align: left;float:left;}
 
-#find-physicians form { margin: 48px 0;}
-
-.search-icon {  background-image: url(../img/desktop/map-search-icon.png); background-repeat: no-repeat; height: 40px; width: 40px;}
+.search-icon {  background-image: url(../img/desktop/map-search-icon.png); background-repeat: no-repeat; height: 40px; width: 40px;float:left;}
 .search-icon:hover {  background-image: url(../img/desktop/map-search-icon-hover.png);}
 .search-icon:focus {  background-image: url(../img/desktop/map-search-icon-hover.png);}
 
@@ -927,6 +925,7 @@ box-shadow: 5px 5px 1px #121922;
 
 #map{
     margin: 0 auto;
+    margin-top:100px;
 }
 
 .instructions { margin-top: 48px;}
@@ -951,35 +950,154 @@ box-shadow: 5px 5px 1px #121922;
     margin-bottom:10px;
 }
 
-        #find_header .banner_bg_find  {
-          background-image: url(../img/desktop/header_find.jpg);
-          background-repeat: no-repeat;
-          height: 387px;
-          width: 100%;
-          position: relative;
-          top: 0;
-          right: 0;
-          margin-left: auto;      
-            margin-right: auto;   
-        }
+#find_header .banner_bg_find  {
+  background-image: url(../img/desktop/header_find.jpg);
+  background-repeat: no-repeat;
+  height: 387px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-left: auto;      
+    margin-right: auto;   
+}
 
-        #find_header .headline {
-        margin-top: 48px;
-              margin-left: 24px;
-        }
+#find_header .headline {
+margin-top: 48px;
+      margin-left: 24px;
+}
 
-        #find_header .headline h1 {
-            font-size: 52px;
-            line-height: 52px;
-            text-align: left;
-        }
+.find-physicians-section .col-lg-offset-2{
+    margin-left:0;    
+}
 
-        #find_header .headline h2 {
-           text-align: left;
-           font-size: 24px;
-          line-height: 28px;
-          margin-right: 24px;
-        }
+#find_header .headline h1 {
+    font-size: 52px;
+    line-height: 52px;
+    text-align: left;
+}
+
+.find{
+    width:100%;
+}
+.controls{
+    float:left;
+    width:400px;
+}
+
+#find_header .headline h2 {
+   text-align: left;
+   font-size: 24px;
+  line-height: 28px;
+  margin-right: 24px;
+}
+
+#findForm{
+    float:left;
+    margin-bottom:10px;
+    margin-top:48px;
+    width:400px;
+}
+
+#findForm input{
+    width:316px;
+    float:left;
+    box-sizing: border-box;
+    height:40px;
+}
+
+.results{
+    width:356px;
+    height:565px;
+    overflow:scroll;
+    border: 1px solid #FFFFFF;
+}
+
+.activate-mobile-location{
+    display:none;
+}
+
+.result{
+  margin-bottom:18px;      
+  margin-left:10px;
+  text-align:left;
+}
+
+.result .arrow{
+    background:url("../img/desktop/map-list-icon.png") no-repeat;
+    width:15px;
+    height:15px;
+    display:block;
+    float:left;
+}
+
+.result .index{
+    font-family: 'Raleway', sans-serif;
+    color:#2c3e50;
+    font-size:14px;
+    font-weight:bold;
+    float:left;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height:132px;
+    font-weight: bold;
+}
+
+.result p{
+    font-family: 'Raleway', sans-serif;
+    color:#2c3e50;
+    font-size:14px;
+    margin-bottom:0;
+}
+
+/**JScrollPane**/
+  
+.jspVerticalBar{
+    width:40px !important;
+    border-left: 1px solid #ffffff;
+}
+
+.jspPane{
+     margin-top:18px !important;
+}
+
+.jspDrag{
+    background-color:#F2F2F2 !important;
+}
+ 
+ .jspTrack{
+     background-color:#61d7d5 !important;
+}
+
+.jspArrowUp{
+    background:#F2F2F2 url("../img/desktop/scroll-up-arrow.png") no-repeat !important;
+    width:20px;
+    height:20px;
+}
+
+.jspArrowDown{
+    background:#F2F2F2 url("../img/desktop/scroll-down-arrow.png") no-repeat !important;
+    width:20px;
+    height:20px;
+}
+
+.jspDrag{
+    background:#F2F2F2 url("../img/desktop/scrubber.jpg") no-repeat !important;
+    width:40px;
+    background-color:transparent;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.6);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.6);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.6);
+}
+
+/*Google Maps elements*/
+
+.gm-style .gm-style-iw{
+    font-family: 'Raleway', sans-serif;
+    font-size:16px;
+    color:#2C3E50;
+}
 
 
 /*****************************************************************Footer *****************************************************************/

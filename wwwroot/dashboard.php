@@ -163,26 +163,26 @@
 								        </div>
 								    </div>
 								    <div class="row">
-								        <div class="col-md-12 table-container" ng-show="filteredItems > 0">
+								        <div id="scrollbox" class="col-md-12 table-container" ng-show="filteredItems > 0">
 								            <table class="table table-striped table-bordered">
 								            <thead>
 								            	<th>ID&nbsp;<a ng-click="sort_by('ID');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Company&nbsp;<a ng-click="sort_by('Company');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>First Name&nbsp;<a ng-click="sort_by('FirstName');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Last Name&nbsp;<a ng-click="sort_by('LastName');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Address&nbsp;<a ng-click="sort_by('Address');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Suite #&nbsp;<a ng-click="sort_by('Suite');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>City&nbsp;<a ng-click="sort_by('City');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>State&nbsp;<a ng-click="sort_by('State');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Zip&nbsp;<a ng-click="sort_by('Zip');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Country&nbsp;<a ng-click="sort_by('Country');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Phone&nbsp;<a ng-click="sort_by('Phone');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Cell&nbsp;<a ng-click="sort_by('Cell');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Fax&nbsp;<a ng-click="sort_by('Fax');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Email&nbsp;<a ng-click="sort_by('Email');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th>Office Contact&nbsp;<a ng-click="sort_by('Office');"><i class="glyphicon glyphicon-sort"></i></a></th>
-								            <th></th>
-								            <th></th>
+									            <th>Company&nbsp;<a ng-click="sort_by('Company');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>First Name&nbsp;<a ng-click="sort_by('FirstName');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Last Name&nbsp;<a ng-click="sort_by('LastName');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Address&nbsp;<a ng-click="sort_by('Address');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Suite #&nbsp;<a ng-click="sort_by('Suite');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>City&nbsp;<a ng-click="sort_by('City');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>State&nbsp;<a ng-click="sort_by('State');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Zip&nbsp;<a ng-click="sort_by('Zip');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Country&nbsp;<a ng-click="sort_by('Country');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Phone&nbsp;<a ng-click="sort_by('Phone');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Cell&nbsp;<a ng-click="sort_by('Cell');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Fax&nbsp;<a ng-click="sort_by('Fax');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Email&nbsp;<a ng-click="sort_by('Email');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th>Office Contact&nbsp;<a ng-click="sort_by('Office');"><i class="glyphicon glyphicon-sort"></i></a></th>
+									            <th></th>
+									            <th></th>
 								            </thead>
 								            <tbody>
 								                <tr ng-repeat="data in filtered = (list | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
@@ -210,7 +210,7 @@
 								        </div>
 								        <div class="col-md-12" ng-show="filteredItems == 0">
 								            <div class="col-md-12">
-								                <h4>No customers found</h4>
+								                <h4>No physicians found</h4>
 								            </div>
 								        </div>
 								        <div class="col-md-12" ng-show="filteredItems > 0">    
@@ -253,9 +253,11 @@
         <script src="js/jquery.validate.js"></script>
         <script src="js/jquery.screwdefaultbuttonsV2.js"></script>
         <script src="js/angular.min.js"></script>
-		<script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>      
+		<script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>
+		<!-- http://enscrollplugin.com -->
+		<script src="js/enscroll-0.6.1.min.js"></script>
         <!-- Custom Script -->
         <script src="js/grid.js"></script>
-        <script src="js/admin.js"></script>          
+        <script src="js/admin.js"></script>
     </body>
 </html>
