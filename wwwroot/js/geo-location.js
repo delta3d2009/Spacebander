@@ -56,7 +56,6 @@ $(document).ready(function() {
 	 
 	 addDropDown();
 	 configInputField();
-	 isMobile = window.matchMedia && window.matchMedia(media_query).matches;
 	 
 	 addFindFormEvents();
 });
@@ -340,10 +339,10 @@ function showPosition(position) {
     center:latlon,
     zoom:14,
     mapTypeId:google.maps.MapTypeId.ROADMAP,
-    mapTypeControl:false,
+    mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
     navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
     });
-     //infoWindow = new google.maps.InfoWindow();
+     infoWindow = new google.maps.InfoWindow();
     //var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
     createMarker(latlon,"", "You are here !","","");
 }
