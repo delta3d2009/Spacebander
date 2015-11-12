@@ -23,16 +23,24 @@ var isMobile;
 $(document).ready(function() {
 	//Handler for .ready() called.
 	isMobile = window.matchMedia && window.matchMedia(media_query).matches;
-	if(isMobile)
-	{
-	     getLocation();
-	     setAsMobile();
-	}else
-	{
+	//if(isMobile)
+	//{
+	     //getLocation();
+	     //setAsMobile();
+	//}else
+	//{
 	    google.maps.event.addDomListener(window, 'load', initialize);
 	    mapContainerWidth = 624;
 	    mapContainerHeight = 655;
-	}
+	    if($(window).width() <= 1024)
+	    {
+	        mapContainerWidth = "43%";
+	    }
+	    if($(window).width() <= 768)
+        {
+            mapContainerWidth = "100%";
+        }
+	//}
 	
 	google.maps.event.addDomListener(window, "resize", function() {
     	 var center = map.getCenter();
@@ -73,6 +81,12 @@ function initialize() {
       google.maps.event.trigger(markers[markerNum], 'click');
         }
       };
+      
+      if(isMobile)
+      {
+         getLocation();
+         //setAsMobile();
+      }
 }
 
 function addFindFormEvents()
@@ -88,13 +102,11 @@ function addFindFormEvents()
 
 function searchLocations() {
     
-    if(isMobile)
-    {
-        address = document.getElementById("addressInput").value;
-    }else
+   if(!isMobile)
     {
         address = document.getElementById("addressInput").value;
     }
+ //address = document.getElementById("addressInput").value;
  var geocoder = new google.maps.Geocoder();
  geocoder.geocode({address: address}, function(results, status) {
  console.log(">>>>>> " + address + " >>>>>> " + status);
@@ -331,9 +343,9 @@ function showPosition(position) {
     mapTypeControl:false,
     navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
     });
-     infoWindow = new google.maps.InfoWindow();
-    var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
-    
+     //infoWindow = new google.maps.InfoWindow();
+    //var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+    createMarker(latlon,"", "You are here !","","");
 }
 
 function showError(error) {
@@ -370,9 +382,10 @@ function getAddressFromLatLang(lat,lng){
             {
                 if (results[1]) 
                 {
-                    //console.log(results[1]);
+                    console.log(results[1]);
                     //alert(results[1].formatted_address);
-                    address = "";
+                    $(".current-location span").text(results[1].formatted_address);
+                    address = results[1].formatted_address;
                 }
             }else{
                 //alert("Geocode was not successful for the following reason: " + status);

@@ -532,3 +532,116 @@ box-shadow: 5px 5px 1px #121922;
 
 
 
+
+/****************************** Find a Physician *******************************/
+
+@media screen and (max-width: 1024px) {
+    
+    /*to do, for the suture remove all these bootstrap classes from styles*/
+    .col-lg-12, .col-md-12, .col-sm-12, .col-xs-12{
+        padding:0 !important;
+    }
+    
+    #find_header .banner_bg_find{
+        background-image: url("../img/desktop/header_find.jpg");
+        background-size:cover;
+        height:auto;
+        padding-bottom:37.79% !important;
+    }
+    
+    #find_header .headline{
+        position:absolute;
+        width:50%;
+        margin-top:5%;
+    }
+    
+    #find_header .headline h1{
+        font-size:34px;
+        line-height:34px;
+    }
+    
+    #find_header .headline h2{
+        font-size:16px;
+        line-height:16px;
+    }
+    
+    .find{
+        float:left;
+        padding-left:5%;
+        padding-right:5%;
+    }
+    
+    .controls{
+        margin-right: 5%;
+        width: 45%;
+        min-width:356px;
+    }
+    
+    #map{
+        float:left;
+        margin-top: 30px;
+    }
+    
+    .instructions{
+        float:left;
+        width:100%;
+    }
+    
+    #findForm{
+        width:auto;
+        margin-top:0;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    .controls{
+        width:100%;
+    }
+    
+    #find-physicians label{
+        width:100%;
+        text-align:center;
+    }
+    
+    #findForm{
+        width:100%;
+    }
+    
+    #findForm label{
+        display:none;
+    }
+    
+    #findForm input{
+        display:none;
+    }
+    
+    .search-icon{
+        display:none;
+    }
+
+    .activate-mobile-location{
+        display:block;
+        margin-bottom: 40px;
+    }
+    
+     .activate-mobile-location:hover{
+        color:#FFFFFF;
+    }
+    
+    .current-location{
+        display:block;
+        margin-top: 80px;
+        color:#FFFFFF;
+    }
+    
+    .results{
+        width:100%;
+    }
+    
+    #map{
+        width:100% !important;
+    }
+
+}

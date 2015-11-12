@@ -102,6 +102,7 @@
 							 	<li>Click on this icon to get an address <span class="address-icon"></span></li>
 							 	<li>You can toggle the view options of the map in the button located in the top left corner of the map: <span class="toggle-icon"></span></li>
 							</ol>
+							<div class="current-location">You are in : <span></span></div>
 						</div>
 					 </div>
 
