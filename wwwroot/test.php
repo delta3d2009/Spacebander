@@ -24,6 +24,8 @@
         <!-- Google fonts -->
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+        <!-- Google Maps API -->
+        <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
 <style type="text/css" id="page-css">
 			/* Styles specific to this particular page */
 			.scroll-pane
@@ -49,7 +51,7 @@
     		
     		<p style="width: 1000px;">f your browser can scroll content, jQuery Scrollbar will scroll it too! Why? Because it does not emulate browser scroll behavior as many plugins do, but hides standard scrollbars and displays custom ones. You want to scroll with mouse middle button? - Just use it! You want to scroll with touch? - Do it! Your browser supports custom scroll behavior? - Use it too! Use standard or jQuery scrollTop/scrollLeft functions to get current scroll offset or scroll to any position. Use standard "scroll" event to handle content scrolling. No custom functions/events to know - everything done using standard scroll behavior. </p>
     	</div>
-
+		<div id="map"></div>
     	<!-- Bootstrap core JavaScript
     	================================================= -->
         <!-- Placed at the end of the document so the pages load faster -->

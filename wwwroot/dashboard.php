@@ -30,8 +30,8 @@
         <!-- Google Fonts -->
        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
-         <!-- Google Maps API -->
-        <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+       <!-- Google Maps API -->
+       <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
     </head>
     <body class="admin-section dashboard-section">
     	 <div id="header" class="purple">
@@ -43,14 +43,14 @@
 			      <div class="content">
 			      	<div class="tabs-dashboard">
 				        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-				          <li role="presentation" class="active"><a href="#edit"data-toggle="tab">Directory</a></li>
-						  <li role="presentation"><a href="#insert" data-toggle="tab">Add New</a></li>
+						  <li role="presentation" class="active"><a href="#insert" data-toggle="tab">Add New</a></li>
+						  <li role="presentation"><a href="#edit"data-toggle="tab">Directory</a></li>
 						  <li role="presentation"><a href="#report" data-toggle="tab">Run Reports </a></li>
 						  <a class="link" href="exit.php">Logout</a>
 						</ul>
 					</div>
 					<div id="tab-content" class="tab-content">
-						<div class="tab-pane" id="insert">
+						<div class="tab-pane active" id="insert">
 							<form id="insertForm" autocomplete="off">
 								<h3>ADD A NEW PHYSICIAN / PRACTICE:</h3>
 								<div class="left-side">
@@ -113,15 +113,19 @@
 										<label>Office Contact Name</label>
 										<input name="office" id="office" type="text" size="20" value="" class="form-control" maxlength="50"/>
 									</div>
-									<div id="map"></div>
 								</div>
-								<button type="submit" class="btn-green">Save</button>
-								<button type="reset" class="btn-orange">Reset</button>
+								<!--<div ng-controller="MapCtrl">-->
+									<div id="map"></div>
+								<!--</div>-->
 								<div id="output"></div>
+								<div class="buttons">
+									<button type="submit" class="btn-green">Save</button>
+									<button type="reset" class="btn-orange">Reset</button>
+								</div>
 							</form>
 						</div>
-						<!--------------------------------------------------------------------------------- Angular JS Data Grid --------------------------------------------------------------------------------->
-						<div class="tab-pane active" id="edit">
+						<!--------------------------------------------------------------------------------- Angular JS Data Grid / Two Way Data Binding--------------------------------------------------------------------------------->
+						<div class="tab-pane" id="edit">
 							<h3>directory of registered physicians and practices:</h3>
 							<!--<div class="filter">
 								<h3>directory of registered physicians and practices:</h3>
@@ -134,7 +138,7 @@
 							<div ng-controller="physiciansControler">
 								<div>
 								    <div class="row control-bar">
-								        <div class="col-md-2">PageSize:<br/>
+								        <div class="col-md-2">Number of Rows:<br/>
 								            <!--<select ng-model="entryLimit" class="">
 								                <option>5</option>
 								                <option>10</option>
@@ -144,7 +148,7 @@
 								            </select>-->
 								            <div class="btn-group" id="btn-pagesize">
 											 <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
-											   <span data-bind="label">Select Page Size</span>&nbsp;<span class="caret"></span>
+											   <span data-bind="label">Select Number of Rows</span>&nbsp;<span class="caret"></span>
 											 </button>
 											 <ul class="dropdown-menu form-control" role="menu" id="pagesize">
 											    <li ng-click="OnItemClick('5')"><a href="#">5</a></li>
@@ -252,7 +256,8 @@
         <script src="js/bootstrap.js"></script>
         <script src="js/jquery.validate.js"></script>
         <script src="js/jquery.screwdefaultbuttonsV2.js"></script>
-        <script src="js/angular.min.js"></script>
+        <!-- Angular JS by Google -->
+       <script src="js/angular.min.js"></script>
 		<script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 		<!-- http://enscrollplugin.com -->
 		<script src="js/enscroll-0.6.1.min.js"></script>

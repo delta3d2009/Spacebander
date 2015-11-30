@@ -17,7 +17,7 @@ var map;
 var currentTab = "";
 
 $(document).ready(function() {
-	//Handler for .ready() called.
+	//Handler for .ready() called
 	if(!$(document.body).hasClass("body-iframe") && !$(document.body).hasClass("body-results") )//If Document is not the iframe
 	{
 		addDashboardTabs();
@@ -42,16 +42,16 @@ $(window).on('beforeunload', function ()
 });
 
 $(window).unload(function () {
-    console.log("Exit from Site. Closing Session. ");
+    console.log("Exit from Site. Closing Session.");
     closeSession();
 });
 
 function closeSession()
 {
     var posting = $.post("php/closeSession.php", {close:true});
-    posting.done(function( data ) {
+        posting.done(function( data ) {
     });
-    posting.fail(function( data ) {ssage();
+        posting.fail(function( data ) {
     });
 }
 
@@ -75,7 +75,7 @@ function addDashboardTabs()
 	 currentTab = e.target.hash.replace('#', '');
 	 window.location.hash = currentTab;
 	 $( document ).scrollTop( 0 );
-	 //e.relatedTarget // previous active tab  
+	   //e.relatedTarget // previous active tab  
 	});
 	
 	var url = window.location.hash;
@@ -111,6 +111,7 @@ function addDropDownCountries()
             .end()
          .children( '.dropdown-toggle' ).dropdown( 'toggle' );
       //return false;
+      updateMap();
    });
    $("#insertForm #btn-countries .dropdown-menu li a").closest( '.btn-group' ).find( '[data-bind="label"]' ).text( countryLocation );
    //$("#insertForm").find("input[name='state']").hide();
@@ -131,6 +132,7 @@ function addDropDownStates()
             .end()
          .children( '.dropdown-toggle' ).dropdown( 'toggle' );
       //return false;
+      updateMap();
    });
 }
 
@@ -277,13 +279,18 @@ function addEventsInsertForm()
 		resetInsertForm();
 	});
 	
-	$("#medicname, #address, #city, #zip, #state").keydown(function() {
-		fullLocation = $("#insertForm").find("input[name='mediccompany]").val() + " " + $("#insertForm").find("input[name='medicfirstname']").val() + " " + $("#insertForm").find("input[name='mediclastname']").val() + " " + $("#insertForm").find("input[name='address']").val() + " " + $("#insertForm").find("input[name='city']").val() + " " + $("#insertForm").find("input[name='zip']").val() + " " + $("#insertForm").find("input[name='state']").val() + " " + countryLocation;
-		//console.log(fullLocation);
-		searchLocations(fullLocation);
+	$("#mediccompany, #address, #city, #zip, #state").keydown(function() {
+		updateMap();
 	});
 	
 	initMap();
+}
+
+function updateMap()
+{
+    fullLocation = $("#insertForm").find("input[name='mediccompany']").val() +  " " + $("#insertForm").find("input[name='address']").val() + " " + $("#insertForm").find("input[name='city']").val() + " " + $("#insertForm").find("input[name='zip']").val() + " " + stateLocation + " " + countryLocation;
+    console.log(fullLocation);
+    searchLocations(fullLocation);
 }
 
 function addEventsUpdateForm(iframe)
@@ -611,7 +618,7 @@ function adjustUpdateIframe(formID, countryName, stateName)
      {
           $("#updateForm #btn-states").hide();
           $("#updateForm").find("input[name='state']").show();
-          alert($("#updateForm").find("input[name='state']").val());
+          //alert($("#updateForm").find("input[name='state']").val());
      }
 }
 
@@ -737,12 +744,13 @@ function numbersonly(myfield, e, dec)
  */
 
 function initialize() {
-  map = new google.maps.Map(document.getElementById("map"), {
+    map = new google.maps.Map(document.getElementById("map"), {
     center: new google.maps.LatLng(40, -100),
-    zoom: 3,
+    zoom: 4,
     mapTypeId: 'roadmap',
     mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU}
   });
+  infoWindow = new google.maps.InfoWindow();
 }
 
 function initMap() {
@@ -753,11 +761,14 @@ function initMap() {
      google.maps.event.trigger(map, "resize");
      map.setCenter(center); 
     
-     $("#map").width($("#insertForm").width());
-     $("#map").height($("#insertForm input").height() * 9); }); 
+     $("#map").width(400);
+     $("#map").height(200); 
      //Resize map on document ready
-     $("#map").width($("#insertForm").width());
-     $("#map").height($("#insertForm input").height() * 9);
+     //$("#map").width($("#insertForm").width());
+     //$("#map").height($("#insertForm input").height() * 9);
+    });
+     $("#map").width(400);
+     $("#map").height(200); 
 }
 
 
@@ -811,7 +822,7 @@ function locateAddress(results){
             itemCity = address_component.long_name;
         }
         if (address_component.types[0] == "administrative_area_level_3"){
-            itemCity = abddress_component.long_name;
+            itemCity = address_component.long_name;
         }
         if (address_component.types[0] == "city"){
             itemCity = address_component.long_name;
@@ -908,7 +919,8 @@ function addTableScroll()
         verticalScrolling: false,
         propagateWheelEvent:false,
         easingDuration:50,
-        zIndex:0
+        zIndex:0,
+        height:'auto'
     });
     //$('.horizontal-handle').css("left","0px");
     //$('#scrollbox').scrollLeft(0);
