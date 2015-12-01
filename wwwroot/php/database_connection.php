@@ -1,9 +1,9 @@
 <?php
 	// Create connection
 	//Test locally connect internal DataBase
-	$con = mysqli_connect("localhost", "root", "123queso", "Spacebander");
+	//$con = mysqli_connect("localhost", "root", "123queso", "Spacebander");
 	//LiveSite
-	//$con = mysqli_connect("localhost", "endospace", "GabySteve742@", "HealthCareProviders");
+	$con = mysqli_connect("localhost", "endospace", "GabySteve742@", "HealthCareProviders");
 	$con->set_charset("utf8");
 	// Check connection
 	if (mysqli_connect_errno())
