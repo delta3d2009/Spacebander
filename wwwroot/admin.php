@@ -39,7 +39,7 @@
 							<label>Password</label>
 							<input name="pass" type="password" size="32" value="" class="form-control"/>
 						</div>
-						<button class="btn-green btn-login" href="#" role="button">LOGIN</button>
+						<button class="btn-green btn-login" href="#" role="button" type="submit">LOGIN</button>
 						<a class="link" href="#" onClick='configModalForgot(); return false;'>Forgot Your Password</a>
 						<div id="output"></div>
 					</form>					

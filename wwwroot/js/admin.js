@@ -35,7 +35,7 @@ $(document).ready(function() {
 	}
 });
 
-$(window).on('beforeunload', function ()
+/*$(window).on('beforeunload', function ()
 {
     console.log("Exit from Site. Closing Session.");
     closeSession();
@@ -44,7 +44,7 @@ $(window).on('beforeunload', function ()
 $(window).unload(function () {
     console.log("Exit from Site. Closing Session.");
     closeSession();
-});
+});*/
 
 function closeSession()
 {
@@ -189,7 +189,7 @@ function addEventsInsertForm()
                 minlength: 7
             },
 			office: {
-                required: true,
+                required: false,
                 minlength: 2
             }
 		},
@@ -263,11 +263,13 @@ function addEventsInsertForm()
 			office = $form.find("input[name='office']").val();
 			lat = locationLat;
 			lng = locationLng;
-			var posting = $.post("php/insertPhysician.php", {company:company, firstname:firstname, lastname:lastname, address:address, suite:suite, city:city, state:state, zip:zip, country:country, phone:phone, cell:cell, email:email, fax:fax, office:office, lat:lat, lng:lng});
+			var posting = $.post("php/insertPhysician.php", {company:company, firstname:firstname, lastname:lastname, address:address, suite:suite, city:city, state:state, zip:zip, country:country, phone:phone, cell:cell, fax:fax, email:email, office:office, lat:lat, lng:lng});
 			posting.done(function( data ) {
 				//showThankYouMessage();
 				$( "#output" ).empty().append(data);
 				showModal("Physician sucessfully registered.","Physician information was saved into Data Base.","For Searching, Editing or Removing use other tabs.");
+				$('#modal-screen .modal-footer .btn-green').hide();
+				window.location.reload();
 			});
 			posting.fail(function( data ) {
 				//showThankYouMessage();
@@ -808,7 +810,6 @@ function locateAddress(results){
         if (address_component.types[0] == "route"){
             itemRoute = address_component.long_name;
         }
-    
         if (address_component.types[0] == "locality"){
             itemLocality = address_component.long_name;
         }
@@ -837,7 +838,7 @@ function locateAddress(results){
             itemZip = address_component.long_name;
         }
         if (address_component.types[0] == "administrative_area_level_1"){
-            itemState = address_component.short_name;
+            itemState = address_component.long_name;
         }
         //return false; // break the loop   
         
@@ -895,6 +896,8 @@ function setLocationIntoForm(itemStreetnumber, itemRoute, itemLocality, itemCoun
     }
     $form.find("input[name='state']").val(itemState);
     $( "#btn-countries button span:first-child" ).text(itemCountry);
+    $( "#btn-states button span:first-child" ).text(itemState);
+    countryLocation = itemCountry;
 }
 
 function addDropDownPageSize()

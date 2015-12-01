@@ -584,22 +584,23 @@ label.error {
     font-size:12px;
     color:#2C3E50;
     line-height: 14px;
-    max-height:100px !important;
+    max-height:120px !important;
 }
-
+pw
 #customInfoWindow{
     font-family: 'Raleway', sans-serif;
     font-size:12px;
     color:#2C3E50;
     line-height: 14px;
     width:150px;
+    height:auto;
     overflow:hidden;
 }
 
 #customInfoWindow p{
-    line-height: 14px;
+    line-height: 10px;
     margin-bottom: 2px;
-    font-size:12px;
+    font-size:10px;
 }
 
 

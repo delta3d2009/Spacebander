@@ -2,8 +2,8 @@
 	// Create connection
 	//Test locally connect internal DataBase
 	$con = mysqli_connect("localhost", "root", "123queso", "Spacebander");
-	//Luisslascr staging
-	//$con = mysqli_connect("localhost", "luissala_root", "123Queso-", "luissala_DB");
+	//LiveSite
+	//$con = mysqli_connect("localhost", "endospace", "GabySteve742@", "HealthCareProviders");
 	$con->set_charset("utf8");
 	// Check connection
 	if (mysqli_connect_errno())
