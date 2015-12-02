@@ -539,8 +539,15 @@ button{
 
 a.thumbnail:hover, a.thumbnail:focus{
     border: 1px solid #b1bac4;
-background-color: #FFF;
+    background-color: #FFF;
     text-decoration:none;
+}
+
+a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green{
+    color:#ffffff;
+    background-color:#4e43ba;
+    border: 1px solid #3e3594;
+    text-decoration: none;
 }
 
 
@@ -1059,6 +1066,7 @@ box-shadow: 5px 5px 1px #121922;
     height:565px;
     overflow:scroll;
     border: 1px solid #FFFFFF;
+    padding-top:18px;
 }
 
 .activate-mobile-location{
