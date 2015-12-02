@@ -340,7 +340,7 @@ table{
 .horizontal-handle {
     height: 40px;
     width:40px !important;
-    background: url("../img/desktop/scrubber-horizontal") no-repeat;
+    background: url("../img/desktop/scrubber-horizontal.jpg") no-repeat;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.6);
     -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.6);
     box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.6);
