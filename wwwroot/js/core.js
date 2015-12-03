@@ -8,7 +8,7 @@
 /* Global Variables */
 var currentPage = "";
 var breakpoint_mobile = '320px';
-var breakpoint_mobile_max = '768px';
+var breakpoint_mobile_max = '767px';
 var media_query = "screen and (min-width: " + breakpoint_mobile + ") and (max-width: " + breakpoint_mobile_max + ")";
 var isMobile;
 
@@ -16,20 +16,39 @@ $(document).ready(function() {
 	//Handler for .ready() called.
 	currentPage = document.body.className;
 	isMobile = window.matchMedia && window.matchMedia(media_query).matches;
-	
-	validateNavigation();
-	if(currentPage != "find-physicians-section")
-	{
-	   addEventsContactForm();
-	}
+
 	configModal();
 	configCarousel();
-	if(isMobile)
+	
+	addCTAEvents();
+	
+	if(isMobile && currentPage === "homepage-section")
 	{
-	     //configCarouselMobile();
+	     configCarouselMobile();
 	}
 	//pageName = getPageName(window.location.pathname);
 	//currentPage = $(".content").attr("id");
+	validateNavigation();
+    if(currentPage != "find-physicians-section")
+    {
+       addEventsContactForm();
+    }
+});
+
+$(window).bind("resize", function(){
+    var mobile_timer = false;
+    if(navigator.userAgent.match(/iPhone/i)) {
+        $('#viewport').attr('content','width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0');
+        $(window).bind('gesturestart',function () {
+            clearTimeout(mobile_timer);
+            $('#viewport').attr('content','width=device-width,minimum-scale=1.0,maximum-scale=10.0');
+        }).bind('touchend',function () {
+            clearTimeout(mobile_timer);
+            mobile_timer = setTimeout(function () {
+                $('#viewport').attr('content','width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0');
+            },1000);
+        });
+    }
 });
 
 function addEventsContactForm()
@@ -119,28 +138,13 @@ function resetContactForm()
 function setupNavigation()
 {
 	pageName = getPageName(window.location.pathname);
-	
-	/*switch(pageName){
-		case "index":
-			
-		break;
-		case "":
-			
-		break;
-		case "aging-with-influenza":
-			$('.navbar ul #item-1').find(".horizontal-line").show();
-			$('.navbar ul #item-1').find(".green-menu").css("color", "#FFFFFF");
-		break;
-		case "immune-response-and-influenza":
-			$('.navbar ul #item-2').find(".horizontal-line").show();
-			$('.navbar ul #item-2').find(".green-menu").css("color", "#FFFFFF");
-		break;
-		case "influenza-case-studies":
-			$('.navbar ul #item-3').find(".horizontal-line").show();
-			$('.navbar ul #item-3').find(".green-menu").css("color", "#FFFFFF");
-		break;
-		
-	}*/
+}
+
+function addCTAEvents()
+{
+    $('#cta_area .curtain').on( 'click', function( event ) {
+        window.location.href = $(this).find("a").attr("href");
+    });
 }
 
 /*Bootstrap Interstitial Modal Window*/
@@ -171,7 +175,7 @@ function configCarousel()
 {
 	$('.carousel').each(function(){
 		$(this).carousel({
-	        //interval: 5000
+	        interval: 15000,
 	        interval:false
 	    });
 	});

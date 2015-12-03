@@ -1,0 +1,145 @@
+ /*
+  * Under this break point all sizes smaller than 1024px
+  * include iPad and other tablet devices.
+  * @marlonjuc
+  * *
+  * */
+ 
+ @media screen and (max-width: 1024px) {
+     
+     /***************************************************** Nav *****************************************************/
+     .navbar{
+         min-height:55px;
+     }
+     
+     .navbar-inverse .navbar-nav > li > a{
+         padding:18px;
+     }
+     
+     .navbar-header{
+        max-width:40%;
+     }
+     
+     .navbar-brand img{
+         max-width:100%;
+         width:100%;
+     }
+     
+     .purple{
+         overflow:hidden;
+     }
+     
+     /***************************************************** Homepage *****************************************************/
+     
+     .carousel-caption{
+         width:44%;
+     }
+     
+    .carousel .item h1.slide1, .carousel .item h1.slide2, .carousel .item h1.slide3 {
+         font-size:2em;
+         line-height: 1em;
+         margin-bottom:20px;
+     }
+     
+     .carousel .item h2{
+          font-size:1.2em;
+          line-height: 0.9em;
+          margin-bottom:20px;
+     }
+     
+      #callouts{
+         width:70%;
+     }
+    
+     /***************************************************** About *****************************************************/
+    
+    .banner_bg_about{
+        background-size:cover;
+        padding-bottom:37.79%;
+        height:auto;
+    }
+    
+    #about_header .headline h1{
+        font-size: 2em;
+        line-height: 1em;
+        margin-bottom: 20px;
+    }
+    
+    #about_header .headline h2{
+        font-size: 1.2em;
+        line-height: 0.9em;
+        margin-bottom: 20px;
+    }
+    
+    
+     /***************************************************** Find a Physician *****************************************************/
+    
+    #find_header .banner_bg_find{
+        background-size:cover;
+        padding-bottom:37.79%;
+        height:auto;
+    }
+    
+    .headline{
+        width:50%;
+    }
+    
+    #find_header .headline h1{
+        font-size:2em;
+        line-height: 1em;
+        margin-bottom:20px;
+    }
+    
+    #find_header .headline h2{
+        font-size:1.2em;
+         line-height: 0.9em;
+         margin-bottom:20px;
+    }
+    
+    .find{
+        float:left;
+        margin-left:5%;
+        margin-right:5%;
+        width:90%;
+    }
+    
+    .controls{
+        margin-right: 5%;
+        margin-left:auto;
+        width: 356px;
+        min-width:356px;
+        float:left;
+    }
+    
+    #map{
+        float:right;
+        margin-top: 30px;
+    }
+    
+    .instructions{
+        float:left;
+        width:100%;
+    }
+    
+    #findForm{
+        width:auto;
+        margin-top:0;
+    }
+    
+    /*********************************************** CTA ***********************/
+   
+
+    
+     /***************************************************** Contact *****************************************************/
+    
+     .contact-container{
+        width:90%;
+    }
+    
+      /***************************************************** Terms and Privacy*****************************************************/
+     
+     #privacy .contact-container{
+         width:90%;
+     }
+     
+ }

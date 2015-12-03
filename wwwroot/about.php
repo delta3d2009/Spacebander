@@ -6,10 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>About SpaceBander<sup>&reg;</sup></title>
+        <title>About SpaceBander&reg;</title>
         <meta name="description" content="">
-        <!-- Viewport tags-->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
@@ -18,11 +16,13 @@
         <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/tablet.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <!-- Google fonts -->
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-
+		<!-- Viewport tags-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="about-section">
     	<div id="header" class="purple">
@@ -33,9 +33,9 @@
 		<div id="about_header">
     		<div class="container-fluid"> 
     			<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="banner_bg_about col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="headline col-lg-7 col-md-5 col-sm-12 col-xs-12">
+					<div class="">
+						<div class="banner_bg_about">
+							<div class="headline">
 								<h1>Say Hello to SpaceBander<sup>&reg;</sup> and Goodbye to your Hemorrhoids</h1>
 								<h2>Permanently eliminate your hemorrhoids in less than 2 minutes with the safe, effective, and painless SpaceBander<sup>&reg;</sup></h2>
 							</div>
@@ -97,15 +97,15 @@
 
 		<div id="cta_area" class="purple">
     		<div class="container-fluid">
-	    		<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+	    		<div class="cta">
+					<div class="doctor-picture">
 						<img class="center-block physician" src="img/desktop/spacebander_certified_physician_2.png">
 					</div>
-					<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">	
+					<div class="description">	
 			  				<h4>I’D LIKE TO PERMANENTLY</br>ELIMINATE MY HEMORRHOIDS</h4>
 			  				<h5>Please help me find a</br>SpaceBander<sup>&reg;</sup> Certified Physician</h5>
 			  		</div>
-			  		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 dark-purple">
+			  		<div class="dark-purple curtain">
 			  			<a href="about.php"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
 			  		</div>
 			  	</div>	

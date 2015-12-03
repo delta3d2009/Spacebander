@@ -8,8 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Contact SpaceBander&reg;</title>
         <meta name="description" content="">
-        <!-- Viewport tags-->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
@@ -18,11 +16,13 @@
         <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/tablet.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <!-- Google fonts -->
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-
+		<!-- Viewport tags-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="contact-section">
     	<div id="header" class="purple">
@@ -33,7 +33,7 @@
 		<div id="contact-us">
     		<div class="container-fluid">
     			<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="title">
 						<h1>Contact Us!</h1>
 					</div>
 				</div>

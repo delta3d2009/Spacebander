@@ -19,7 +19,7 @@
        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
     </head>
-    <body class="admin-section">
+    <body class="admin-section login-section">
   		<div id="header" class="purple">
 			<?php include 'includes/header.php';?>
 		</div>

@@ -8,15 +8,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Find Physicians</title>
         <meta name="description" content="">
-        <!-- Viewport tags-->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/tablet.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <!-- styles needed by jScrollPane -->
 		<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
         <!-- jQuery for Mobile CSS -->
@@ -26,6 +25,8 @@
         <!-- Google fonts -->
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+        <!-- Viewport tags-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
  	    <body class="find-physicians-section">
@@ -37,9 +38,9 @@
 		<div id="find_header">
     		<div class="container-fluid"> 
     			<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="banner_bg_find col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="headline col-lg-7 col-md-5 col-sm-12 col-xs-12">
+					<div class="">
+						<div class="banner_bg_find">
+							<div class="headline ">
 								<h1>Find a Physician in your area!</h1>
 								<h2>SpaceBander<sup>&reg;</sup> is inexpensive and completely covered by all insurance companies</h2>
 							</div>

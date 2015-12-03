@@ -1,0 +1,200 @@
+/*
+  * Under this break point all sizes smaller than 768px
+  * include iPhone and other mobile devices until 640px
+  * @marlonjuc
+  * *
+  * */
+ 
+ @media screen and (max-width: 767px) {
+     
+      /***************************************************** Nav *****************************************************/
+     
+     body{
+         min-width:640px;
+     }
+     
+     .navbar-right{
+         padding-right:0;
+         margin-right:0;
+     }
+     
+     .navbar{
+         min-height:55px;
+         margin-right:0;
+     }
+     
+     .navbar-nav{
+         margin-top:0;
+     }
+     
+     .navbar-collapse.in{
+         overflow:hidden;
+     }
+     
+     .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
+         margin-left:0;
+         margin-right:0;
+     }
+     
+     .navbar-inverse .navbar-nav > li > a{
+         padding-right:0;
+         font-size:20px;
+     }
+     
+      .navbar-header{
+        max-width:100%;
+     }
+     
+     .navbar-brand img{
+         width:84%;
+     }
+     
+     /***************************************************** Homepage *****************************************************/
+     
+     .carousel-caption{
+         width:44%;
+         margin-top: 48px;
+     }
+     
+    .carousel .item h1.slide1, .carousel .item h1.slide2, .carousel .item h1.slide3{
+         font-size:1.4em;
+         line-height: 1em;
+         margin-bottom:20px;
+     }
+     
+     .carousel .item h2{
+          font-size:0.9em;
+          line-height: 1em;
+          margin-bottom:40px;
+     }
+     
+     .carousel-indicators{
+         bottom: -50px;
+     }
+     
+     #callouts{
+         width:70%;
+     }
+     
+      /***************************************************** About *****************************************************/
+     
+     .banner_bg_about .headline{
+         width:63%;
+         text-shadow: 2px 2px #FFFFFF;
+     }
+     
+      /***************************************************** Footer *****************************************************/
+     
+     .bottom_links ul{
+         padding-left:0;
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+     
+     .bottom_links ul li:first-child a{
+         border-bottom: none !important;
+     }
+     
+     .bottom_links ul li:last-child a{
+         border-top: none !important;
+     }
+     
+     #footer{
+         padding-top:10px;
+     }
+     
+     #footer .bottom_links a.btn_footer{
+         width:100%;
+         float:left;
+         margin-left: 0;
+         margin-right: 0;
+         font-size:20px;
+     }
+     
+     #footer .bottom_links a.btn_footer:hover{
+         border: 1px solid #f2f2f2;
+     }
+     
+     .footer .hide-desktop{
+        display:block;
+    }
+    
+     /***************************************************** Find a Physician *****************************************************/
+    
+     .controls{
+        width:100%;
+    }
+    
+    #find-physicians label{
+        width:100%;
+        text-align:center;
+    }
+    
+    #findForm{
+        width:100%;
+    }
+    
+    #findForm label{
+        display:none;
+    }
+    
+    #findForm input{
+        display:none;
+    }
+    
+    .search-icon{
+        display:none;
+    }
+
+    .activate-mobile-location{
+        display:block;
+        margin-bottom: 40px;
+    }
+    
+     .activate-mobile-location:hover{
+        color:#FFFFFF;
+    }
+    
+    .current-location{
+        display:block;
+        margin-top: 80px;
+        color:#FFFFFF;
+    }
+    
+    .results{
+        width:100%;
+    }
+    
+    #map{
+        width:100% !important;
+    }
+    
+     /*********************************************** CTA ***********************/
+    
+    .cta{
+        height:290px;
+    }
+    
+    .doctor-picture{
+        float:none;
+    }
+    
+    .description{
+        width: 100%;
+    }
+    
+    #cta_area h4{
+        margin-top:0;
+    }
+    
+    .curtain{
+        width:100%;
+        height:80px;
+    }
+    
+    #cta_area img.go_find_btn{
+        margin-bottom: 23px;
+        margin-top: 23px;
+    }
+     
+ }

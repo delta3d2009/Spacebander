@@ -4,6 +4,10 @@
     min-height:100%;
 }
 
+.login-section{
+    min-width:1024px;
+}
+
 h1{
     color:#2c3e50;
     font-size:36px;
@@ -21,6 +25,10 @@ h1{
 .admin-section .admin-container{
     background-color:#222e3f;
     margin-bottom:88px;
+}
+
+.login-section .admin-container{
+    min-width:1024px;
 }
 
 .dashboard-section{
@@ -64,6 +72,8 @@ form{
     padding-right:32px;
     padding-top:32px;
     margin-top:48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #username{

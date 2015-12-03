@@ -21,7 +21,7 @@ echo "
 				</div>
 				<div class='row'>			
 					<div class='col-lg-10 col-lg-offset-1'> 
-						<p>USE OF THIS SITE SIGNIFIES YOUR AGREEMENT TO THE <a href='terms.php'>TERMS OF USE</a> AND TO OUR <a href='privacy.php'>PRIVACY POLICY.</a></p>
+						<p>USE OF THIS SITE SIGNIFIES YOUR AGREEMENT TO THE <br class='hide-desktop'/><a href='terms.php'>TERMS OF USE</a> AND TO OUR <a href='privacy.php'>PRIVACY POLICY.</a></p>
 						<p> &copy; SPACEBANDER CORPORATION 2015  •  ALL RIGHTS RESERVED </p>
 				    </div>
 			    </div> 

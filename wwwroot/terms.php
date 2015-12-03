@@ -18,7 +18,8 @@
         <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/tablet.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <!-- Google fonts -->
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -33,7 +34,7 @@
 		<div id="contact-us">
     		<div class="container-fluid">
     			<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="title">
 						<h1>Terms of Use</h1>
 					</div>
 				</div>
