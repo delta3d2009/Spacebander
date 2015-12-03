@@ -1038,6 +1038,11 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     padding-top: 18px;
 }
 
+.results p{
+    text-align:left;
+    margin-left:12px;
+}
+
 .activate-mobile-location {
     display: none;
 }

@@ -90,7 +90,7 @@
 						    <button type="submit" class="search-icon"></button>
 						 </form>
 						 	<label>PHYSICIANS CLOSEST TO YOUR ZIP CODE</label>
-						 	<div class="results scroll-pane"></div>
+						 	<div class="results scroll-pane"><p>Click the search icon and your results will show here…</p></div>
 						    <select id="locationSelect" style="width:100%;visibility:hidden"></select>
 						 </div>
 						 <div id="map"></div>
