@@ -38,7 +38,7 @@
 		<?php include 'includes/header.php';?>
 	</div>
     	 	<div class="admin-container dashboard">
-    	 		<h1>Staff Dashboard.</h1>
+    	 		<h1>Staff Dashboard</h1>
 	    	  	<!-- Main component for a primary marketing message or call to action -->
 			      <div class="content">
 			      	<div class="tabs-dashboard">
