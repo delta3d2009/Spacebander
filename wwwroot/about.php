@@ -106,7 +106,7 @@
 			  				<h5>Please help me find a</br>SpaceBander<sup>&reg;</sup> Certified Physician</h5>
 			  		</div>
 			  		<div class="dark-purple curtain">
-			  			<a href="about.php"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
+			  			<a href="find-physicians.php"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
 			  		</div>
 			  	</div>	
 			</div>	

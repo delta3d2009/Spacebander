@@ -760,6 +760,10 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     margin-top: 40px;
 }
 
+#contactForm #output{
+    margin-top:40px;
+}
+
 /*****************************************************************Privacy & Terms*****************************************************************/
 
 #privacy h6, #privacy p, #privacy ul, #privacy li {

@@ -28,13 +28,13 @@
 	{
 		try{
 			$from_email = $email;
-			$replay_email = "info@spacebander.com";
-			$message = "Dear user, \n\nYour have a new message from: '". $name . "' Phone: '". $room . "' Email: '". $email . "'\n Message: \n'" . $message . "' \n Regards";
+			$replay_email = "support@spacebander.com";
+			$message = "Dear user, \n\nYour have a new message from: '". $name . "'\n Phone: '". $room . "'\n Email: '". $email . "'\n Message: \n'" . $message . "' \n\n Regards";
 			
 			$headers = "From: " . $from_email . "\r\n";
-			$headers .= "CC: " . $replay_email . "\r\n";
+			//$headers .= "CC: " . $replay_email . "\r\n";
 			
-			mail("marlonjuc@hotmail.com", "Contact Form Message", $message, $headers );
+			mail("support@spacebander.com", "Contact Form Message", $message, $headers );
 		}catch( Exception $e){}
 	}
 ?>

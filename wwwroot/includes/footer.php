@@ -5,7 +5,7 @@ echo "
 				<div class='row bottom_links'>
 					<div class='col-lg-10 col-lg-offset-1 col-sm-12'>
 						<ul>
-							<li><a class='btn_footer' href='portal.php'>Physician Portal</a></li>
+							<li><a class='btn_footer' href='admin.php'>Physician Portal</a></li>
 							<li><a class='btn_footer' href='privacy.php'>Privacy Policy</a></li>
 							<li><a class='btn_footer' href='terms.php'>Terms of Use</a></li>
 						</ul>

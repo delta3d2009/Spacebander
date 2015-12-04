@@ -96,7 +96,7 @@
 
 
 		<?php include 'includes/footer.php';?>
-
+		<?php include 'includes/interstitial.php';?>
 	</div>	<!-- END Body===================== -->
 
     	<!-- Bootstrap core JavaScript

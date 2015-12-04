@@ -112,6 +112,7 @@ function addEventsContactForm()
 				//showThankYouMessage();
 				$( "#output" ).empty().append(data);
 				showModal("Your message was sucessfully sent.","We'll contact you as soon as possible.","Thanks.");
+				$('#modal-screen .modal-footer .btn-green').hide();
 			});
 			posting.fail(function( data ) {
 				//showThankYouMessage();
@@ -131,6 +132,7 @@ function resetContactForm()
 	$( "#contactForm textarea.error" ).css("border-color","#68DDDD");
 	$( "#contactForm input:text" ).val("");
 	$( "#contactForm #email").val("");
+	$( "#contactForm #confirmemail").val("");
 	$( "#contactForm #message").val("");
 	$( "#output" ).empty();
 }
