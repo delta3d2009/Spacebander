@@ -269,7 +269,10 @@ function addEventsInsertForm()
 				$( "#output" ).empty().append(data);
 				showModal("Physician sucessfully registered.","Physician information was saved into Data Base.","For Searching, Editing or Removing use other tabs.");
 				$('#modal-screen .modal-footer .btn-green').hide();
-				window.location.reload();
+				$("#modal-screen").on('hide.bs.modal', function (e) {
+                    window.location.reload();
+                 });
+				//window.location.reload();
 			});
 			posting.fail(function( data ) {
 				//showThankYouMessage();
