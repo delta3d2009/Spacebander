@@ -196,6 +196,8 @@ function addEventsResetForm()
             posting.done(function( data ) {
                 //showModal("Forgot your Password ?",data,"");
                 $( "#output" ).empty().append(data);
+                $("#resetForm").find("input[name='password']").prop( "disabled", true );
+                $("#resetForm").find("input[name='confirmpassword']").prop( "disabled", true );
             });
             posting.fail(function( data ) {
                 //showThankYouMessage();
@@ -203,7 +205,7 @@ function addEventsResetForm()
         }
     }); 
     
-    $( "#fresetForm button:reset" ).on( 'click', function( event ) {
+    $( "#resetForm button:reset" ).on( 'click', function( event ) {
         resetForgotForm();
     });
 }

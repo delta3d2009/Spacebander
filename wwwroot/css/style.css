@@ -1039,12 +1039,6 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     height: 565px;
     overflow: scroll;
     border: 1px solid #FFFFFF;
-    padding-top: 18px;
-}
-
-.results p{
-    text-align:left;
-    margin-left:12px;
 }
 
 .activate-mobile-location {
@@ -1055,12 +1049,17 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     display: none;
 }
 
-.result {
+.result { 
     margin-bottom: 18px;
     margin-left: 10px;
     text-align: left;
     float: left;
     width: 100%;
+}
+
+.results p{
+    text-align:left;
+    margin-left:12px;
 }
 
 .result .arrow {

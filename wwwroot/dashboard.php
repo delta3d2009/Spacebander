@@ -103,7 +103,7 @@
 									</div>
 									<div>
 										<label>Physician's Email</label>
-										<input name="email" id="email" type="email" size="20" value="" class="form-control" maxlength="30"/>
+										<input name="email" id="email" type="email" size="50" value="" class="form-control" maxlength="50"/>
 									</div>
 									<div>
 										<label>Physicians' Fax</label>

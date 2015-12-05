@@ -19,7 +19,7 @@ Country VARCHAR(50) NOT NULL,\
 Phone VARCHAR(20) NOT NULL,\
 Cell VARCHAR(20) NOT NULL,\
 Fax VARCHAR(20) NOT NULL,\
-Email VARCHAR(30) NULL,\
+Email VARCHAR(50) NULL,\
 Office VARCHAR(50) NULL,\
 Lat FLOAT(20,16) NOT NULL,\
 Lng FLOAT(20,16) NOT NULL,\
@@ -40,7 +40,7 @@ ID INT NOT NULL AUTO_INCREMENT, \
 FirstName VARCHAR(80) NOT NULL, \
 LastName VARCHAR(80) NOT NULL, \
 Phone VARCHAR(20) NOT NULL,\
-Email VARCHAR(30) NULL,\
+Email VARCHAR(50) NULL,\
 Message VARCHAR(200) NULL,\
 Date DATE NOT NULL,\
 PRIMARY KEY(ID)\
@@ -66,7 +66,7 @@ SELECT COUNT(Username) FROM Account WHERE Username = user AND Password = MD5(pas
 END;;\
 \
 DELIMITER ;;\
-CREATE PROCEDURE insertPhysician(IN paramCompany VARCHAR(50), IN paramFirstName VARCHAR(80), IN paramLastName VARCHAR(80), IN paramAddress VARCHAR(80), paramSuite VARCHAR(80), IN paramCity VARCHAR(40), IN paramState VARCHAR(40), IN paramZip INT, IN paramCountry VARCHAR(50), IN paramPhone VARCHAR(20), IN paramCell VARCHAR(20), IN paramFax VARCHAR(20), IN paramEmail VARCHAR(30), IN paramOffice VARCHAR(50), IN paramLat FLOAT, IN paramLng FLOAT )\
+CREATE PROCEDURE insertPhysician(IN paramCompany VARCHAR(50), IN paramFirstName VARCHAR(80), IN paramLastName VARCHAR(80), IN paramAddress VARCHAR(80), paramSuite VARCHAR(80), IN paramCity VARCHAR(40), IN paramState VARCHAR(40), IN paramZip INT, IN paramCountry VARCHAR(50), IN paramPhone VARCHAR(20), IN paramCell VARCHAR(20), IN paramFax VARCHAR(20), IN paramEmail VARCHAR(50), IN paramOffice VARCHAR(50), IN paramLat FLOAT, IN paramLng FLOAT )\
 BEGIN\
 DECLARE counter INT;\
 SET counter = 0;\
@@ -81,7 +81,7 @@ END IF;\
 END;;\
 \
 DELIMITER ;;\
-CREATE PROCEDURE insertContact(IN paramFirstName VARCHAR(80), IN paramLastName VARCHAR(80), IN paramPhone VARCHAR(20), IN paramEmail VARCHAR(30), IN paramMessage VARCHAR(200) )\
+CREATE PROCEDURE insertContact(IN paramFirstName VARCHAR(80), IN paramLastName VARCHAR(80), IN paramPhone VARCHAR(20), IN paramEmail VARCHAR(50), IN paramMessage VARCHAR(200) )\
 BEGIN\
 INSERT INTO Contact (FirstName, LastName, Phone , Email, Message, Date) VALUES (paramFirstName, paramLastName, paramPhone, paramEmail, paramMessage, CURDATE());\
 SELECT 0;\
@@ -256,7 +256,7 @@ END IF;\
 END;;\
 \
 DELIMITER ;;\
-CREATE PROCEDURE updatePhysician(IN paramID INT, IN paramCompany VARCHAR(50), IN paramFirstName VARCHAR(80), IN paramLastName VARCHAR(80), IN paramAddress VARCHAR(80), IN paramSuite VARCHAR(80), IN paramCity VARCHAR(40), IN paramState VARCHAR(40), IN paramZip INT, IN paramCountry VARCHAR(50), IN paramPhone VARCHAR(20), IN paramCell VARCHAR(20), IN paramFax VARCHAR(20), IN paramEmail VARCHAR(30), IN paramOffice VARCHAR(50) )\
+CREATE PROCEDURE updatePhysician(IN paramID INT, IN paramCompany VARCHAR(50), IN paramFirstName VARCHAR(80), IN paramLastName VARCHAR(80), IN paramAddress VARCHAR(80), IN paramSuite VARCHAR(80), IN paramCity VARCHAR(40), IN paramState VARCHAR(40), IN paramZip INT, IN paramCountry VARCHAR(50), IN paramPhone VARCHAR(20), IN paramCell VARCHAR(20), IN paramFax VARCHAR(20), IN paramEmail VARCHAR(50), IN paramOffice VARCHAR(50) )\
 BEGIN\
 IF EXISTS(SELECT ID FROM Physician WHERE ID = paramID)\
 THEN\

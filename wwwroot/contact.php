@@ -73,7 +73,7 @@
 								</div>
 								<div>
 									<label>Confirm Email</label>
-									<input name="confirmemail" id="confirmemail" type="email" size="20" value="" class="form-control" maxlength="30" required/>
+									<input name="confirmemail" id="confirmemail" type="email" size="50" value="" class="form-control" maxlength="50" required/>
 								</div>
 								<div>
 									<label>Phone *(<em>optional</em>)</label>

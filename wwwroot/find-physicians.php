@@ -65,7 +65,7 @@
 				      	<div class="controls">
 				      		
 				        <form id="findForm">
-				        		<label>SEARCH BY ZIP CODE</label>
+				        		<label>SEARCH BY ZIP CODE/CITY</label>
 						        <input type="text" id="addressInput" size="10" class="form-control"/>
 						        <a class="activate-mobile-location" href="#" onclick="searchLocations()">SEARCH BY LOCATION</a>
 						  <!--  <select id="radiusSelect" class="form-control dropdown-menu" role='menu'> 

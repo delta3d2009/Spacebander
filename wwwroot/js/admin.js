@@ -284,7 +284,7 @@ function addEventsInsertForm()
 		resetInsertForm();
 	});
 	
-	$("#mediccompany, #address, #city, #zip, #state").keydown(function() {
+	$("#mediccompany, #address, #city, #zip, #state").keyup(function() {
 		updateMap();
 	});
 	
@@ -320,7 +320,7 @@ function addEventsUpdateForm(iframe)
                 minlength: 5
             },
             suite: {
-                required: true,
+                required: false,
                 minlength: 5
             },
             city: {
@@ -344,7 +344,7 @@ function addEventsUpdateForm(iframe)
                 minlength: 7
             },
             fax: {
-                required: true,
+                required: false,
                 minlength: 7
             },
             email: {
@@ -352,7 +352,7 @@ function addEventsUpdateForm(iframe)
                 email: true
             },
             office: {
-                required: true,
+                required: false,
                 minlength: 2
             }
         },
@@ -543,7 +543,7 @@ function configModalForm(id)
 	$('#modal-screen .modal-footer button').text("Close");
 	$('#modal-screen .modal-footer .btn-green').hide();
 	$('#modal-screen .modal-body iframe').remove();
-	$('#modal-screen .modal-dialog').width(850);
+	$('#modal-screen .modal-dialog').width(1024);
 $('<iframe />');
     $('<iframe />', {
         name: 'update',
@@ -795,6 +795,8 @@ function locateAddress(results){
     //console.log(results[0])
     locationLat = center.lat();
     locationLng = center.lng();
+    
+    console.log("Latitude : " + locationLat + " Longitude : " + locationLng );
     
     var arrAddress = results[0].address_components;
     var itemRoute = '';

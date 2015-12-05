@@ -37,31 +37,31 @@
 			<div class='left-side'>
 				<div>
 					<label>Company</label>
-					<input name='company' id='company' type='text' size='80' value='".$row[1]."' class='form-control' maxlength='80' required/>
+					<input name='company' id='company' type='text' size='80' value='".htmlspecialchars($row[1], ENT_QUOTES)."' class='form-control' maxlength='80' required/>
 				</div>
 				<div>
 					<label>First Name</label>
-					<input name='medicfirstname' id='medicfirstname' type='text' size='80' value='".$row[2]."' class='form-control' maxlength='80' required/>
+					<input name='medicfirstname' id='medicfirstname' type='text' size='80' value='".htmlspecialchars($row[2], ENT_QUOTES)."' class='form-control' maxlength='80' required/>
 				</div>
 				<div>
 					<label>Last Name</label>
-					<input name='mediclastname' id='mediclastname' type='text' size='80' value='".$row[3]."' class='form-control' maxlength='80' required/>
+					<input name='mediclastname' id='mediclastname' type='text' size='80' value='".htmlspecialchars($row[3], ENT_QUOTES)."' class='form-control' maxlength='80' required/>
 				</div>
 				<div>
 					<label>Address</label>
-					<input name='address' id='address' type='text' size='80' value='".$row[4]."' class='form-control' maxlength='80' required/>
+					<input name='address' id='address' type='text' size='80' value='".htmlspecialchars($row[4], ENT_QUOTES)."' class='form-control' maxlength='80' required/>
 				</div>
 				<div>
 					<label>Suite</label>
-					<input name='suite' id='suite' type='text' size='80' value='".$row[5]."' class='form-control' maxlength='80' required/>
+					<input name='suite' id='suite' type='text' size='80' value='".htmlspecialchars($row[5], ENT_QUOTES)."' class='form-control' maxlength='80' required/>
 				</div>
 				<div>
 					<label>City</label>
-					<input name='city' id='city' type='text' size='40' value='".$row[6]."' class='form-control' maxlength='40'/>
+					<input name='city' id='city' type='text' size='40' value='".htmlspecialchars($row[6], ENT_QUOTES)."' class='form-control' maxlength='40'/>
 				</div>
 				<div>
 					<label>State</label>
-					<input name='state' id='state' type='text' size='2' value='".$row[7]."' class='form-control' maxlength='40'/>";
+					<input name='state' id='state' type='text' size='2' value='".htmlspecialchars($row[7], ENT_QUOTES)."' class='form-control' maxlength='40'/>";
 					include 'includes/states.php';
 				echo "</div></div>
 				<div class='right-side'><div>
@@ -74,23 +74,23 @@
 				echo"</div>	
 				<div>
 					<label>Office Phone</label>
-					<input name='phone' id='phone' type='text' size='20' value='".$row[10]."' class='form-control' maxlength='20'/>
+					<input name='phone' id='phone' type='text' size='20' value='".htmlspecialchars($row[10], ENT_QUOTES)."' class='form-control' maxlength='20'/>
 				</div>
 				<div>
 					<label>Physician's Cell</label>
-					<input name='cell' id='cell' type='text' size='20' value='".$row[11]."' class='form-control' maxlength='20'/>
+					<input name='cell' id='cell' type='text' size='20' value='".htmlspecialchars($row[11], ENT_QUOTES)."' class='form-control' maxlength='20'/>
 				</div>
 				<div>
 					<label>Office Fax</label>
-					<input name='fax' id='fax' type='text' size='20' value='".$row[12]."' class='form-control' maxlength='20'/>
+					<input name='fax' id='fax' type='text' size='20' value='".htmlspecialchars($row[12], ENT_QUOTES)."' class='form-control' maxlength='20'/>
 				</div>
 				<div>
 					<label>Email</label>
-					<input name='email' id='email' type='email' size='20' value='".$row[13]."' class='form-control' maxlength='30'/>
+					<input name='email' id='email' type='email' size='50' value='".$row[13]."' class='form-control' maxlength='50'/>
 				</div>
 				<div>
 					<label>Office Contact</label>
-					<input name='office' id='office' type='text' size='20' value='".$row[14]."' class='form-control' maxlength='50'/>
+					<input name='office' id='office' type='text' size='20' value='".htmlspecialchars($row[14], ENT_QUOTES)."' class='form-control' maxlength='50'/>
 				</div></div>
 				<button type='submit' class='btn-green'>Save</button>
 				<button type='reset' class='btn-orange'>Reset</button>

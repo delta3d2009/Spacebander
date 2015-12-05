@@ -13,7 +13,7 @@
 		$country = addslashes($_POST["country"]);
 		$phone = addslashes($_POST["phone"]);
 		$cell = addslashes($_POST["cell"]);
-		$email = addslashes($_POST["email"]);
+		$email = $_POST["email"];
 		$fax = addslashes($_POST["fax"]);
 		$office = addslashes($_POST["office"]);
 		$lat = $_POST["lat"];

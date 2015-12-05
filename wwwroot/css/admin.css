@@ -2,6 +2,7 @@
 
 .admin-section{
     min-height:100%;
+    min-width:1024px;
 }
 
 .login-section{
@@ -643,7 +644,7 @@ pw
 }
 
 iframe{
-    width:833px;
+    width:92%;
     height:692px;
     border:none;
 }
@@ -745,6 +746,7 @@ iframe#forgot{
 
 .forgot-section{
     min-height:200px;
+    min-width: auto;
 }
 
 .content-forgot{
@@ -781,7 +783,12 @@ iframe#forgot{
 }
 
 #resetForm button{  
-    margin-top:40px;
+    margin-top:20px;
+}
+
+#resetForm #output{
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 

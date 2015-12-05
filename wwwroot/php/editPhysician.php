@@ -14,7 +14,7 @@
 		$phone = addslashes($_POST["phone"]);
 		$cell = addslashes($_POST["cell"]);
 		$fax = addslashes($_POST["fax"]);
-		$email =addslashes( $_POST["email"]);
+		$email = $_POST["email"];
 		$office = addslashes($_POST["office"]);
 		//echo $id . $company.$firstname.$lastname.$address.$city.$state.$zip.$country.$phone.$email.$office.$web;
 		$result = mysqli_query($con, "CALL updatePhysician('$id','$company','$firstname','$lastname','$address','$suite','$city','$state','$zip','$country','$phone','$cell','$fax','$email','$office')");
