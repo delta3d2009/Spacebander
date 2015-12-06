@@ -57,7 +57,7 @@ function closeSession()
 
 function initSession()
 {
-    console.log("Starting Session...");
+    console.log("Starting Session...");//25 minutes of Session in milliseconds
     setTimeout(function(){ alert("Your session will expire in 5 minutes"); finishSession();}, 1500000);
 }
 
@@ -691,6 +691,7 @@ function addEventsExcelForm(){
 		if (selected.length > 0) {
 		    tableName = selected.val();
 		    window.open("php/create-spreadsheet.php?table=" + tableName);
+		    //window.location.href = "php/create-spreadsheet.php?table=" + tableName;
 		}
 		//var posting = $.post("php/create-spreadsheet.php", {table:tableName});
 		//posting.done(function( data ) {

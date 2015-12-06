@@ -25,7 +25,7 @@
 	{
 		try{
 			$url = "http://www.spacebander.com/reset.php?email=" .$email. "&token=" .$token.  "&user=" .$user. "&span=1928374650qazxplmn";
-			echo $url;
+			//echo $url;
 			$from_email = "support@spacebander.com";
 			//$replay_email = "support@spacebander.com";
 			$message = "Dear user, \n\nPlease follow this link in order to reset your password: \n'". $url . "'\n'\n Regards.";

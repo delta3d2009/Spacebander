@@ -58,6 +58,9 @@ END;;\
 \pard\pardeftab720
 \cf0 INSERT INTO Account (Username, Password, Email, Token) VALUES ('admin', MD5('123queso'), 'marlonjuc@hotmail.com', 0);\
 INSERT INTO Account (Username, Password, Email, Token) VALUES ('gaby', MD5('123queso'), 'gabrielasalas@gmail.com', 0);\
+INSERT INTO Account (Username, Password, Email, Token) VALUES ('steve.loonan', MD5('Steve2015!'), 'steve.loonan@spacebander.com', 0);\
+INSERT INTO Account (Username, Password, Email, Token) VALUES ('howard.loonan', MD5('Howard2015!'), 'howard.loonan@spacebander.com', 0);\
+INSERT INTO Account (Username, Password, Email, Token) VALUES ('devjit.nayar', MD5('Devjit2015!'), 'devjit.nayar@spacebander.com', 0);\
 \
 DELIMITER ;;\
 CREATE PROCEDURE getUserAccount(IN user VARCHAR(16), IN pass VARCHAR(32))\

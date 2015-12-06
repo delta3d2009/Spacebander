@@ -236,7 +236,7 @@
 									  <label for="optionsRadios1">Physicians</label>
 									</div>
 									<div class="radio">
-									  <input type="radio" name="optionsRadios" id="optionsRadios2" value="Subscribers">
+									  <input type="radio" name="optionsRadios" id="optionsRadios2" value="Subscriber">
 									  <label for="optionsRadios2">Subscribers</label>
 									</div>
 								</div>

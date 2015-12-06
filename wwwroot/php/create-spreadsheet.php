@@ -1,4 +1,22 @@
 <?php
+
+	header("Content-type: application/vnd.ms-excel");//check MYME Types at Server Side
+	header("Content-Transfer-Encoding:  binary");
+	header("Content-Description: File Transfer");
+	if(isset($_GET['table']))
+	{
+		$tableName = $_GET["table"];
+	}else
+	{
+		$tableName = "Physician";
+	}
+	$xls_filename = 'Report_'.$tableName.'s_'.date('Y-m-d').'.xls'; // Define Excel (.xls) file name
+	header("Content-Disposition: attachment; filename=$xls_filename");
+	header("Pragma: no-cache");
+	header("Expires: 0");
+	flush();
+	readfile($xls_filename );
+
 	require_once "database_connection.php";
 
 /*
@@ -8,14 +26,6 @@
  
 $header = '';
 $data ='';
-
-if(isset($_GET['table']))
-{
-	$tableName = $_GET["table"];
-}else
-{
-	$tableName = "Physician";
-}
  
 $result = mysqli_query($con, "CALL getTableInfo('$tableName')");
  
@@ -51,16 +61,8 @@ if ( $data == "" )
 {
     $data = "\nNo Record(s) Found!\n";                        
 }
- 
-// allow exported file to download forcefully
-$xls_filename = 'Report_'.$tableName.'s_'.date('Y-m-d').'.xls'; // Define Excel (.xls) file name
-header("Content-type: application/octet-stream");
-//header("Content-Type: application/xls");
-//header("Content-Disposition: attachment; filename=devzone_co_in_export.xls");
-header("Content-Disposition: attachment; filename=$xls_filename");
-header("Pragma: no-cache");
-header("Expires: 0");
-print "$header\n$data";
 
+print "$header\n$data";
+exit;
  
 ?>
