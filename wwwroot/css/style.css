@@ -760,8 +760,8 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     margin-top: 40px;
 }
 
-#contactForm #output{
-    margin-top:40px;
+#contactForm #output {
+    margin-top: 40px;
 }
 
 /*****************************************************************Privacy & Terms*****************************************************************/
@@ -827,8 +827,8 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     text-decoration: none;
 }
 
-#footer .hide-desktop{
-    display:none;
+#footer .hide-desktop {
+    display: none;
 }
 
 /******** social *************/
@@ -1053,7 +1053,7 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     display: none;
 }
 
-.result { 
+.result {
     margin-bottom: 18px;
     margin-left: 10px;
     text-align: left;
@@ -1061,9 +1061,9 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     width: 100%;
 }
 
-.results p{
-    text-align:left;
-    margin-left:12px;
+.results p {
+    text-align: left;
+    margin-left: 12px;
 }
 
 .result .arrow {

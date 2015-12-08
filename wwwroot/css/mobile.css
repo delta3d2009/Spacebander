@@ -8,7 +8,7 @@
 @media screen and (max-width: 767px) {
 
     /***************************************************** Nav *****************************************************/
-   
+
     body {
         min-width: 320px;
     }
@@ -36,8 +36,8 @@
         margin-right: 0;
     }
 
-    .navbar-inverse .navbar-brand{
-        padding-left:5%;
+    .navbar-inverse .navbar-brand {
+        padding-left: 5%;
     }
 
     .navbar-inverse .navbar-nav > li > a {
@@ -48,12 +48,12 @@
     .navbar-header {
         max-width: 100%;
     }
-    
-     .navbar-brand {
-         width:80%;
-         max-width:327px;
-     }
-     
+
+    .navbar-brand {
+        width: 80%;
+        max-width: 327px;
+    }
+
     .navbar-brand img {
         width: 100%;
     }
@@ -63,7 +63,7 @@
     .carousel-caption {
         width: 60%;
         margin-top: 3%;
-        margin-left:10%;
+        margin-left: 10%;
     }
 
     .carousel .item h1.slide1, .carousel .item h1.slide2, .carousel .item h1.slide3 {
@@ -76,15 +76,15 @@
         font-size: 4vw;
         line-height: 4vw;
         margin-bottom: 3%;
-        font-weight:normal;
+        font-weight: normal;
     }
-    
-    .carousel-control.left{
-        margin-left:0;
+
+    .carousel-control.left {
+        margin-left: 0;
     }
-    
-    .carousel-control.right{
-        margin-right:0;
+
+    .carousel-control.right {
+        margin-right: 0;
     }
 
     .carousel-indicators {
@@ -94,88 +94,88 @@
     #callouts {
         width: 90%;
     }
-    
-    .callout{
-        padding:8%;
-        float:left;
+
+    .callout {
+        padding: 8%;
+        float: left;
     }
-    
-    .callout h3{
+
+    .callout h3 {
         font-size: 5vw;
         line-height: 5vw;
-        text-transform:none;
-        margin-bottom:6%;
+        text-transform: none;
+        margin-bottom: 6%;
     }
-    
-    .callout p{
+
+    .callout p {
         font-size: 4vw;
-        line-height: 4.3vw;
-        height:50%;
-        margin-bottom:6%;
+        line-height: 4.3 vw;
+        height: 50%;
+        margin-bottom: 6%;
     }
-    
-    .callout .btn-green{
-        margin-left:25%;
+
+    .callout .btn-green {
+        margin-left: 25%;
     }
-    
+
     /*****************************************************Buttons*****************************************************/
-   
-   .btn-green{
-       width:30%;
-       font-size: 3vw;
-       line-height:3vw;
-       padding: 4% 4%;
-       float:left;
-       width:45%;
-   }
+
+    .btn-green {
+        width: 30%;
+        font-size: 3vw;
+        line-height: 3vw;
+        padding: 4% 4%;
+        float: left;
+        width: 45%;
+    }
 
     /***************************************************** About *****************************************************/
-   
-   .banner_bg_about{
-       padding-bottom:50%;
-   }
+
+    .banner_bg_about {
+        padding-bottom: 50%;
+    }
 
     .banner_bg_about .headline {
         width: 63%;
         text-shadow: 2px 2px #FFFFFF;
         margin-top: 3%;
-        margin-left:5%;
+        margin-left: 5%;
     }
-    
-    #about_header .headline h1{
+
+    #about_header .headline h1 {
         font-size: 5vw;
         line-height: 5vw;
         margin-bottom: 6%;
     }
-    
-    #about_header .headline h2{
+
+    #about_header .headline h2 {
         font-size: 4vw;
         line-height: 4vw;
-        font-weight:normal;
-        margin-top:0;
+        font-weight: normal;
+        margin-top: 0;
     }
-    
-     /***************************************************** Global *****************************************************/
-    
-    .content{
-        padding:10%;
+
+    /***************************************************** Global *****************************************************/
+
+    .content {
+        padding: 10%;
     }
-    
-    h3{
+
+    h3 {
         font-size: 5vw;
         line-height: 5vw;
     }
-    
-    h4{
+
+    h4 {
         font-size: 5vw;
         line-height: 5vw;
     }
-    
-    p{
+
+    p {
         font-size: 4vw;
-        line-height: 4.5vw;
+        line-height: 4.5 vw;
     }
-    
+
     /***************************************************** Footer *****************************************************/
 
     .bottom_links ul {
@@ -213,46 +213,46 @@
     }
 
     /***************************************************** Find a Physician *****************************************************/
-   
-  #find_header .banner_bg_find{
-       padding-bottom:50%;
-   }
-   
-   .find-physicians-section .content{
-       padding:5%;
-   }
-   
-   .find{
-       margin-left:0;
-       margin-right:0;
-       float:left;
-       width:100%;
-   }
-   
-   #find_header .headline {
+
+    #find_header .banner_bg_find {
+        padding-bottom: 50%;
+    }
+
+    .find-physicians-section .content {
+        padding: 5%;
+    }
+
+    .find {
+        margin-left: 0;
+        margin-right: 0;
+        float: left;
+        width: 100%;
+    }
+
+    #find_header .headline {
         width: 63%;
         text-shadow: 2px 2px #FFFFFF;
         margin-top: 3%;
-        margin-left:5%;
+        margin-left: 5%;
     }
-    
-    #find_header .headline h1{
+
+    #find_header .headline h1 {
         font-size: 5vw;
         line-height: 5vw;
         margin-bottom: 6%;
     }
-    
-    #find_header .headline h2{
+
+    #find_header .headline h2 {
         font-size: 4vw;
         line-height: 4vw;
-        font-weight:normal;
-        margin-top:0;
+        font-weight: normal;
+        margin-top: 0;
     }
 
     .controls {
         width: 100%;
-        min-width:100%;
-        margin-right:0;
+        min-width: 100%;
+        margin-right: 0;
     }
 
     #find-physicians label {
@@ -271,17 +271,17 @@
     #findForm input {
         display: none;
     }
-    
-    .instructions ol{
-        padding-left:5%;
+
+    .instructions ol {
+        padding-left: 5%;
     }
-    
-    .instructions ol li{
-        text-align:left;
+
+    .instructions ol li {
+        text-align: left;
     }
-    
-    .instructions h4{
-        font-weight:bold;
+
+    .instructions h4 {
+        font-weight: bold;
     }
 
     .search-icon {
@@ -305,13 +305,13 @@
 
     .results {
         width: 100%;
-        padding-top:10px;
-        height:70px;
+        padding-top: 10px;
+        height: 70px;
     }
 
     #map {
         width: 100% !important;
-        margin-top:0;
+        margin-top: 0;
     }
 
     /*********************************************** CTA ***********************/
@@ -341,27 +341,27 @@
         margin-bottom: 23px;
         margin-top: 23px;
     }
-    
+
     /*********************************************** Contact ***********************/
-   
-   .contact-section .content{
-       padding:0;
-       padding-top:5%;
-   }
-   
-   .contact-container{
-       padding:5%;
-       margin-bottom:5%;
-   }
-   
-   /*********************************************** Privacy and Terms ***********************/
-  
-  #privacy{
-      padding:5%;
-  }
-  
-   #privacy .contact-container{
-       width:100%;
-   }
+
+    .contact-section .content {
+        padding: 0;
+        padding-top: 5%;
+    }
+
+    .contact-container {
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    /*********************************************** Privacy and Terms ***********************/
+
+    #privacy {
+        padding: 5%;
+    }
+
+    #privacy .contact-container {
+        width: 100%;
+    }
 
 }
