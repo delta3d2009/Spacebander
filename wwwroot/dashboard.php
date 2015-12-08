@@ -138,7 +138,7 @@
 							<div ng-controller="physiciansControler">
 								<div>
 								    <div class="row control-bar">
-								        <div class="col-md-2">Number of Rows:<br/>
+								        <div class="rows-number">Number of Rows:<br/>
 								            <!--<select ng-model="entryLimit" class="">
 								                <option>5</option>
 								                <option>10</option>
@@ -158,16 +158,16 @@
 											 </ul>
 											</div>
 								        </div>
-								        <div class="col-md-3">
+								        <div class="input-container">
 								        	&nbsp;
 								            <input type="text" ng-model="search" ng-change="filter()" placeholder="SEARCH..." class="form-control" />
 								        </div>
-								        <div class="col-md-4">
+								        <div class="copy">
 								            <h5>Filtered {{ filtered.length }} of {{ totalItems}} total physicians</h5>
 								        </div>
 								    </div>
 								    <div class="row">
-								        <div id="scrollbox" class="col-md-12 table-container" ng-show="filteredItems > 0">
+								        <div id="scrollbox" class="table-container" ng-show="filteredItems > 0">
 								            <table class="table table-striped table-bordered">
 								            <thead>
 								            	<th>ID&nbsp;<a ng-click="sort_by('ID');"><i class="glyphicon glyphicon-sort"></i></a></th>

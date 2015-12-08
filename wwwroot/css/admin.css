@@ -1,5 +1,5 @@
 /*****************************************************************Login*****************************************************************/
-.tab-content
+
 .admin-section{
     min-height:100%;
     min-width:1200px;
@@ -186,7 +186,6 @@ a.link:hover, a.link:active, a.link:focus{
     padding:32px;
     min-height: 920px;
     overflow:hidden;
-    min-width:1100px;
 }
 
 .admin-container{
@@ -302,6 +301,22 @@ a.link:hover, a.link:active, a.link:focus{
 
 table{
     width:100%;
+}
+
+.rows-number{
+    float: left;
+    margin-right: 40px;
+    width: 200px;
+}
+
+.input-container{
+    float: left;
+    margin-right: 40px;
+    width: 400px;
+}
+
+.copy{
+    float: left;
 }
 
 /************** http://enscrollplugin.com/#demos **************/
