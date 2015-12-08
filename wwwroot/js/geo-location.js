@@ -314,6 +314,10 @@ function configInputField()
     });
 }
 
+function increaseResultsHeight()
+{
+    $(".results").height(400);
+}
 
 /*********** Mobile Geolocation ************/
 

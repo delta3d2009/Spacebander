@@ -15,7 +15,7 @@
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/tablet.css">
-        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <!-- styles needed by jScrollPane -->
 		<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
         <!-- jQuery for Mobile CSS -->
@@ -67,7 +67,7 @@
 				        <form id="findForm">
 				        		<label>SEARCH BY ZIP CODE/CITY</label>
 						        <input type="text" id="addressInput" size="10" class="form-control"/>
-						        <a class="activate-mobile-location" href="#" onclick="searchLocations()">SEARCH BY LOCATION</a>
+						        <a class="activate-mobile-location" href="#" onclick="increaseResultsHeight(); searchLocations();">SEARCH BY LOCATION</a>
 						  <!--  <select id="radiusSelect" class="form-control dropdown-menu" role='menu'> 
 						      <option value="25" selected>25mi</option>
 						      <option value="100">100mi</option>
