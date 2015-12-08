@@ -33,9 +33,28 @@ $(document).ready(function() {
     {
        addEventsContactForm();
     }
+    setViewPort();
 });
 
 $(window).bind("resize", function(){
+    //setViewPort();
+});
+
+window.document.addEventListener('orientationchange', function() {
+  var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
+  var viewportmeta = document.querySelector('meta[name="viewport"]');
+  if (iOS && viewportmeta) {
+    if (viewportmeta.content.match(/width=device-width/)) {
+      viewportmeta.content = viewportmeta.content.replace(/width=[^,]+/, 'width=1');
+    }
+    viewportmeta.content = viewportmeta.content.replace(/width=[^,]+/, 'width=' + window.innerWidth);
+  }
+  // If you want to hide the address bar on orientation change, uncomment the next line
+  // window.scrollTo(0, 0);
+}, false);
+
+/*function setViewPort()
+{
     var mobile_timer = false;
     if(navigator.userAgent.match(/iPhone/i)) {
         $('#viewport').attr('content','width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0');
@@ -48,8 +67,34 @@ $(window).bind("resize", function(){
                 $('#viewport').attr('content','width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0');
             },1000);
         });
-    }
-});
+    }    
+}*/
+
+function setViewPort()
+{
+    /*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+      var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width; //get proper width
+      var mw = 640; // min width of site
+      var ratio =  ww / mw; //calculate ratio
+      if( ww < mw){ //smaller than minimum size
+       $('#Viewport').attr('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww);
+      }else{ //regular size
+       $('#Viewport').attr('content', 'initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=yes, width=' + ww);
+      }
+    }   */
+    
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+var viewportmeta = document.querySelector('meta[name="viewport"]');
+if (viewportmeta) {
+    viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+    jQuery(document).ready(function() {
+        document.body.addEventListener('gesturestart', function () {
+            viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+        }, false);
+    });
+}
+}
+}
 
 function addEventsContactForm()
 {

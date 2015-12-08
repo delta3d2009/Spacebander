@@ -49,7 +49,7 @@
 						            <div class="carousel-caption">
 						              <h1 class="slide1">Say goodbye to your hemorrhoids</h1>
 						              <h2>Permanently eliminate your hemorrhoids</br>with the non-surgical SpaceBander<sup>&reg;</sup></h2>
-						              <p><a class="btn-green" href="about.php" role="button">LEARN MORE</a></p>
+						              <a class="btn-green" href="about.php" role="button">LEARN MORE</a>
 						            </div>
 					            </div>
 					        </div>
@@ -60,7 +60,7 @@
 						            <div class="carousel-caption">
 						                <h1 class="slide2">SpaceBander<sup>&reg;</sup> is quick, effective, and painless</h1>
 						                <h2>Eliminate your hemorrhoids in less than 2 minutes in the comfort of a doctor’s office</h2>
-						                <p><a class="btn-green" href="about.php" role="button">LEARN MORE</a></p>
+						                <a class="btn-green" href="about.php" role="button">LEARN MORE</a>
 						            </div>
 					       		 </div>
 							</div>
@@ -71,7 +71,7 @@
 						            <div class="carousel-caption">
 						                <h1 class="slide3">No more ineffective creams or painful surgery</h1>
 						                <h2>SpaceBander<sup>&reg;</sup> is an effective and painless procedure with no need for recovery time</h2>
-						                <p><a class="btn-green" href="about.php" role="button">LEARN MORE</a></p>
+						                <a class="btn-green" href="about.php" role="button">LEARN MORE</a>
 						            </div>
 					            </div>
 					        </div>
