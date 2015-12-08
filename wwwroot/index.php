@@ -48,7 +48,7 @@
 					            <div class="container">
 						            <div class="carousel-caption">
 						              <h1 class="slide1">Say goodbye to your hemorrhoids</h1>
-						              <h2>Permanently eliminate your hemorrhoids</br>with the non-surgical SpaceBander<sup>&reg;</sup></h2>
+						              <h2>Permanently eliminate your hemorrhoids with the non-surgical SpaceBander<sup>&reg;</sup></h2>
 						              <a class="btn-green" href="about.php" role="button">LEARN MORE</a>
 						            </div>
 					            </div>

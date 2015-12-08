@@ -827,6 +827,10 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     text-decoration: none;
 }
 
+#footer .hide-desktop{
+    display:none;
+}
+
 /******** social *************/
 
 #footer .bottom_links a.social-facebook {

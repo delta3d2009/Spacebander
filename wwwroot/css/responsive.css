@@ -61,21 +61,21 @@
     /***************************************************** Homepage *****************************************************/
 
     .carousel-caption {
-        width: 48%;
+        width: 60%;
         margin-top: 3%;
-        margin-left:15%;
+        margin-left:10%;
     }
 
     .carousel .item h1.slide1, .carousel .item h1.slide2, .carousel .item h1.slide3 {
         font-size: 5vw;
         line-height: 5vw;
-        margin-bottom: 6%;
+        margin-bottom: 3%;
     }
 
     .carousel .item h2 {
         font-size: 4vw;
         line-height: 4vw;
-        margin-bottom: 6%;
+        margin-bottom: 3%;
         font-weight:normal;
     }
     
@@ -97,6 +97,7 @@
     
     .callout{
         padding:5%;
+        float:left;
     }
     
     .callout h3{
@@ -111,6 +112,10 @@
         height:50%;
     }
     
+    .callout .btn-green{
+        margin-left:25%;
+    }
+    
     /*****************************************************Buttons*****************************************************/
    
    .btn-green{
@@ -118,6 +123,8 @@
        font-size: 3vw;
        line-height:3vw;
        padding: 4% 4%;
+       float:left;
+       width:45%;
    }
 
     /***************************************************** About *****************************************************/
