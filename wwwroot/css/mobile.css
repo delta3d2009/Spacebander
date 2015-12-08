@@ -120,7 +120,7 @@
 
     /*****************************************************Buttons*****************************************************/
 
-    .btn-green {
+    .btn-green, .btn-orange {
         width: 30%;
         font-size: 3vw;
         line-height: 3vw;
@@ -195,6 +195,10 @@
     #footer {
         padding-top: 10px;
     }
+    
+    #footer  p{
+        line-height: 20px;
+    }
 
     #footer .bottom_links a.btn_footer {
         width: 100%;
@@ -208,7 +212,7 @@
         border: 1px solid #f2f2f2;
     }
 
-    .footer .hide-desktop {
+    #footer .hide-desktop {
         display: block;
     }
 
@@ -353,7 +357,18 @@
         padding: 5%;
         margin-bottom: 5%;
     }
-
+    
+    .contact-container .btn-green{
+         margin-left:2.5%;
+         margin-right:5%;
+         margin-bottom:40px;
+     }
+     
+     .contact-container .green-reset {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
     /*********************************************** Privacy and Terms ***********************/
 
     #privacy {

@@ -84,7 +84,7 @@
 									<textarea name="message" id="message" class="form-control" rows="5" maxlength="200"></textarea>
 								</div>
 								<button type="submit" class="btn-green">Submit</button>
-								<button type="reset" class="btn-green">Reset</button>
+								<button type="reset" class="btn-green green-reset">Reset</button>
 								<div id="output"></div>
 							</form> 
 						

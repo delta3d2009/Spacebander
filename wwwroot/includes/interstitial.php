@@ -20,6 +20,6 @@ echo "
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<button type='button' class='btn btn-primary btn-lg' data-toggle='modal' data-target='#modal-screen' id='launch-modal'>Launch demo modal</button>
+<!--<button type='button' class='btn btn-primary btn-lg' data-toggle='modal' data-target='#modal-screen' id='launch-modal'>Launch demo modal</button>-->
 ";
 ?>
