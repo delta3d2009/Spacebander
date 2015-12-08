@@ -358,6 +358,10 @@
         margin-bottom: 5%;
     }
     
+    .contact-container-2 h3, .contact-container p{
+        line-height:5vw;
+    }
+    
     .contact-container .btn-green{
          margin-left:2.5%;
          margin-right:5%;
