@@ -58,7 +58,7 @@ function addEventsLoginForm(){
 
 function configModalForgot()
 {
-    showModal("Forgot Your Password","","");
+    showModal("Problems Login in?","","");
     $('#modal-screen p').hide();
     $('#modal-screen .modal-footer button').text("Close");
     $('#modal-screen .modal-footer .btn-green').hide();

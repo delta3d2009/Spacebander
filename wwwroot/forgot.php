@@ -18,6 +18,7 @@
     <body class="forgot-section body-iframe admin-section">
 		<div>
     	 	<div class='content-forgot'>
+    	 			<p>Type your email and we'll help you create a new password.</p>
 				<form id='forgotForm' autocomplete='off'>
 					<div>
 						<label>Email</label>

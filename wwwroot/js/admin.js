@@ -25,6 +25,7 @@ $(document).ready(function() {
 		addDropDownStates();
 		addDropDownPageSize();
 		addTableScroll();
+		addLogoutBtn();
 		addEventsInsertForm();
 		addEventsSearchForm();
 		configSearchForm();
@@ -933,4 +934,11 @@ function addTableScroll()
     });
     //$('.horizontal-handle').css("left","0px");
     //$('#scrollbox').scrollLeft(0);
+}
+
+function addLogoutBtn()
+{
+    $("#logout-btn").on( 'click', function( event ) {
+        window.location.href = "exit.php";
+    });
 }

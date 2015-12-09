@@ -46,7 +46,8 @@
 						  <li role="presentation" class="active"><a href="#insert" data-toggle="tab">Add New</a></li>
 						  <li role="presentation"><a href="#edit"data-toggle="tab">Directory</a></li>
 						  <li role="presentation"><a href="#report" data-toggle="tab">Run Reports </a></li>
-						  <a class="link" href="exit.php">Logout</a>
+						  <!--<a class="link" href="exit.php">Logout</a>-->
+						  <button class="btn-green" id="logout-btn">Logout</button>
 						</ul>
 					</div>
 					<div id="tab-content" class="tab-content">
@@ -170,21 +171,21 @@
 								        <div id="scrollbox" class="table-container" ng-show="filteredItems > 0">
 								            <table class="table table-striped table-bordered">
 								            <thead>
-								            	<th>ID&nbsp;<a ng-click="sort_by('ID');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Company&nbsp;<a ng-click="sort_by('Company');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>First Name&nbsp;<a ng-click="sort_by('FirstName');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Last Name&nbsp;<a ng-click="sort_by('LastName');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Address&nbsp;<a ng-click="sort_by('Address');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Suite #&nbsp;<a ng-click="sort_by('Suite');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>City&nbsp;<a ng-click="sort_by('City');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>State&nbsp;<a ng-click="sort_by('State');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Zip&nbsp;<a ng-click="sort_by('Zip');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Country&nbsp;<a ng-click="sort_by('Country');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Phone&nbsp;<a ng-click="sort_by('Phone');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Cell&nbsp;<a ng-click="sort_by('Cell');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Fax&nbsp;<a ng-click="sort_by('Fax');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Email&nbsp;<a ng-click="sort_by('Email');"><i class="glyphicon glyphicon-sort"></i></a></th>
-									            <th>Office Contact&nbsp;<a ng-click="sort_by('Office');"><i class="glyphicon glyphicon-sort"></i></a></th>
+								            	<th>ID&nbsp;<a ng-click="sort_by('ID');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Company&nbsp;<a ng-click="sort_by('Company');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>First Name&nbsp;<a ng-click="sort_by('FirstName');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Last Name&nbsp;<a ng-click="sort_by('LastName');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Address&nbsp;<a ng-click="sort_by('Address');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Suite #&nbsp;<a ng-click="sort_by('Suite');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>City&nbsp;<a ng-click="sort_by('City');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>State&nbsp;<a ng-click="sort_by('State');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Zip&nbsp;<a ng-click="sort_by('Zip');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Country&nbsp;<a ng-click="sort_by('Country');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Phone&nbsp;<a ng-click="sort_by('Phone');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Cell&nbsp;<a ng-click="sort_by('Cell');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Fax&nbsp;<a ng-click="sort_by('Fax');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Email&nbsp;<a ng-click="sort_by('Email');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
+									            <th>Office Contact&nbsp;<a ng-click="sort_by('Office');"><i class="caret"></i><i class="caret caret-reversed"></i></a></th>
 									            <th></th>
 									            <th></th>
 								            </thead>

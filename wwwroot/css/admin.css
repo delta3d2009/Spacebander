@@ -256,6 +256,12 @@ a.link:hover, a.link:active, a.link:focus{
     text-transform: uppercase;
 }
 
+#logout-btn {
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
 #map{
     float:left;
     height:200px;
@@ -478,12 +484,32 @@ h5{
     margin-top:0;
 }
 
+/**this is to center modal dialog vertically**/
+    
+.modal-dialog {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+
+.modal.fade .modal-dialog {
+    transition: top 0.4s ease-out;
+    transform: translate(0, -50%);
+    top: 0;
+}
+
+.modal.in .modal-dialog {
+    transform: translate(0, -50%);
+    top: 50%;
+}
+
 /*****************************************************************Insert form*****************************************************************/
 
 form#insertForm{
     height: 980px;
     width: 840px;
-    float:left;
 }
 
 #insertForm h3{
@@ -587,6 +613,11 @@ select option {
     color:#68dddd;
 }
 
+.caret.caret-reversed {
+    border-top-width: 0;
+    border-bottom: 7px solid #68dddd;
+}
+
 .dropdown-menu > li > a{
     text-decoration:none;
 }
@@ -618,7 +649,7 @@ label.error {
     line-height: 14px;
     max-height:120px !important;
 }
-pw
+
 #customInfoWindow{
     font-family: 'Raleway', sans-serif;
     font-size:12px;
@@ -784,6 +815,10 @@ iframe#forgot{
 
 #forgotForm #output{
     
+}
+
+.login-section #modal-screen .btn-orange{
+    display:block;
 }
 
 /*****************************************************************Reset Form*****************************************************************/
