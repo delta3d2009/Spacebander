@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Contact SpaceBander</title>
+        <title>SpaceBander Physicians Portal</title>
         <meta name="description" content="">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
@@ -34,7 +34,7 @@
     		<div class="container-fluid">
     			<div class="row">
 					<div class="title">
-						<h1>Contact Us!</h1>
+						<h1>Physicians Portal</h1>
 					</div>
 				</div>
 			</div>
@@ -42,53 +42,12 @@
 
 	<!-- Header================================================== -->
 	<!-- content ================================================== -->
-		<div id="contact-us" class="content green">
+		<div id="contact-us" class="content dark-gray">
     		<div class="container-fluid">
 					<div class="contact-container">
-						<div class="contact-container-2">
-							<img class="logo" src="img/desktop/spacebander-logo-sm.jpg" alt="SpaceBander Logo">
-							<h3>Spacebander Corporation</h3>
-								<p>Call • 908.334.1323</p>
-								<p>Send • PO Box 221, Belmar, NJ 07719</p>
-								<p>Email • <a href="mailto:support@spacebander.com">support@spacebander.com</a></p>
-						</div>
-							
-						<div>
-							<h3>I’m interested.</br>Please send me more information:</h3>
-							<h4>Your information is always kept private.</h4>
-						</div>
-
-							<form id="contactForm" class="contact-form" autocomplete="off">
-								<div>
-									<label>First Name</label>
-									<input name="contactfirstname" id="contactfirstname" type="text" size="80" value="" class="form-control" maxlength="80" required/>
-								</div>
-								<div>
-									<label>Last Name</label>
-									<input name="contactlastname" id="contactlastname" type="text" size="80" value="" class="form-control" maxlength="80" required/>
-								</div>
-								<div>
-									<label>Email</label>
-									<input name="email" id="email" type="email" size="20" value="" class="form-control" maxlength="30" required/>
-								</div>
-								<div>
-									<label>Confirm Email</label>
-									<input name="confirmemail" id="confirmemail" type="email" size="50" value="" class="form-control" maxlength="50" required/>
-								</div>
-								<div>
-									<label>Phone *(<em>optional</em>)</label>
-									<input name="phone" id="phone" type="text" size="20" value="" class="form-control" maxlength="20"/>
-								</div>	
-								<div>
-									<label>Message</label>
-									<textarea name="message" id="message" class="form-control" rows="5" maxlength="200"></textarea>
-								</div>
-								<button type="submit" class="btn-green">Submit</button>
-								<button type="reset" class="btn-green green-reset">Reset</button>
-								<div id="output"></div>
-							</form> 
 						
-						<h5>Thanks for your interest.</br>We will contact you shortly!</h5>
+						
+						<h2>Coming Soon!</h2>
 							
 					</div>
 			</div>

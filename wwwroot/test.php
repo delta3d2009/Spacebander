@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>About SpaceBander<sup>&reg;</sup></title>
+        <title>About SpaceBander</title>
         <meta name="description" content="">
         <!-- Viewport tags-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +49,7 @@
     <body>
     	<div class="test-container scroll-pane horizontal-only">
     		
-    		<p style="width: 1000px;">f your browser can scroll content, jQuery Scrollbar will scroll it too! Why? Because it does not emulate browser scroll behavior as many plugins do, but hides standard scrollbars and displays custom ones. You want to scroll with mouse middle button? - Just use it! You want to scroll with touch? - Do it! Your browser supports custom scroll behavior? - Use it too! Use standard or jQuery scrollTop/scrollLeft functions to get current scroll offset or scroll to any position. Use standard "scroll" event to handle content scrolling. No custom functions/events to know - everything done using standard scroll behavior. </p>
+    		<p style="width: 1000px;">If your browser can scroll content, jQuery Scrollbar will scroll it too! Why? Because it does not emulate browser scroll behavior as many plugins do, but hides standard scrollbars and displays custom ones. You want to scroll with mouse middle button? - Just use it! You want to scroll with touch? - Do it! Your browser supports custom scroll behavior? - Use it too! Use standard or jQuery scrollTop/scrollLeft functions to get current scroll offset or scroll to any position. Use standard "scroll" event to handle content scrolling. No custom functions/events to know - everything done using standard scroll behavior. </p>
     	</div>
 		<div id="map"></div>
     	<!-- Bootstrap core JavaScript

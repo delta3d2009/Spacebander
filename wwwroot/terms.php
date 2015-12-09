@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>SpaceBander<sup>&reg;</sup> Terms of Use</title>
+        <title>SpaceBander Terms of Use</title>
         <meta name="description" content="">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
@@ -43,7 +43,7 @@
 
 	<!-- Header================================================== -->
 	<!-- content ================================================== -->
-		<div id="privacy" class="content green">
+		<div id="privacy" class="content medium-gray">
     		<div class="container-fluid">
     			<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

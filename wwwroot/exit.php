@@ -26,7 +26,7 @@
 			<?php include 'includes/header.php';?>
 		</div>
 		<div class="content-exit">
-    		<h3>Your session has finished please login again.</h3>
+    		<h5>Your session has finished please login again.</h5>
     		<button class="btn-green btn-login" onclick="window.location.href='admin.php'" role="button">LOGIN</button>
 		</div>
 		 <?php include 'includes/footer.php';?>

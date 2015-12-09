@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Administrador Login</title>
+        <title>Staff Dashboard Login</title>
         <meta name="description" content="">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
@@ -24,7 +24,7 @@
 			<?php include 'includes/header.php';?>
 		</div>
 		<div class="admin-container">
-	    	  	<h1>Staff Dashboard.</h1>
+	    	  	<h1>Staff Dashboard</h1>
 	    	  	<!-- Main component for a primary marketing message or call to action -->
 			      <div class="content">
 			        <form id="signin">
@@ -40,7 +40,7 @@
 							<input name="pass" type="password" size="32" value="" class="form-control"/>
 						</div>
 						<button class="btn-green btn-login" href="#" role="button" type="submit">LOGIN</button>
-						<a class="link" href="#" onClick='configModalForgot(); return false;'>Forgot Your Password</a>
+						<a class="link" href="#" onClick='configModalForgot(); return false;'>Problems login in? Click here.</a>
 						<div id="output"></div>
 					</form>					
 			      </div><!-- End Content -->

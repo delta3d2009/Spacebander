@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Find Physicians</title>
+        <title>Find a SpaceBander Certified Physician</title>
         <meta name="description" content="">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
@@ -41,8 +41,8 @@
 					<div class="">
 						<div class="banner_bg_find">
 							<div class="headline ">
-								<h1>Find a Physician in your area!</h1>
-								<h2>SpaceBander<sup>&reg;</sup> is inexpensive and completely covered by all insurance companies</h2>
+								<h1>Find a SpaceBander<sup>&reg;</sup> Certified Physician in your area!</h1>
+								<h2>SpaceBander<sup>&reg;</sup> is inexpensive and completely covered by all insurance companies. Use this tool to find a Certified Physician near you.</h2>
 							</div>
 						</div>
 					</div>
@@ -60,7 +60,7 @@
 
 						<div class="find">
 						<h3>Search for Physicians in your area</h3>
-						      			<p>Are you ready to take the next step?  Find a physician in your area that is knowledgeable about hemorrhoids and certified to conduct the non-surgical SpaceBander<sup>&reg;</sup> procedure in the comfort of your doctor’s office.</p>
+						    <p>Are you ready to take the next step?  Find a physician in your area that is knowledgeable about hemorrhoids and certified to conduct the non-surgical SpaceBander<sup>&reg;</sup> procedure in the comfort of his or her office.</p>
 							        		
 				      	<div class="controls">
 				      		
@@ -99,7 +99,7 @@
 						 	<ol>
 							 	<li><strong>CLICK</strong> and <strong>DRAG</strong> to <strong>MOVE</strong> around the area of your map.</li>
 							 	<li>To <strong>ZOOM IN</strong> or <strong>ZOOM OUT</strong> use the plus and minus signs: <span class="zoom-icon"></span></br>located in the botton-right corner of the map.</li>
-							 	<li>You search results will show up highlighted with this icon: <span class="pin-icon"></span></li>
+							 	<li>Your search results will show up highlighted in the map with this icon: <span class="pin-icon"></span></li>
 							 	<li>Click on this icon to get an address <span class="address-icon"></span></li>
 							 	<li>You can toggle the view options of the map in the button located in the top left corner of the map: <span class="toggle-icon"></span></li>
 							</ol>
