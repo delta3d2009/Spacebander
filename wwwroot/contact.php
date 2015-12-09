@@ -48,9 +48,9 @@
 						<div class="contact-container-2">
 							<img class="logo" src="img/desktop/spacebander-logo-sm.jpg" alt="SpaceBander Logo">
 							<h3>Spacebander Corporation</h3>
-								<p>Call • 908.334.1323</p>
-								<p>Send • PO Box 221, Belmar, NJ 07719</p>
-								<p>Email • <a href="mailto:support@spacebander.com">support@spacebander.com</a></p>
+								<p>908.334.1323</p>
+								<p>PO Box 221, Belmar, NJ 07719</p>
+								<p><a href="mailto:support@spacebander.com">support@spacebander.com</a></p>
 						</div>
 							
 						<div>
