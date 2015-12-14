@@ -231,9 +231,9 @@ BEGIN\
 IF paramTableName = "Physician"\
 THEN\
 SELECT * FROM Physician;\
-ELSEIF paramTableName = "Account"\
+ELSEIF paramTableName = "Subscriber"\
 THEN\
-SELECT * FROM Account;\
+SELECT * FROM Contact;\
 ELSE\
 SELECT * FROM Physician;\
 END IF;\
