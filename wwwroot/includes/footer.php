@@ -22,7 +22,7 @@ echo "
 				<div class='row'>			
 					<div class='col-lg-10 col-lg-offset-1'> 
 						<p>USE OF THIS SITE SIGNIFIES YOUR AGREEMENT TO THE <br class='hide-desktop'/><a href='terms.php'>TERMS OF USE</a> <br class='hide-desktop'/>AND TO OUR <br class='hide-desktop'/><a href='privacy.php'>PRIVACY POLICY.</a></p>
-						<p> &copy; SPACEBANDER CORPORATION 2015  <br class='hide-desktop'/>•  ALL RIGHTS RESERVED </p>
+						<p> &copy; SPACEBANDER CORPORATION 2015-2016  <br class='hide-desktop'/>•  ALL RIGHTS RESERVED </p>
 				    </div>
 			    </div> 
 			</div>
