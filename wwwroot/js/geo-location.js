@@ -204,14 +204,16 @@ function searchLocationsNear(center) {
          var name = firstname + " " + lastname;
          var address = markerNodes[i].getAttribute("address");
          var city = markerNodes[i].getAttribute("city");
+         var state = markerNodes[i].getAttribute("state");
+         var zip = markerNodes[i].getAttribute("zip");
          var phone = markerNodes[i].getAttribute("phone");
          var distance = parseFloat(markerNodes[i].getAttribute("distance"));
          var latlng = new google.maps.LatLng(
               parseFloat(markerNodes[i].getAttribute("lat")),
               parseFloat(markerNodes[i].getAttribute("lng")));
 
-         createOption(company, name, address, phone, distance, i);
-         createMarker(latlng, company, name, address, city);
+         createOption(company, name, address, city, state, zip, phone, distance, i);
+         createMarker(latlng, company, name, address, city, state, zip);
          bounds.extend(latlng);
        }      
         map.fitBounds(bounds);
@@ -226,7 +228,7 @@ function searchLocationsNear(center) {
   });
 }
 
-function createMarker(latlng, company, name, address, city) {
+function createMarker(latlng, company, name, address, city, state, zip) {
   var html = "<b>" + company + "<br/>" + name + "</b> <br/>" + address + "<br/>" + city;
   var marker = new google.maps.Marker({
     map: map,
@@ -239,13 +241,14 @@ function createMarker(latlng, company, name, address, city) {
   markers.push(marker);
 }
 
-function createOption(company, name, address, phone, distance, num) {
+function createOption(company, name, address, city, state, zip, phone, distance, num) {
   /*var option = document.createElement("option");
   option.value = num;
   option.innerHTML = name + "(" + distance.toFixed(1) + ")";
   locationSelect.appendChild(option);*/
   num++;
-  var option = "<div class='result'><span class='arrow'></span><span class='index'>" + num + "</span><div class='info'><p>"+ company +"</p><p>"+ name +"</p><p>"+ address +"</p><p>" + phone + "</p><p>" + distance.toFixed(1) + " milles</p></div></div>";
+  var stateAbbrev = convertStateName(state, "abbrev");
+  var option = "<div class='result'><span class='arrow'></span><span class='index'>" + num + "</span><div class='info'><p>"+ company +"</p><p>"+ name +"</p><p>"+ address +"</p><p>"+ city +", "+ stateAbbrev + " "+ zip +"</p><p>" + phone + "</p><p>" + distance.toFixed(1) + " milles</p></div></div>";
   $(".results").append(option);
 }
 
@@ -396,3 +399,42 @@ function getAddressFromLatLang(lat,lng){
         });
 }
 
+/*Miscelaneous Function*/
+//Convert State Long Name to Abbreviation
+
+function convertStateName(name, to) {
+    var name = name.toUpperCase();
+    var states = new Array(                         {'name':'Alabama', 'abbrev':'AL'},          {'name':'Alaska', 'abbrev':'AK'},
+        {'name':'Arizona', 'abbrev':'AZ'},          {'name':'Arkansas', 'abbrev':'AR'},         {'name':'California', 'abbrev':'CA'},
+        {'name':'Colorado', 'abbrev':'CO'},         {'name':'Connecticut', 'abbrev':'CT'},      {'name':'Delaware', 'abbrev':'DE'},
+        {'name':'Florida', 'abbrev':'FL'},          {'name':'Georgia', 'abbrev':'GA'},          {'name':'Hawaii', 'abbrev':'HI'},
+        {'name':'Idaho', 'abbrev':'ID'},            {'name':'Illinois', 'abbrev':'IL'},         {'name':'Indiana', 'abbrev':'IN'},
+        {'name':'Iowa', 'abbrev':'IA'},             {'name':'Kansas', 'abbrev':'KS'},           {'name':'Kentucky', 'abbrev':'KY'},
+        {'name':'Louisiana', 'abbrev':'LA'},        {'name':'Maine', 'abbrev':'ME'},            {'name':'Maryland', 'abbrev':'MD'},
+        {'name':'Massachusetts', 'abbrev':'MA'},    {'name':'Michigan', 'abbrev':'MI'},         {'name':'Minnesota', 'abbrev':'MN'},
+        {'name':'Mississippi', 'abbrev':'MS'},      {'name':'Missouri', 'abbrev':'MO'},         {'name':'Montana', 'abbrev':'MT'},
+        {'name':'Nebraska', 'abbrev':'NE'},         {'name':'Nevada', 'abbrev':'NV'},           {'name':'New Hampshire', 'abbrev':'NH'},
+        {'name':'New Jersey', 'abbrev':'NJ'},       {'name':'New Mexico', 'abbrev':'NM'},       {'name':'New York', 'abbrev':'NY'},
+        {'name':'North Carolina', 'abbrev':'NC'},   {'name':'North Dakota', 'abbrev':'ND'},     {'name':'Ohio', 'abbrev':'OH'},
+        {'name':'Oklahoma', 'abbrev':'OK'},         {'name':'Oregon', 'abbrev':'OR'},           {'name':'Pennsylvania', 'abbrev':'PA'},
+        {'name':'Rhode Island', 'abbrev':'RI'},     {'name':'South Carolina', 'abbrev':'SC'},   {'name':'South Dakota', 'abbrev':'SD'},
+        {'name':'Tennessee', 'abbrev':'TN'},        {'name':'Texas', 'abbrev':'TX'},            {'name':'Utah', 'abbrev':'UT'},
+        {'name':'Vermont', 'abbrev':'VT'},          {'name':'Virginia', 'abbrev':'VA'},         {'name':'Washington', 'abbrev':'WA'},
+        {'name':'West Virginia', 'abbrev':'WV'},    {'name':'Wisconsin', 'abbrev':'WI'},        {'name':'Wyoming', 'abbrev':'WY'}
+        );
+    var returnthis = false;
+    $.each(states, function(index, value){
+        if (to == 'name') {
+            if (value.abbrev == name){
+                returnthis = value.name;
+                return false;
+            }
+        } else if (to == 'abbrev') {
+            if (value.name.toUpperCase() == name){
+                returnthis = value.abbrev;
+                return false;
+            }
+        }
+    });
+    return returnthis;
+}

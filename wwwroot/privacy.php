@@ -52,7 +52,7 @@
 							
 							<p>SpaceBander Corporation<sup>&reg;</sup> is concerned about your privacy and wants you to be familiar with how we collect, use, and disclose information. This Privacy Policy describes our practices in connection with information that we or our service providers collect through the Website operated and controlled by us from which you are accessing this Privacy Policy (each, the “Site”). By providing personal information to us or by using the Site, you agree to the terms and conditions of this Privacy Policy.</p>
 							<h6>INFORMATION YOU PROVIDE</h6>
-								<p>Some areas of the Site may ask you to submit personal information in order for you to benefit from the specified features (such as newsletters, tips, or order processing) or to participate in a particular activity (such as secure coupons or offers or promotions). You will be informed what information is required and what information is optional. We may combine the information you submit with other information we have collected from you, whether on- or offline, including, for example, your purchase history. We may also combine it with information we receive about you from other sources, publicly available information sources (such as publicly available social media), and other third parties.</p>
+								<p>Some areas of the Site may ask you to submit personal information in order for you to benefit from the specified features (such as newsletters, tips, or order processing) or to participate in a particular activity (such as secure coupons or offers or promotions). You will be informed what information is required and what information is optional. We may combine the information you submit with other information we have collected from you, whether online or offline, including, for example, your purchase history. We may also combine it with information we receive about you from other sources, publicly available information sources (such as publicly available social media), and other third parties.</p>
 							<h6>PASSIVE INFORMATION COLLECTION AND USE</h6>
 								<p>As you navigate around the Site, certain information can be passively collected (gathered without your actively providing the information), using various technologies. We and our third party service providers passively collect and use information in a variety of ways, including:</p>
 							<h6>THROUGH YOUR BROWSER</h6>
@@ -64,8 +64,8 @@
 							<h6>IP ADDRESS</h6>
 								<p>Your IP Address is a number that is automatically assigned to the computer that you are using by your Internet Service Provider. An IP Address is identified and may be logged in our server log files whenever a user visits the Site, along with the time of the visit and the page(s) that were visited. Collecting IP Addresses is standard practice on the Internet and is done by many websites. We use IP Addresses for purposes such as determining Site usage levels, helping to diagnose server problems, and administering the Site. We may collect similar information about your mobile device, such as a unique device identifier.</p>
 							<h6>HOW WE USE AND DISCLOSE INFORMATION</h6>
-
-							<ul>We use and disclose information you provide to us as described to you at the point of collection and also use information from or about you:
+								<p>We use and disclose information you provide to us as described to you at the point of collection and also use information from or about you:</p>
+							<ul>
 								<li>To respond to your inquiries and fulfill your requests.</li>
 								<li>To send you information regarding our relationship with you or regarding the Site, changes to our terms, conditions, and policies and/or other administrative in formation.</li>
 								<li>For our own business purposes, such as data analysis, new product development, improving our website, products, identifying Site usage trends, personalizing your experience on the Site by presenting products and offers tailored to you, and determining the effectiveness of our marketing. </li>
@@ -104,7 +104,7 @@
 								<p>We may change this Privacy Policy. Any changes to this Privacy Policy will become effective when we post the revised Privacy Policy on the Site. Your use of the Site following these changes means that you accept the revised Privacy Policy. This policy was last updated on October 31, 2015.
 							<h6>CONTACTING US</h6>
 								<p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:privacy@spacebander.com">privacy@spacebander.com.</a></p>
-								<p>Copyright © SpaceBander Corporation 2015. All Rights Reserved.</p>
+								<p class="copyright">Copyright © SpaceBander Corporation 2015-2016. All Rights Reserved.</p>
 
 
 						</div>

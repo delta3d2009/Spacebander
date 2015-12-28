@@ -222,8 +222,7 @@ function configCarousel()
 {
 	$('.carousel').each(function(){
 		$(this).carousel({
-	        interval: 15000,
-	        interval:false
+	        interval: 8000
 	    });
 	});
 }

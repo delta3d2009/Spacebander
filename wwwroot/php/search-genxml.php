@@ -32,6 +32,8 @@ while ($row = mysqli_fetch_array($result)){
   $newnode->setAttribute("address", $row['Address']);
   $newnode->setAttribute("suite", $row['Suite']);
   $newnode->setAttribute("city", $row['City']);
+  $newnode->setAttribute("state", $row['State']);
+  $newnode->setAttribute("zip", $row['Zip']);
   $newnode->setAttribute("phone", $row['Phone']);
   $newnode->setAttribute("lat", $row['Lat']);
   $newnode->setAttribute("lng", $row['Lng']);

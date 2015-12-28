@@ -36,7 +36,7 @@
 					<div class="">
 						<div class="banner_bg_about">
 							<div class="headline">
-								<h1>Say Hello to SpaceBander<sup>&reg;</sup> and Goodbye to your Hemorrhoids</h1>
+								<h1>Say hello to SpaceBander<sup>&reg;</sup> and goodbye to your hemorrhoids</h1>
 								<h2>Permanently eliminate your hemorrhoids in less than 2 minutes with the safe, effective, and painless SpaceBander<sup>&reg;</sup></h2>
 							</div>
 						</div>
@@ -53,7 +53,7 @@
     			<div class="row">
 					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 						<h3>WHAT ARE HEMORRHOIDS?</h3>
-						<p>If you have symptoms of rectal bleeding, itching, discomfort, or anal pain, you may be one of the millions of people experiencing symptoms of hemorrhoids. Hemorrhoids are swollen veins in the lower rectum and are very common.</p>
+						<p>If you have symptoms of rectal bleeding, itching, discomfort, or anal pain, you may be one of the millions of people experiencing symptoms of hemorrhoids. Hemorrhoids are swollen veins in the lower rectum. They are very common and occur equally in men and women of all ages. You may see them just outside the anal area or they may be hidden from view.</p>
 					</div>
 				</div>
 			</div>

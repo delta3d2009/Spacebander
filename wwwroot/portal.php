@@ -24,13 +24,13 @@
 		<!-- Viewport tags-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body class="contact-section">
+    <body class="portal-section">
     	<div id="header" class="purple">
 		    <?php include 'includes/header.php';?>
 		</div>
 
 	<!-- Header================================================== -->
-		<div id="contact-us">
+		<div>
     		<div class="container-fluid">
     			<div class="row">
 					<div class="title">
@@ -42,7 +42,7 @@
 
 	<!-- Header================================================== -->
 	<!-- content ================================================== -->
-		<div id="contact-us" class="content dark-gray">
+		<div class="content dark-gray">
     		<div class="container-fluid">
 					<div class="contact-container">
 						

@@ -76,7 +76,7 @@
 									<input name="confirmemail" id="confirmemail" type="email" size="50" value="" class="form-control" maxlength="50" required/>
 								</div>
 								<div>
-									<label>Phone *(<em>optional</em>)</label>
+									<label>Phone (<em>optional</em>)</label>
 									<input name="phone" id="phone" type="text" size="20" value="" class="form-control" maxlength="20"/>
 								</div>	
 								<div>

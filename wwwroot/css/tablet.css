@@ -40,6 +40,10 @@
         line-height: 1em;
         margin-bottom: 20px;
     }
+    
+    .carousel .item h2.slide1, .carousel .item h2.slide2, .carousel .item h2.slide3 {
+        width:auto;
+    }
 
     .carousel .item h2 {
         font-size: 1.2em;

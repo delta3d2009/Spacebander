@@ -364,6 +364,17 @@ sup {
     margin-bottom: 32px;
 }
 
+.carousel .item h2.slide1 {
+    width:480px;
+}
+
+.carousel .item h2.slide2 {
+    width:590px;
+}
+
+.carousel .item h2.slide3 {
+}
+
 .carousel-inner > .item > img {
     position: relative;
     top: 0;
@@ -789,6 +800,10 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
     line-height: 24px;
     font-weight: 400;
     letter-spacing: 0.5px;
+}
+
+#privacy p.copyright{
+    text-align:center;
 }
 
 /*****************************************************************Footer*****************************************************************/

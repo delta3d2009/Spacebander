@@ -14,8 +14,8 @@ echo "
 				<div class='row bottom_links'>
 					<div class='col-lg-8 col-lg-offset-2'>
 						<ul>
-							<li><a class='social-facebook' href='www.facebook.com/spacebander'><img src='img/desktop/icon_facebook.jpg'></a></li>
-							<li><a class='social-twitter' href='www.twitter.com/spacebander'><img src='img/desktop/icon_twitter.jpg'></a></li>	
+							<li><a class='social-facebook' href='http://www.facebook.com/spacebander' target='_blank'><img src='img/desktop/icon_facebook.jpg'></a></li>
+							<li><a class='social-twitter' href='http://www.twitter.com/spacebander' target='_blank'><img src='img/desktop/icon_twitter.jpg'></a></li>	
 						</ul>
 					</div>
 				</div>
