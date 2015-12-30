@@ -67,7 +67,7 @@
 								<p>We use and disclose information you provide to us as described to you at the point of collection and also use information from or about you:</p>
 							<ul>
 								<li>To respond to your inquiries and fulfill your requests.</li>
-								<li>To send you information regarding our relationship with you or regarding the Site, changes to our terms, conditions, and policies and/or other administrative in formation.</li>
+								<li>To send you information regarding our relationship with you or regarding the Site, changes to our terms, conditions, and policies and/or other administrative information.</li>
 								<li>For our own business purposes, such as data analysis, new product development, improving our website, products, identifying Site usage trends, personalizing your experience on the Site by presenting products and offers tailored to you, and determining the effectiveness of our marketing. </li>
 							</ul>
 
