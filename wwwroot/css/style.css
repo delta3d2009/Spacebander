@@ -677,6 +677,9 @@ a.thumbnail:hover .btn-green, a.thumbnail:focus .btn-green {
 
 /*****************************************************************CONTACT*****************************************************************/
 
+body.contact-section{
+     font-family: 'Lato', sans-serif;
+}
 .contact-container {
     height: auto;
     padding: 32px;
