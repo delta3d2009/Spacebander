@@ -1,14 +1,16 @@
 Health Care Providers. For Seniors.
 
-Consumer in US Clients.
+Eng. Marlon Ulate. Consumer in US Clients.
 
 
 Built with MySQl/PHP/AngularJS/HTML/CSS3
 
 
-Spacebander Corporation.
+Property of Spacebander Corporation.
 
 Belmar, New Jersey.
+
+2016. All rights reserved
 
 
 ***{}{}{}***
