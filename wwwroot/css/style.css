@@ -951,9 +951,15 @@ body.contact-section{
     margin-top: 48px;
 }
 
+.instructions h4 {
+    text-align: left;
+}
+
 .instructions ol {
     margin-top: 24px;
+    text-align: left;
 }
+
 
 .instructions ol li {
     margin-bottom: 16px;
@@ -980,6 +986,14 @@ body.contact-section{
     background-repeat: no-repeat;
     height: 24px;
     width: 52px;
+    display: inline-block;
+}
+.yellow-person-icon {
+    background-image: url("../img/desktop/map-yellow-person-icon.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
     display: inline-block;
 }
 

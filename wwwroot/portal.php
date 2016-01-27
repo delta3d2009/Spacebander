@@ -34,7 +34,7 @@
     		<div class="container-fluid">
     			<div class="row">
 					<div class="title">
-						<h1>Physicians Portal</h1>
+						<h1>Physician Portal</h1>
 					</div>
 				</div>
 			</div>

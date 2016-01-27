@@ -100,6 +100,7 @@
 							 	<li><strong>CLICK</strong> and <strong>DRAG</strong> to <strong>MOVE</strong> around the area of your map.</li>
 							 	<li>To <strong>ZOOM IN</strong> or <strong>ZOOM OUT</strong> use the plus and minus signs: <span class="zoom-icon"></span></br>located in the botton-right corner of the map.</li>
 							 	<li>Your search results will show up highlighted in the map with this icon: <span class="pin-icon"></span></li>
+							 	<li>To get the Street View mode, drag and drop the yellow person icon <span class="yellow-person-icon"></span> (located at the bottom-right corner) on the map. You can move around the area using the arrows and compass icon. To go back to the map view, click on the back arrow at the top-left corner of the map.</li>
 							 	<li>Click on this icon to get an address <span class="address-icon"></span></li>
 							 	<li>You can toggle the view options of the map in the button located in the top left corner of the map: <span class="toggle-icon"></span></li>
 							</ol>
