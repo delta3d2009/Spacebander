@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en-US"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
@@ -14,12 +14,15 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- jQuery for Mobile CSS -->
         <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+        <!-- Video JS Styles -->
+        <link rel='stylesheet prefetch' href='css/vendor/video-js.css'>
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/tablet.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/video-player.css">
         <!-- Google fonts -->
-		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 		<!-- Viewport tags-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,17 +89,39 @@
 					        <span class="sr-only">Next</span>
 					    </a>
 					</div>
-	<!-- Carousel
+	         <!-- Carousel
 					    ================================================== -->
 
-			
+
 			</div>
 		</div><!--  slider================================================== -->
 
-
+    <!--  Video Player ================================================== -->
+    <div id="video-player-container">
+    <!--<script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        var options = {
+            id: "https://player.vimeo.com/video/201723679",
+            width: 1024,
+            height: 576,
+            color: "61d7d5"
+        };
+        var player = new Vimeo.Player('video-player-container', options);
+        player.setVolume(0);
+        player.on('play', function() {
+            console.log('played the video!');
+        });
+    </script>-->
+      <!--<video id="video-homepage" class="video-js" controls preload="none" width="1024px" height="576px"
+       poster="img/desktop/video-homepage-poster.jpg" data-setup='{ "aspectRatio":"640:360", "playbackRates": [1, 1.5, 2] }'>
+         <source src="videos/Spacebander_60secPatient_08_HD.mp4" type='video/mp4'>
+         <source src="videos/Spacebander_60secPatient_08_Web.webm" type='video/webm'>
+       </video>-->
+     </div>
+    <!--  Video Player ================================================== -->
 		<div id="callouts" class="container-fluid">
     		<div class="callouts row">
-			
+
 	        	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 	        		<a href="about.php" class="callout thumbnail ">
 	        			<div>
@@ -135,15 +160,15 @@
 					<div class="doctor-picture">
 						<img class="center-block physician" src="img/desktop/spacebander_certified_physician.png">
 					</div>
-					<div class="description">	
+					<div class="description">
 			  				<h4>I’D LIKE TO PERMANENTLY</br>ELIMINATE MY HEMORRHOIDS</h4>
 			  				<h5>Please help me find a</br>SpaceBander<sup>&reg;</sup> Certified Physician</h5>
 			  		</div>
 			  		<div class="dark-purple curtain">
 			  			<a href="find-physicians.php"><img class="center-block go_find_btn" src="img/desktop/btn_go_to_find.png"></a>
 			  		</div>
-			  	</div>	
-			</div>	
+			  	</div>
+			</div>
 		</div><!-- End Row-->
 
 		<?php include 'includes/footer.php';?>
@@ -163,16 +188,16 @@
 					<div class="col-lg-8 col-lg-offset-2">
 						<ul>
 							<li><a class="social-facebook" href="www.facebook.com/spacebander"><img src="img/desktop/icon_facebook.jpg"></a></li>
-							<li><a class="social-twitter" href="www.twitter.com/spacebander"><img src="img/desktop/icon_twitter.jpg"></a></li>	
+							<li><a class="social-twitter" href="www.twitter.com/spacebander"><img src="img/desktop/icon_twitter.jpg"></a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="row">			
-					<div class="col-lg-10 col-lg-offset-1"> 
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1">
 						<p>USE OF THIS SITE SIGNIFIES YOUR AGREEMENT TO THE <a href="terms.php">TERMS OF USE</a> AND TO OUR <a href="privacy.php">PRIVACY POLICY.</a></p>
 						<p> &copy; SPACEBANDER CORPORATION 2015  •  ALL RIGHTS RESERVED </p>
 				    </div>
-			    </div> 
+			    </div>
 			</div>
 		</div>   footer===================== -->
 
@@ -181,10 +206,12 @@
     	<!-- Bootstrap core JavaScript
     	================================================= -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="js/jquery-1.11.0.min.js"></script>
-        <!--<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
-        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+        <!--<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>-->
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <!-- Video JS -->
+        <script src="js/vendor/video.js" type="text/javascript"></script>
         <!-- Custom Script -->
-        <script src="js/core.js"></script>
+        <script src="js/core.js" type="text/javascript"></script>
     </body>
 </html>
