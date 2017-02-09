@@ -1,7 +1,7 @@
 <?php
 	// Create connection
 	//Test locally connect internal DataBase
-	//$con = mysqli_connect("localhost", "root", "123queso", "Spacebander");
+	//$con = mysqli_connect("localhost", "root", "root", "Spacebander");
 	//LiveSite
 	$con = mysqli_connect("localhost", "", "", "");
 	$con->set_charset("utf8");

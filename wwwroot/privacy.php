@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en-US"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
@@ -47,9 +47,9 @@
     		<div class="container-fluid">
     			<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						
+
 						<div class="contact-container">
-							
+
 							<p>SpaceBander Corporation<sup>&reg;</sup> is concerned about your privacy and wants you to be familiar with how we collect, use, and disclose information. This Privacy Policy describes our practices in connection with information that we or our service providers collect through the Website operated and controlled by us from which you are accessing this Privacy Policy (each, the “Site”). By providing personal information to us or by using the Site, you agree to the terms and conditions of this Privacy Policy.</p>
 							<h6>INFORMATION YOU PROVIDE</h6>
 								<p>Some areas of the Site may ask you to submit personal information in order for you to benefit from the specified features (such as newsletters, tips, or order processing) or to participate in a particular activity (such as secure coupons or offers or promotions). You will be informed what information is required and what information is optional. We may combine the information you submit with other information we have collected from you, whether online or offline, including, for example, your purchase history. We may also combine it with information we receive about you from other sources, publicly available information sources (such as publicly available social media), and other third parties.</p>
@@ -70,12 +70,13 @@
 								<li>To send you information regarding our relationship with you or regarding the Site, changes to our terms, conditions, and policies and/or other administrative information.</li>
 								<li>For our own business purposes, such as data analysis, new product development, improving our website, products, identifying Site usage trends, personalizing your experience on the Site by presenting products and offers tailored to you, and determining the effectiveness of our marketing. </li>
 							</ul>
-
-							<ul>We also disclose information collected through the Site to:
+              <p>We also disclose information collected through the Site to:</p>
+							<ul>
 								<li>Our third party service providers, who provide services, such as website hosting and moderating, mobile application hosting, data analysis, payment processing, order fulfillment, infrastructure provision, IT services, customer service, email and direct mail delivery services, credit card processing and other services.</li>
 								<li>A third party in the event of any reorganization, merger, sale, joint venture, assignment, transfer, or other disposition of all or any portion of our business, assets, or stock, including in connection with any bankruptcy or similar proceedings.</li>
 							</ul>
-							<ul>In addition, we use and disclose information collected through the Site as we believe necessary or appropriate:
+              <p>In addition, we use and disclose information collected through the Site as we believe necessary or appropriate:</p>
+							<ul>
 								<li>As permitted by applicable law, including laws outside your country of residence.</li>
 								<li>To comply with legal process.</li>
 								<li>To respond to requests from public and government authorities, including public and government authorities outside your country of residence.</li>
@@ -104,7 +105,7 @@
 								<p>We may change this Privacy Policy. Any changes to this Privacy Policy will become effective when we post the revised Privacy Policy on the Site. Your use of the Site following these changes means that you accept the revised Privacy Policy. This policy was last updated on October 31, 2015.
 							<h6>CONTACTING US</h6>
 								<p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:privacy@spacebander.com">privacy@spacebander.com.</a></p>
-								<p class="copyright">Copyright © SpaceBander Corporation 2015-2016. All Rights Reserved.</p>
+								<p class="copyright">Copyright © SpaceBander Corporation 2015-2017. All Rights Reserved.</p>
 
 
 						</div>

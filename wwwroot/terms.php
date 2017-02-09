@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en-US"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
@@ -47,9 +47,9 @@
     		<div class="container-fluid">
     			<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						
+
 						<div class="contact-container">
-							
+
 							<p>These Terms of Use are a binding agreement between you and SpaceBander Corporation, and govern your access and use of the Site, which includes any information, tools, products, services and other content (together, "Content") available on or through the Site.</p>
 							<p>Please read these Terms of Use carefully before entering the Site. Each time you enter the Site, your use indicates your full acceptance of and agreement to abide by these Terms of Use in their then current form. If you do not accept the Terms of Use stated in these Terms of Use, please exit the Site.</p>
 							<p>As we may revise the Terms of Use from time to time, you should review them periodically.</p>
@@ -92,7 +92,7 @@
 							<p>We may change these Terms of Use. Any changes to these Terms of Use will become effective when we post the revised Terms of Use on the Site. Your use of the Site following these changes means that you accept the revised Terms of Use. These Terms of Use were last updated on October 31, 2015.</p>
 							<h6>CONTACTING US</h6>
 							<p>If you have any questions about these Terms of Use, please contact us at: <a href="mailto:legal@spacebander.com">legal@spacebander.com.</a></p>
-							<p class="copyright">Copyright &copy; SpaceBander Corporation 2015-2016. All Rights Reserved.</p>
+							<p class="copyright">Copyright &copy; SpaceBander Corporation 2015-2017. All Rights Reserved.</p>
 
 
 						</div>

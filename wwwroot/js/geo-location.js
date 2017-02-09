@@ -1,8 +1,8 @@
 /*
  * Eng. Marlon Ulate Caruzo.
  * March 2015
- * 
- * 
+ *
+ *
  */
 
 /* Global Variables */
@@ -14,6 +14,7 @@ var radius = 500;// default radius distance in milles
 var mapContainerWidth = 0;
 var mapContainerHeight = 0;
 var address;
+var api_key = "AIzaSyCMz8cgj2HUN1yhqmlDLDmStO_so32iaNw";
 
 var breakpoint_mobile = '320px';
 var breakpoint_mobile_max = '768px';
@@ -41,27 +42,27 @@ $(document).ready(function() {
             mapContainerWidth = "100%";
         }
 	//}
-	
+
 	google.maps.event.addDomListener(window, "resize", function() {
     	 var center = map.getCenter();
     	 google.maps.event.trigger(map, "resize");
-    	 map.setCenter(center); 
-	
+    	 map.setCenter(center);
+
 	     $("#map").width(mapContainerWidth);
-	     $("#map").height(mapContainerHeight);	
-	 });	
+	     $("#map").height(mapContainerHeight);
+	 });
 	 //Resize map on document ready
 	 $("#map").width(mapContainerWidth);
 	 $("#map").height(mapContainerHeight);
-	 
+
 	 addDropDown();
 	 configInputField();
-	 
+
 	 addFindFormEvents();
 });
 
-/* Google Maps Initialize Implementation 
- * More Info about API Version 3 at https://developers.google.com/maps/web/ 
+/* Google Maps Initialize Implementation
+ * More Info about API Version 3 at https://developers.google.com/maps/web/
  */
 
 function initialize() {
@@ -80,7 +81,7 @@ function initialize() {
       google.maps.event.trigger(markers[markerNum], 'click');
         }
       };
-      
+
       if(isMobile)
       {
          getLocation();
@@ -100,7 +101,7 @@ function addFindFormEvents()
 }
 
 function searchLocations() {
-    
+
    if(!isMobile)
     {
         address = document.getElementById("addressInput").value;
@@ -116,7 +117,7 @@ function searchLocations() {
      }
   });
 }
-   
+
 function locateAddress(results){
 var addr = {};
 if (results.length >= 1) {
@@ -150,12 +151,12 @@ if (types == "country,political"){
     }
     response(addr);
     searchLocationsNear(results[0].geometry.location);
-    } else 
+    } else
     {
         response({success:false});
     }
    }
-   
+
 function response(obj)
 {
 	console.log(obj);
@@ -163,12 +164,12 @@ function response(obj)
 
 function clearLocations() {
 	infoWindow.close();
-	for (var i = 0; i < markers.length; i++) 
+	for (var i = 0; i < markers.length; i++)
 	{
-		markers[i].setMap(null);     
+		markers[i].setMap(null);
 	}
 	    markers.length = 0;
-	
+
 	    locationSelect.innerHTML = "";
 	 	var option = document.createElement("option");
 	 	option.value = "none";
@@ -215,12 +216,12 @@ function searchLocationsNear(center) {
          createOption(company, name, address, city, state, zip, phone, distance, i);
          createMarker(latlng, company, name, address, city, state, zip);
          bounds.extend(latlng);
-       }      
+       }
         map.fitBounds(bounds);
          $('.scroll-pane').jScrollPane({showArrows: false,verticalDragMinHeight: 40,verticalDragMaxHeight: 40, contentWidth: '0px'});
         //locationSelect.style.visibility = "visible";
    }
-  
+
    /*locationSelect.onchange = function() {
      var markerNum = locationSelect.options[locationSelect.selectedIndex].value;
      google.maps.event.trigger(markers[markerNum], 'click');
@@ -299,9 +300,9 @@ function configInputField()
 {
     var defaultValue = "What is your zip code?";
     $("#addressInput").val(defaultValue);
-    
+
     $("#addressInput").focus(function(){
-        var currentValue = $(this).val(); 
+        var currentValue = $(this).val();
             if(currentValue === defaultValue)
             {
                  $(this).val("");
@@ -330,7 +331,7 @@ function increaseResultsHeight()
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else { 
+    } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
@@ -339,9 +340,9 @@ function showPosition(position) {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
     var latlon = new google.maps.LatLng(lat, lon);
-    
+
     getAddressFromLatLang(lat, lon);
-    
+
     map = new google.maps.Map(document.getElementById("map"), {
     center:latlon,
     zoom:14,
@@ -373,7 +374,7 @@ function showError(error) {
 
 function setAsMobile()
 {
-    
+
 }
 
 
@@ -384,9 +385,9 @@ function getAddressFromLatLang(lat,lng){
         geocoder.geocode( { 'latLng': latLng}, function(results, status) {
             //console.log("After getting address");
             //console.log(results);
-            if (status == google.maps.GeocoderStatus.OK) 
+            if (status == google.maps.GeocoderStatus.OK)
             {
-                if (results[1]) 
+                if (results[1])
                 {
                     console.log(results[1]);
                     //alert(results[1].formatted_address);

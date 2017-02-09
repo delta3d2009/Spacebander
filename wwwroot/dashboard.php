@@ -1,7 +1,7 @@
 <?php
-	session_start();  
-	//echo "------------------ " . $_SESSION["username"]; 
-	if (empty($_SESSION["username"])) 
+	session_start();
+	//echo "------------------ " . $_SESSION["username"];
+	if (empty($_SESSION["username"]))
 	{
 		header("Location: exit.php");
 		session_unset($_SESSION["username"]);
@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 	<html ng-app="spaceBanderApp" ng-app lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
@@ -31,7 +31,7 @@
        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
        <!-- Google Maps API -->
-       <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMz8cgj2HUN1yhqmlDLDmStO_so32iaNw"></script>
     </head>
     <body class="admin-section dashboard-section">
     	 <div id="header" class="purple">
@@ -93,7 +93,7 @@
 									<div>
 										<label>Country</label>
 										<?php include 'includes/countries.php';?>
-									</div>	
+									</div>
 									<div>
 										<label>Office Phone</label>
 										<input name="phone" id="phone" type="text" size="20" value="" class="form-control" maxlength="20"/>
@@ -208,7 +208,7 @@
 								                    <td>{{data.Office}}</td>
 								                    <td><a class='edit' href='#' onClick='configModalForm(this.id); return false;' id={{data.ID}}>Edit</a></td>
 								                    <td><a class='remove' href='#' onClick='configModalRemove(this.id); return false;' id={{data.ID}}>Remove</a></td>
-								                      
+
 								                </tr>
 								            </tbody>
 								            </table>
@@ -218,10 +218,10 @@
 								                <h4>No physicians found</h4>
 								            </div>
 								        </div>
-								        <div class="col-md-12" ng-show="filteredItems > 0">    
+								        <div class="col-md-12" ng-show="filteredItems > 0">
 								            <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
-								            
-								            
+
+
 								        </div>
 								    </div>
 								</div>
@@ -243,8 +243,8 @@
 								</div>
 								<button type="submit" class="btn-green">Download Excel Spreadsheet</button>
 							</form>
-						</div>			
-					</div> 
+						</div>
+					</div>
 			      </div><!-- End Main component for a primary marketing message or call to action -->
 			 </div><!-- End Container -->
 			 <?php include 'includes/footer.php';?>

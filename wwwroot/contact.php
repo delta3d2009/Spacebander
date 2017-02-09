@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en-US"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
@@ -48,11 +48,11 @@
 						<div class="contact-container-2">
 							<img class="logo" src="img/desktop/spacebander-logo-sm.jpg" alt="SpaceBander Logo">
 							<h3>Spacebander Corporation</h3>
-								<p>Phone: 908-334-1323</p>
+								<p>Phone: <a href="tel:855-853-6100">855-853-6100</a></p>
 								<p>Address: PO Box 221, Belmar, NJ 07719</p>
 								<p><a href="mailto:support@spacebander.com">support@spacebander.com</a></p>
 						</div>
-							
+
 						<div>
 							<h3>I’m interested.</br>Please send me more information:</h3>
 							<h4>Your information is always kept private.</h4>
@@ -78,7 +78,7 @@
 								<div>
 									<label>Phone (<em>optional</em>)</label>
 									<input name="phone" id="phone" type="text" size="20" value="" class="form-control" maxlength="20"/>
-								</div>	
+								</div>
 								<div>
 									<label>Message</label>
 									<textarea name="message" id="message" class="form-control" rows="5" maxlength="200"></textarea>
@@ -86,10 +86,10 @@
 								<button type="submit" class="btn-green">Submit</button>
 								<button type="reset" class="btn-green green-reset">Reset</button>
 								<div id="output"></div>
-							</form> 
-						
+							</form>
+
 						<h5>Thanks for your interest.</br>We will contact you shortly!</h5>
-							
+
 					</div>
 			</div>
 		</div>

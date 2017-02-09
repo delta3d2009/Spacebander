@@ -28,5 +28,3 @@
 		$_SESSION['ERROR'] = "No username or password were provided";
 	}
 ?>
-
-
