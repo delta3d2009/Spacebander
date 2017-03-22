@@ -13,9 +13,7 @@
 */
 
 #video-homepage {
-  max-width: 1024px;
   text-align: left;
-  margin: 30px auto;
 }
 
 .video-js {
@@ -23,7 +21,7 @@
      All dimensions use em-based sizes so that the scale along with the font size.
      Try increasing it to 15px and see what happens. */
   font-family: 'Raleway', sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   /* The main font color changes the ICON COLORS as well as the text */
   color: #61d7d5;
 }
@@ -66,8 +64,8 @@
 }
 
 .video-js .vjs-big-play-button {
-  top: 45%;
-  left: 45%;
+  left: 38%;
+  top: 25%;
 }
 
 /* Slider - used for Volume bar and Progress bar */
@@ -99,4 +97,31 @@
   background: white;
   /* Otherwise we'll rely on stacked opacities */
   background: rgba(115, 133, 159, 0.75);
+}
+
+.video-js .vjs-big-play-button {
+  width: 25%;
+  height: 45%;
+  border-radius: 50%;
+  color: #5c4fee;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 63px;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+}
+
+/*
+ * Under this break point all sizes smaller than 768px
+ * include iPhone and other mobile devices until 640px
+ * @marlonjuc
+ * *
+ * */
+
+@media screen and (max-width: 767px) {
+
+  .video-js .vjs-big-play-button {
+    font-size: 14vw;
+  }
+
 }

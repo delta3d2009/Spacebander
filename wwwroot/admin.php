@@ -7,7 +7,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Staff Dashboard Login</title>
         <meta name="description" content="">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -18,6 +17,7 @@
         <!-- Google Fonts -->
        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
+       <?php include 'includes/favicons.php';?>
     </head>
     <body class="admin-section login-section">
   		<div id="header" class="purple">
@@ -42,7 +42,7 @@
 						<button class="btn-green btn-login" href="#" role="button" type="submit">LOGIN</button>
 						<a class="link" href="#" onClick='configModalForgot(); return false;'>Problems login in? Click here.</a>
 						<div id="output"></div>
-					</form>					
+					</form>
 			      </div><!-- End Content -->
 			 </div><!-- End Container -->
 			 <?php include 'includes/footer.php';?>

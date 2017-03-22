@@ -119,6 +119,56 @@
         margin-left: 25%;
     }
 
+    /* Video Player */
+
+    .see-how {
+      padding-left: 2%;
+      padding-right: 2%;
+      display: inline-block;
+    }
+
+    .see-how .copy-container {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .see-how .headline {
+      font-size: 5vw;
+      line-height: 5vw;
+      margin-bottom: 3%;
+    }
+
+    .see-how .info {
+      font-size: 4vw;
+      font-weight: normal;
+      line-height: 4vw;
+      margin-bottom: 3%;
+    }
+
+    .see-how p {
+      font-size: 3vw;
+      line-height: 3vw;
+      margin-bottom: 3vw;
+    }
+
+    .see-how a {
+      font-size: 3vw;
+      line-height: 3vw;
+    }
+
+    .see-how a span {
+      font-size: 3vw;
+      line-height: 3vw;
+    }
+
+    .see-how #video-player-container {
+      margin-left: 3%;
+      margin-right: 3%;
+      width: 94%;
+      height: auto;
+    }
+
     /*****************************************************Buttons*****************************************************/
 
     .btn-green, .btn-orange {
@@ -195,7 +245,7 @@
     #footer {
         padding-top: 24px;
     }
-    
+
     #footer  p{
         line-height: 20px;
     }
@@ -208,11 +258,11 @@
         font-size: 18px;
         margin-bottom:24px;
     }
-    
+
     #footer .bottom_links:last-child {
         margin-bottom:0;
     }
-    
+
     #footer .bottom_links li{
         margin-bottom:40px;
     }
@@ -346,10 +396,10 @@
         font-size:18px;
         line-height: 20px;
     }
-    
+
      #cta_area h5 {
         font-size:16px;
-        line-height:18px;  
+        line-height:18px;
      }
 
     .curtain {
@@ -373,22 +423,22 @@
         padding: 5%;
         margin-bottom: 5%;
     }
-    
+
     .contact-container-2 h3, .contact-container p{
         line-height:6vw;
     }
-    
+
     .contact-container .btn-green{
          margin-left:2.5%;
          margin-right:5%;
          margin-bottom:40px;
      }
-     
+
      .contact-container .green-reset {
         margin-left: 0;
         margin-right: 0;
     }
-    
+
     /*********************************************** Privacy and Terms ***********************/
 
     #privacy {

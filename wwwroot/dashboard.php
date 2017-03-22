@@ -19,7 +19,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Staff Dashboard</title>
         <meta name="description" content="">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -32,7 +31,8 @@
        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
        <!-- Google Maps API -->
        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMz8cgj2HUN1yhqmlDLDmStO_so32iaNw"></script>
-    </head>
+			 <?php include 'includes/favicons.php';?>
+		</head>
     <body class="admin-section dashboard-section">
     	 <div id="header" class="purple">
 		<?php include 'includes/header.php';?>

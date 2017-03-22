@@ -7,13 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Reset Your Password</title>
         <meta name="description" content="">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/admin.css">
+        <?php include 'includes/favicons.php';?>
     </head>
     <body class="admin-section">
     	<div id="header" class="purple">
@@ -21,8 +21,8 @@
 		</div>
     <?php
 		require_once 'php/database_connection.php';
-		
-		if (isset($_GET['token']) && isset($_GET['email']) && isset($_GET['user']) ) 
+
+		if (isset($_GET['token']) && isset($_GET['email']) && isset($_GET['user']) )
 		{
 			$email = $_GET['email'];
 			$token = $_GET['token'];
@@ -59,5 +59,3 @@
 		<?php include 'includes/interstitial.php';?>
     </body>
 </html>
-
-

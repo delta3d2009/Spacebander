@@ -8,7 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Welcome to SpaceBander</title>
         <meta name="description" content="">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -24,8 +23,9 @@
         <!-- Google fonts -->
 		    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-		<!-- Viewport tags-->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		    <!-- Viewport tags-->
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php include 'includes/favicons.php';?>
     </head>
     <body class="homepage-section">
     	<div id="header" class="purple">
@@ -35,8 +35,7 @@
 		<div id="slider">
     		<div class="container-fluid">
 
-	<!-- Carousel
-					    ================================================== -->
+	         <!-- Carousel ================================================== -->
 					<div id="myCarousel" class="carousel slide " data-ride="carousel">
 					      <!-- Indicators -->
 					    <ol class="carousel-indicators">
@@ -89,35 +88,42 @@
 					        <span class="sr-only">Next</span>
 					    </a>
 					</div>
-	         <!-- Carousel
-					    ================================================== -->
+	         <!-- Carousel ================================================== -->
 
 
 			</div>
 		</div><!--  slider================================================== -->
 
     <!--  Video Player ================================================== -->
-    <div id="video-player-container">
-    <!--<script src="https://player.vimeo.com/api/player.js"></script>
-    <script>
-        var options = {
-            id: "https://player.vimeo.com/video/201723679",
-            width: 1024,
-            height: 576,
-            color: "61d7d5"
-        };
-        var player = new Vimeo.Player('video-player-container', options);
-        player.setVolume(0);
-        player.on('play', function() {
-            console.log('played the video!');
-        });
-    </script>-->
-      <!--<video id="video-homepage" class="video-js" controls preload="none" width="1024px" height="576px"
-       poster="img/desktop/video-homepage-poster.jpg" data-setup='{ "aspectRatio":"640:360", "playbackRates": [1, 1.5, 2] }'>
-         <source src="videos/Spacebander_60secPatient_08_HD.mp4" type='video/mp4'>
-         <source src="videos/Spacebander_60secPatient_08_Web.webm" type='video/webm'>
-       </video>-->
-     </div>
+    <div class="see-how container-fluid">
+      <div class="copy-container">
+        <div class="headline">Why is it hard to talk about hemorroids?</div>
+        <div class="info">It should be very simple.</div>
+        <p>Solve the root of the problem, with a quick, easy, painless and inexpensive solution.</p>
+        <a href="#">Watch this video and see how! <span>></span></a>
+      </div>
+      <div id="video-player-container">
+      <!--<script src="https://player.vimeo.com/api/player.js"></script>
+      <script>
+          var options = {
+              id: "https://player.vimeo.com/video/201723679",
+              width: 1024,
+              height: 576,
+              color: "61d7d5"
+          };
+          var player = new Vimeo.Player('video-player-container', options);
+          player.setVolume(0);
+          player.on('play', function() {
+              console.log('played the video!');
+          });
+      </script>-->
+        <video id="video-homepage" class="video-js small-player" controls preload="none" width="184px" height="160px"
+         poster="img/desktop/video-homepage-poster.jpg" data-setup='{ "aspectRatio":"640:360", "playbackRates": [1, 1.5, 2] }'>
+           <source src="videos/Spacebander_60secPatient_08_HD.mp4" type='video/mp4'>
+           <source src="videos/Spacebander_60secPatient_08_Web.webm" type='video/webm'>
+         </video>
+       </div>
+   </div>
     <!--  Video Player ================================================== -->
 		<div id="callouts" class="container-fluid">
     		<div class="callouts row">

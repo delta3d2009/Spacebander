@@ -460,18 +460,21 @@ button {
     padding: 12px 40px;
     text-decoration: none;
 }
+
 .btn-green:focus {
     color: #ffffff;
     background-color: #4e43ba;
     border: 1px solid #3e3594;
     text-decoration: none;
 }
+
 .btn-green:hover {
     color: #ffffff;
     background-color: #4e43ba;
     border: 1px solid #3e3594;
     text-decoration: none;
 }
+
 .btn-green:active {
     color: #ffffff;
     background-color: #4e43ba;
@@ -520,6 +523,71 @@ button {
     float: left;
     background-color: #FFFFFF;
     background-position: center;
+}
+
+/***************************************************************** Video Player Homepage *****************************************************************/
+
+.see-how {
+  text-align: left;
+  padding-left: 45px;
+  padding-top: 45px;
+}
+
+.see-how .copy-container {
+  float: left;
+  width: 565px;
+  position: relative;
+  top: -8px;
+}
+
+.see-how .headline {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 34px;
+  line-height: 34px;
+  color:#59bfc1;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  width: 100%;
+}
+
+.see-how .info {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 28px;
+  color:#4e3ebd;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.see-how p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  line-height: 22px;
+  color:#212d3f;
+  width: 90%;
+  margin-bottom: 32px;
+}
+
+.see-how a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  color:#5c4fee;
+  text-transform: uppercase;
+}
+
+.see-how a span {
+  font-size: 27px;
+}
+
+.see-how #video-player-container {
+  width: 400px;
+  height: 225px;
+  float: right;
+  outline: 5px solid #DDDDDD;
+  margin-right: 5px;
 }
 
 /*****************************************************************Home page callouts*****************************************************************/

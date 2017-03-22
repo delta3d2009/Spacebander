@@ -8,7 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Find a SpaceBander Certified Physician</title>
         <meta name="description" content="">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -17,17 +16,17 @@
         <link rel="stylesheet" type="text/css" href="css/tablet.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <!-- styles needed by jScrollPane -->
-		<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+		    <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
         <!-- jQuery for Mobile CSS -->
         <!--<link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">-->
         <!-- Google Maps API -->
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMz8cgj2HUN1yhqmlDLDmStO_so32iaNw"></script>
         <!-- Google fonts -->
-		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
         <!-- Viewport tags-->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php include 'includes/favicons.php';?>
     </head>
  	    <body class="find-physicians-section">
     	<div id="header" class="purple">

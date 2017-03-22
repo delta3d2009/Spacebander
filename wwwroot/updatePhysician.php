@@ -7,20 +7,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Staff Dashboard</title>
         <meta name="description" content="">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/admin.css">
+        <?php include 'includes/favicons.php';?>
     </head>
     <body class="body-iframe admin-section">
     <?php
 
 		require_once "php/database_connection.php";
-		
-		if (isset($_GET['id']) or is_numeric($_GET['id'])) 
+
+		if (isset($_GET['id']) or is_numeric($_GET['id']))
 		{
 			$id = $_GET['id'];
 			//echo "<script>alert(".$_GET['id'].")</script>";
@@ -28,7 +28,7 @@
 			$row = mysqli_fetch_array($result);
 			loadPhysicianData($row);
 		}
-		
+
 		function loadPhysicianData($row)
 		{
 		 echo"<script src='js/jquery-1.11.0.min.js'></script><script src='js/bootstrap.js'></script><script src='js/jquery.validate.js'></script><script src='js/admin.js'></script>";
@@ -71,7 +71,7 @@
 				<div>
 					<label>Country</label>";
 					include 'includes/countries.php';
-				echo"</div>	
+				echo"</div>
 				<div>
 					<label>Office Phone</label>
 					<input name='phone' id='phone' type='text' size='20' value='".htmlspecialchars($row[10], ENT_QUOTES)."' class='form-control' maxlength='20'/>
@@ -94,14 +94,14 @@
 				</div></div>
 				<button type='submit' class='btn-green'>Save</button>
 				<button type='reset' class='btn-orange'>Reset</button>
-			</form>			
+			</form>
     	 </div><!-- End Wrapper -->
     	 ";
     	 echo "<script>
-    	 		adjustUpdateIframe('".$row[0]."', '".$row[9]."', '".$row[7]."');				
+    	 		adjustUpdateIframe('".$row[0]."', '".$row[9]."', '".$row[7]."');
 			</script>";
     	 }
     	 ?>
-    	
+
     </body>
 </html>

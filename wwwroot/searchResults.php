@@ -1,6 +1,6 @@
 <?php
-	session_start();  
-	if (empty($_SESSION["username"])) 
+	session_start();
+	if (empty($_SESSION["username"]))
 	{
 		header("Location: exit.php");
 		session_unset($_SESSION["username"]);
@@ -17,13 +17,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Search Results</title>
         <meta name="description" content="">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/admin.css">
+				<?php include 'includes/favicons.php';?>
     </head>
     <body class="body-results">
     	<div id="header" class="purple">
@@ -39,22 +39,22 @@
 		      			if(isset($_GET['parameter']))
 						{
 							require_once "php/database_connection.php";
-							
+
 							$parameter = $_GET["parameter"];
-							
-							if (!isset($_GET['startrow']) or !is_numeric($_GET['startrow'])) 
+
+							if (!isset($_GET['startrow']) or !is_numeric($_GET['startrow']))
 							{
 								//we give the value of the starting row to 0 because nothing was found in URL
 								$startrow = 0;
 								//otherwise we take the value from the URL
-							} else 
+							} else
 							{
 								$startrow = (int)$_GET['startrow'];
 							}
-							
+
 							global $con;
 							$result = mysqli_query($con, "CALL filterPhysicians('$parameter','$startrow')");
-							
+
 							$rowCount = mysqli_num_rows($result);
 
 							if($rowCount) {
@@ -104,12 +104,12 @@
 									echo "</table></div>";
 									//addPagination($orderby, $startrow, $rowCount);
 								}
-					
+
 						}else
 						{
 							echo "No matching results.";
 						}
-						
+
 						function addPagination($orderby, $startrow, $rowCount)
 						{
 							$numPages = $_SESSION["countPhysicians"];
@@ -131,7 +131,7 @@
 								}
 							}
 						}
-						
+
 		      		?>
 			 </div><!-- End Container -->
     	 </div><!-- End Wrapper -->

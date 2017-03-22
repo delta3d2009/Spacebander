@@ -40,7 +40,7 @@
         line-height: 1em;
         margin-bottom: 20px;
     }
-    
+
     .carousel .item h2.slide1, .carousel .item h2.slide2, .carousel .item h2.slide3 {
         width:auto;
     }
@@ -58,9 +58,56 @@
     #callouts .btn-green {
         width: 50%;
     }
-    
+
     .callout p{
         height:auto;
+    }
+
+    /* Video Player */
+
+    .see-how {
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    .see-how .copy-container {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 22px;
+      top: 0;
+    }
+
+    .see-how .headline {
+      font-size: 2em;
+      line-height: 1em;
+      margin-bottom: 20px;
+    }
+
+    .see-how .info {
+      font-size: 1.2em;
+      line-height: 0.9em;
+      margin-bottom: 20px;
+    }
+
+    .see-how p {
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 22px;
+    }
+
+    .see-how a {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .see-how a span {
+      font-size: 18px;
+    }
+
+    .see-how #video-player-container {
+      clear: both;
+      float: none;
+      margin: 0 auto;
     }
 
     /***************************************************** About *****************************************************/

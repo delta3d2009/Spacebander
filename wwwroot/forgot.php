@@ -7,13 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Staff Dashboard</title>
         <meta name="description" content="">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/admin.css">
+        <?php include 'includes/favicons.php';?>
     </head>
     <body class="forgot-section body-iframe admin-section">
 		<div>
@@ -27,7 +27,7 @@
 					<button type='submit' class='btn-green'>Send</button>
 					<button type='reset' class='btn-orange'>Reset</button>
 					<div id='output'></div>
-				</form>			
+				</form>
 			 </div><!-- End Container -->
     	 </div><!-- End Wrapper -->
     </body>
