@@ -1,8 +1,8 @@
 /*
  * Eng. Marlon Ulate Caruzo.
  * March 2015
- * 
- * 
+ *
+ *
  */
 
 /* Global Variables */
@@ -19,8 +19,13 @@ $(document).ready(function() {
 
 	configModal();
 	configCarousel();
-	
+
 	addCTAEvents();
+
+	if(currentPage === "homepage-section")
+	{
+		addClickEventPlayVideo();
+	}
 	
 	if(isMobile && currentPage === "homepage-section")
 	{
@@ -29,11 +34,13 @@ $(document).ready(function() {
 	//pageName = getPageName(window.location.pathname);
 	//currentPage = $(".content").attr("id");
 	validateNavigation();
-    if(currentPage != "find-physicians-section")
-    {
-       addEventsContactForm();
-    }
-    setViewPort();
+
+	if(currentPage != "find-physicians-section")
+  {
+     addEventsContactForm();
+  }
+  setViewPort();
+
 });
 
 $(window).bind("resize", function(){
@@ -67,7 +74,7 @@ window.document.addEventListener('orientationchange', function() {
                 $('#viewport').attr('content','width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0');
             },1000);
         });
-    }    
+    }
 }*/
 
 function setViewPort()
@@ -82,18 +89,18 @@ function setViewPort()
        $('#Viewport').attr('content', 'initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=yes, width=' + ww);
       }
     }   */
-    
+
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-var viewportmeta = document.querySelector('meta[name="viewport"]');
-if (viewportmeta) {
-    viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
-    jQuery(document).ready(function() {
-        document.body.addEventListener('gesturestart', function () {
-            viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
-        }, false);
-    });
-}
-}
+			var viewportmeta = document.querySelector('meta[name="viewport"]');
+			if (viewportmeta) {
+			    viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+			    jQuery(document).ready(function() {
+			        document.body.addEventListener('gesturestart', function () {
+			            viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+			        }, false);
+			    });
+			}
+		}
 }
 
 function addEventsContactForm()
@@ -151,7 +158,7 @@ function addEventsContactForm()
 			phone = $form.find("input[name='phone']").val();
 			email = $form.find("input[name='email']").val();
 			message = $form.find("#message").val();
-			
+
 			var posting = $.post("php/insertContact.php", {firstname:firstname, lastname:lastname, phone:phone, email:email, message:message});
 			posting.done(function( data ) {
 				//showThankYouMessage();
@@ -163,8 +170,8 @@ function addEventsContactForm()
 				//showThankYouMessage();
 			});
 		}
-	});	
-	
+	});
+
 	$( "button:reset" ).on( 'click', function( event ) {
 		resetContactForm();
 	});
@@ -228,10 +235,10 @@ function configCarousel()
 }
 
 function configCarouselMobile()
-{    
+{
      var script = "js/jquery.mobile-1.4.5.min.js";
      $("head").append('<script type="text/javascript" src="' + script + '"></script>');
-     
+
      $("#myCarousel").swiperight(function() {
          $(this).carousel('prev');
     });
@@ -244,25 +251,38 @@ function validateNavigation()
 {
     switch(currentPage)
     {
-      
+
         case "homepage-section":
             $("#myNavbar ul.navbar-nav li").eq(0).find("a").addClass("active");
         break;
-        
+
         case "about-section":
             $("#myNavbar ul.navbar-nav li").eq(1).find("a").addClass("active");
         break;
-        
+
         case "find-physicians-section":
            $("#myNavbar ul.navbar-nav li").eq(2).find("a").addClass("active");
         break;
-            
+
         case "contact-section":
              $("#myNavbar ul.navbar-nav li").eq(3).find("a").addClass("active");
         break;
 
         default:
         break;
-        
+
     }
+}
+
+function addClickEventPlayVideo()
+{
+	var myPlayer = videojs("video-homepage");
+	$(".play-video").on('click tap', function() {
+	  if (myPlayer.paused()) {
+	    myPlayer.play();
+	  }
+	  else {
+	    myPlayer.pause();
+	  }
+	});
 }

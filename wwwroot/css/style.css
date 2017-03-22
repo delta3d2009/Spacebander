@@ -562,7 +562,7 @@ button {
 
 .see-how p {
   font-family: 'Raleway', sans-serif;
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 22px;
   line-height: 22px;
   color:#212d3f;
@@ -572,10 +572,14 @@ button {
 
 .see-how a {
   font-family: 'Raleway', sans-serif;
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 22px;
   color:#5c4fee;
   text-transform: uppercase;
+}
+
+.see-how a:hover {
+    color: #50b2b4;
 }
 
 .see-how a span {
