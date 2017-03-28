@@ -9,7 +9,7 @@
     min-width:1024px;
 }
 
-h1{
+h1 {
     color:#2c3e50;
     font-size:36px;
     font-family: 'PT Serif', serif;
@@ -79,7 +79,7 @@ form{
 }
 
 #signin #output{
-    
+
 }
 
 #username{
@@ -113,7 +113,7 @@ label{
     height:48px;
     border:1px solid #68DDDD;
     box-shadow:none;
-    transition:none;   
+    transition:none;
     border-radius:0;
 }
 
@@ -155,7 +155,7 @@ a.link:hover, a.link:active, a.link:focus{
 #output{
     height:32px;
     margin-top: 10px;
-    text-align: center;   
+    text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -207,11 +207,11 @@ a.link:hover, a.link:active, a.link:focus{
 }
 
 .admin-container h4{
-    text-align: center;   
+    text-align: center;
 }
 
 .admin-container p{
-    text-align: center;   
+    text-align: center;
 }
 
 .admin-container .nav.nav-tabs{
@@ -326,7 +326,7 @@ table{
 }
 
 /************** http://enscrollplugin.com/#demos **************/
-    
+
 #scrollbox {
     overflow: auto;
     width: 100%;
@@ -404,7 +404,7 @@ table{
     width: 40px;
     height: 40px;
     background: #e4e6e3;
-    border: 1px solid #dfdfdd; 
+    border: 1px solid #dfdfdd;
 }*/
 
 /************** http://enscrollplugin.com/#demos **************/
@@ -473,11 +473,11 @@ h5{
 }
 
 .modal-dialog{
-    
+
 }
 
 .modal-content{
-    border-radius:0;   
+    border-radius:0;
 }
 
 .modal-footer{
@@ -485,13 +485,13 @@ h5{
 }
 
 /**this is to center modal dialog vertically**/
-    
+
 .modal-dialog {
     position: absolute;
     right: 0;
     left: 0;
     margin-top: 0;
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .modal.fade .modal-dialog {
@@ -717,7 +717,7 @@ iframe{
 /*****************************************************************SpreadSheet generator form*****************************************************************/
 
 #report{
-   
+
 }
 
 #excelForm{
@@ -783,8 +783,8 @@ iframe{
 }
 
 .btn-container{
-    margin-top:40px;  
-    margin-bottom:40px;   
+    margin-top:40px;
+    margin-bottom:40px;
 }
 
 
@@ -814,7 +814,7 @@ iframe#forgot{
 }
 
 #forgotForm #output{
-    
+
 }
 
 .login-section #modal-screen .btn-orange{
@@ -835,10 +835,10 @@ iframe#forgot{
 }
 
 #resetForm{
-    
+
 }
 
-#resetForm button{  
+#resetForm button{
     margin-top:20px;
 }
 

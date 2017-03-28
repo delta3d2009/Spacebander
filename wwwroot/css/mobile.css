@@ -134,27 +134,29 @@
     }
 
     .see-how .headline {
-      font-size: 5vw;
-      line-height: 5vw;
+      font-size: 6vw;
+      line-height: 6vw;
       margin-bottom: 3%;
     }
 
     .see-how .info {
-      font-size: 4vw;
+      font-size: 5vw;
       font-weight: normal;
-      line-height: 4vw;
+      line-height: 5vw;
       margin-bottom: 3%;
     }
 
     .see-how p {
-      font-size: 3vw;
-      line-height: 3vw;
-      margin-bottom: 3vw;
+      font-size: 4vw;
+      line-height: 4vw;
+      margin-bottom: 4vw;
+      width: 100%;
+      font-weight: 100%;
     }
 
     .see-how a {
-      font-size: 3vw;
-      line-height: 3vw;
+      font-size: 4vw;
+      line-height: 4vw;
     }
 
     .see-how a span {
