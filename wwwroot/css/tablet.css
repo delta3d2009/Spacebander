@@ -29,10 +29,6 @@
         overflow: hidden;
     }
 
-    .show-in-tablet {
-      display: block;
-    }
-
     /***************************************************** Homepage *****************************************************/
 
     .carousel-caption {

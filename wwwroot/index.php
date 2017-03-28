@@ -99,7 +99,7 @@
       <div class="copy-container">
         <div class="headline">Why is it hard to talk about hemorroids?</div>
         <div class="info">It should be very simple.</div>
-        <p>Solve the root of the problem, with a quick,<br class="show-in-tablet"/> easy, painless and inexpensive solution.</p>
+        <p>Solve the root of the problem, with a quick,<br/> easy, painless and inexpensive solution.</p>
         <a href="#" onclick="return false;" class="play-video">Watch this video and see how! <span>></span></a>
       </div>
       <div id="video-player-container">
