@@ -90,6 +90,10 @@ a:focus {
     color: #50b2b4;
 }
 
+.show-in-tablet {
+  display: none;
+}
+
 /*********************************************** CTA ***********************/
 .cta {
     height: 290px;
