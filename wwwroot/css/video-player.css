@@ -100,7 +100,7 @@
 }
 
 .video-js .vjs-poster {
-  background-color: transparent;
+  background-color: #DDDDDD;
 }
 
 .video-js .vjs-big-play-button {
@@ -116,7 +116,7 @@
 }
 
 /*
- * Under this break point all sizes smaller than 768px
+ * Under this break point all sizes smaller than 1024px
  * include iPhone and other mobile devices until 640px
  * @marlonjuc
  * *
