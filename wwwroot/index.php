@@ -97,9 +97,9 @@
     <!--  Video Player ================================================== -->
     <div class="see-how container-fluid">
       <div class="copy-container">
-        <div class="headline">Why is it hard to talk about hemorroids?</div>
-        <div class="info">It should be very simple.</div>
-        <p>Solve the root of the problem, with a quick,<br/> easy, painless and inexpensive solution.</p>
+        <!--<div class="headline">Why is it hard to talk about hemorroids?</div>
+        <div class="info">It should be very simple.</div>-->
+        <p>Eliminate your hemorrhoids with a quick,<br/>easy, painless, and inexpensive solution.</p>
         <a href="#" onclick="return false;" class="play-video">Watch this video and see how! <span>></span></a>
       </div>
       <div id="video-player-container">
