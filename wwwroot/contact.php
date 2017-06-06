@@ -48,8 +48,10 @@
 						<div class="contact-container-2">
 							<img class="logo" src="img/desktop/spacebander-logo-sm.jpg" alt="SpaceBander Logo">
 							<h3>Spacebander Corporation</h3>
-								<p>Phone: <a href="tel:855-853-6100">855-853-6100</a></p>
-								<p>Address: PO Box 221, Belmar, NJ 07719</p>
+								<p><strong>Phone: </strong><a href="tel:855-853-6100">855-853-6100</a></p>
+								<p><strong>Address: </strong>120 Stryker Lane</br>
+									Unit 104 A/B</br>
+									Hillsborough NJ 08844</p>
 								<p><a href="mailto:support@spacebander.com">support@spacebander.com</a></p>
 						</div>
 
