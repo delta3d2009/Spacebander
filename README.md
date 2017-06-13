@@ -1,6 +1,7 @@
-Health Care Providers. For Seniors.
+Health Care Providers. For Seniors. Consumer in US Clients.
 
-Eng. Marlon Ulate. Consumer in US Clients.
+Eng. Marlon Ulate. Site Developer
+Gabriela Salas. Graphic Design
 
 Built with MySQl/PHP/AngularJS/HTML/CSS3
 
