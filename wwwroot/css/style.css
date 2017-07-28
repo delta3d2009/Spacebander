@@ -205,10 +205,14 @@ sup {
 .navbar-toggle {
     position: relative;
     float: right;
-    background-color: #4e43ba;
+    background-color: #4e43ba !important;
     border: none;
     border-radius: 0px;
     padding: 10px;
+    width: 40px !important;
+    height: 40px;
+    margin-right: 40px;
+    margin-top: 2%;
 }
 
 .navbar-toggle .icon-bar {
@@ -297,6 +301,19 @@ sup {
 
 /* CUSTOMIZE THE CAROUSEL
  -------------------------------------------------- */
+
+#ajaxloader {
+
+}
+
+#ajaxloader h4{
+  font-size: 2vw;
+  line-height: 2vw;
+}
+
+#ajaxloader img {
+  margin-bottom: 20px;
+}
 
 /* Carousel base class */
 .carousel {

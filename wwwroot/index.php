@@ -36,6 +36,10 @@
     		<div class="container-fluid">
 
 	         <!-- Carousel ================================================== -->
+           <div id="ajaxloader">
+             <h4>Loading</h4>
+             <img src="img/loader-large.gif"/>
+          </div>
 					<div id="myCarousel" class="carousel slide " data-ride="carousel">
 					      <!-- Indicators -->
 					    <ol class="carousel-indicators">

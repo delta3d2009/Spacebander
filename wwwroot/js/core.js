@@ -26,7 +26,7 @@ $(document).ready(function() {
 	{
 		addClickEventPlayVideo();
 	}
-	
+
 	if(isMobile && currentPage === "homepage-section")
 	{
 	     configCarouselMobile();
@@ -105,72 +105,74 @@ function setViewPort()
 
 function addEventsContactForm()
 {
-	$("#contactForm").validate({
-		rules: {
-			contactfirstname: {
-				required: true,
-				minlength: 2
+	try {
+		$("#contactForm").validate({
+			rules: {
+				contactfirstname: {
+					required: true,
+					minlength: 2
+				},
+				contactlastname: {
+	                required: true,
+	                minlength: 2
+	            },
+				phone: {
+					required: false,
+					minlength: 7
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				confirmemail: {
+	                required: true,
+	                email: true,
+	                equalTo: "#email"
+	            },
+				message: {
+					required: true,
+					minlength: 10
+				}
 			},
-			contactlastname: {
-                required: true,
-                minlength: 2
-            },
-			phone: {
-				required: false,
-				minlength: 7
+			messages: {
+				contactfirstname: {
+					required: "This field is required.",
+					minlength: "Names must be at least 2 characters."
+				},
+				contactlastname: {
+	                required: "This field is required.",
+	                minlength: "Names must be at least 2 characters."
+	            },
+				email: "Please enter a valid e-mail address.",
+				confirmemail: {
+				    equalTo: "Please validate email address."
+				},
+				message: {
+					required: "This field is required.",
+					minlength: "Message must be at least 10 characters."
+				}
 			},
-			email: {
-				required: true,
-				email: true
-			},
-			confirmemail: {
-                required: true,
-                email: true,
-                equalTo: "#email"
-            },
-			message: {
-				required: true,
-				minlength: 10
-			}
-		},
-		messages: {
-			contactfirstname: {
-				required: "This field is required.",
-				minlength: "Names must be at least 2 characters."
-			},
-			contactlastname: {
-                required: "This field is required.",
-                minlength: "Names must be at least 2 characters."
-            },
-			email: "Please enter a valid e-mail address.",
-			confirmemail: {
-			    equalTo: "Please validate email address."
-			},
-			message: {
-				required: "This field is required.",
-				minlength: "Message must be at least 10 characters."
-			}
-		},
-		 submitHandler: function(form) {
-			var $form = $("#contactForm");
-			firstname = $form.find("input[name='contactfirstname']").val();
-			lastname = $form.find("input[name='contactlastname']").val();
-			phone = $form.find("input[name='phone']").val();
-			email = $form.find("input[name='email']").val();
-			message = $form.find("#message").val();
+			 submitHandler: function(form) {
+				var $form = $("#contactForm");
+				firstname = $form.find("input[name='contactfirstname']").val();
+				lastname = $form.find("input[name='contactlastname']").val();
+				phone = $form.find("input[name='phone']").val();
+				email = $form.find("input[name='email']").val();
+				message = $form.find("#message").val();
 
-			var posting = $.post("php/insertContact.php", {firstname:firstname, lastname:lastname, phone:phone, email:email, message:message});
-			posting.done(function( data ) {
-				//showThankYouMessage();
-				$( "#output" ).empty().append(data);
-				showModal("Your message was sucessfully sent.","We'll contact you as soon as possible.","Thanks.");
-				$('#modal-screen .modal-footer .btn-green').hide();
-			});
-			posting.fail(function( data ) {
-				//showThankYouMessage();
-			});
-		}
-	});
+				var posting = $.post("php/insertContact.php", {firstname:firstname, lastname:lastname, phone:phone, email:email, message:message});
+				posting.done(function( data ) {
+					//showThankYouMessage();
+					$( "#output" ).empty().append(data);
+					showModal("Your message was sucessfully sent.","We'll contact you as soon as possible.","Thanks.");
+					$('#modal-screen .modal-footer .btn-green').hide();
+				});
+				posting.fail(function( data ) {
+					//showThankYouMessage();
+				});
+			}
+		});
+	} catch(error) {}
 
 	$( "button:reset" ).on( 'click', function( event ) {
 		resetContactForm();
@@ -286,3 +288,29 @@ function addClickEventPlayVideo()
 	  }
 	});
 }
+
+
+//Carousel Events
+
+$(function() {
+    var carousel = $('.carousel').hide();
+    var deferreds = [];
+    var imgs = $('.carousel').find('img');
+    // loop over each img
+    imgs.each(function(){
+        var self = $(this);
+        var datasrc = self.attr('data-src');
+        if (datasrc) {
+            var d = $.Deferred();
+            self.one('load', d.resolve)
+                .attr("src", datasrc)
+                .attr('data-src', '');
+            deferreds.push(d.promise());
+        }
+    });
+
+    $.when.apply($, deferreds).done(function(){
+        $('#ajaxloader').hide();
+        carousel.fadeIn(1000);
+    });
+});
