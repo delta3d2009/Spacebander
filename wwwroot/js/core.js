@@ -12,6 +12,31 @@ var breakpoint_mobile_max = '767px';
 var media_query = "screen and (min-width: " + breakpoint_mobile + ") and (max-width: " + breakpoint_mobile_max + ")";
 var isMobile;
 
+//Closure function
+(function() {
+    var carousel = $('.carousel').hide();
+    var deferreds = [];
+    var imgs = $('.carousel').find('img');
+    // loop over each img
+    imgs.each(function(){
+        var self = $(this);
+        var datasrc = self.attr('data-src');
+        if (datasrc) {
+            var d = $.Deferred();
+            self.one('load', d.resolve)
+                .attr("src", datasrc)
+                .attr('data-src', '');
+            deferreds.push(d.promise());
+        }
+    });
+
+    $.when.apply($, deferreds).done(function(){
+        $('#ajaxloader').hide();
+        carousel.fadeIn(1000);
+    });
+});
+
+
 $(document).ready(function() {
 	//Handler for .ready() called.
 	currentPage = document.body.className;
