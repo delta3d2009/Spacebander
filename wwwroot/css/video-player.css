@@ -65,7 +65,7 @@
 
 .video-js .vjs-big-play-button {
   left: 38%;
-  top: 25%;
+  top: 22%;
 }
 
 /* Slider - used for Volume bar and Progress bar */
@@ -124,8 +124,12 @@
 
 @media screen and (max-width: 767px) {
 
-  .video-js .vjs-big-play-button {
+  /*.video-js .vjs-big-play-button {
     font-size: 14vw;
+    top: 19%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;*/
   }
 
 }
