@@ -14,6 +14,7 @@
 
 #video-homepage {
   text-align: left;
+  position: relative;
 }
 
 .video-js {
@@ -64,8 +65,18 @@
 }
 
 .video-js .vjs-big-play-button {
-  left: 38%;
-  top: 22%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* Slider - used for Volume bar and Progress bar */
@@ -104,9 +115,9 @@
 }
 
 .video-js .vjs-big-play-button {
-  width: 25%;
-  height: 45%;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
   color: #5c4fee;
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 63px;

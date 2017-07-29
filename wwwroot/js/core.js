@@ -261,7 +261,7 @@ function configCarousel()
 	});
 }
 
-function configCarouselMobile()
+/*function configCarouselMobile()
 {
      var script = "js/jquery.mobile-1.4.5.min.js";
      $("head").append('<script type="text/javascript" src="' + script + '"></script>');
@@ -272,7 +272,21 @@ function configCarouselMobile()
     $("#myCarousel").swipeleft(function() {
         $(this).carousel('next');
     });
+}*/
+
+function configCarouselMobile()
+{
+    var mySwipeIt = new SwipeIt('#myCarousel');
+
+    mySwipeIt.on('swipeLeft', function(e) {
+      $('#myCarousel').carousel('next');
+    })
+    .on('swipeRight', function(e) {
+      $('#myCarousel').carousel('prev');
+    });
 }
+
+
 
 function validateNavigation()
 {

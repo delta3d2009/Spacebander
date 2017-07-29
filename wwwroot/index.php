@@ -221,6 +221,8 @@
         <script src="js/bootstrap.js" type="text/javascript"></script>
         <!-- Video JS -->
         <script src="js/vendor/video.js" type="text/javascript"></script>
+        <!-- Swipe Touchscreen Plugin -->
+        <script src="js/vendor/swipe-it.min.js" type="text/javascript"></script>
         <!-- Custom Script -->
         <script src="js/core.js" type="text/javascript"></script>
     </body>
